@@ -292,24 +292,29 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://netdisk20180612-1256911399.cos.ap-beijing.myqcloud.com/gitment-css.css">
-<script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "https://pilotluobo.com/categories/index.html",
-  owner: 'PilotLuobo',
-  repo: 'pilotluobo.github.io',
-  oauth: {
-    client_id: 'c1ae9f4dad2acc4ca598',
-    client_secret: '8d707a24802d0e4eede7cc5e8dcb99c0122950ae',
-  },
+
+
+
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+  var gitalk = new Gitalk({
+    clientID: 'c1ae9f4dad2acc4ca598',
+    clientSecret: '8d707a24802d0e4eede7cc5e8dcb99c0122950ae',
+    repo: 'pilotluobo.github.io',
+    owner: 'PilotLuobo',
+    admin: ['PilotLuobo'],
+    id: 'Sun Aug 04 2019 23:51:48 GMT+0800',
+    distractionFreeMode: 'true'
 })
-gitment.render('gitment-ctn')
+gitalk.render('gitalk-container') 
+}
 </script>
   
-
-
           </div>
         </div>
       </div>
@@ -400,11 +405,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
