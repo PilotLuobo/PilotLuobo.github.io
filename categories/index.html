@@ -8,14 +8,17 @@
   <link rel="dns-prefetch" href="https://pilotluobo.com">
   <title>categories | 清与时光</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:type" content="website">
 <meta property="og:title" content="categories">
 <meta property="og:url" content="https://pilotluobo.com/categories/index.html">
 <meta property="og:site_name" content="清与时光">
+<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-08-04T15:53:06.592Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
+<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
   
   
     <link rel="icon" href="/images/cat-32x32.png">
@@ -179,7 +182,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
       
 
       
@@ -258,7 +279,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://pilotluobo.com/categories/" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByElEQVR42u3aQYrEMAwF0b7/pTMwq4YhTn0pVsJQXoV0x37eGFnS54PH8Tu+n7/fkK/+viczFIdcuXLb3GM5CLf26/r96ZbkypU7yOWH19lEZKvr+dFRKFeu3Jdx+TP5p1y5cv8Hd31dSely5cp9P5dcflL0+v32u5pcuXIb3FrC9N7n7flduXLl3lSVIEmQWoHkKA25cuXOcEnwQZYh3/JSysU8cuXKHeSmhU+e1AhSHuSiJVeu3EFuegzxN/0j7DTEkStX7mZumuhM06w88Rqcu3Llyt3A5aEJX4bPkDZ7yZUrd5IbhBdgS51vL1KucuXKHeR2UiS8kSJtvJArV+5T3FraotZoxRs7UEJWrly527j98io/2gj3omIiV67ccS5f7CJ5gTfJNyZXrtxJbq1QWgti+qvIlSt3hstLpPwwSsMauXLlvpNLFuCUIFjBa8mVK3ee22mMqBVa0iApzs3IlSu3wU0PlPTSEqdE8a9y5crdze1cbzp0MsNFFkeuXLmbuXcdXml6lLeLyZUr951cXlIlVyze8FHt15ArV+4cN22w6JRd5cqV+yw3DVDSq1FthlZaRK5cuYMJUxKO9Mu3cuXKfYj7A/d13USEdKhuAAAAAElFTkSuQmCC" alt="微信分享二维码">
     </div>
 </div>
 
@@ -415,7 +436,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Apple</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">macOS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -435,23 +464,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Apple</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">macOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">命令行</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">黑苹果</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
             
             <div class="clearfix"></div>
