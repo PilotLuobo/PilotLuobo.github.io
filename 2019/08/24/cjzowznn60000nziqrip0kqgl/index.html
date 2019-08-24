@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="清与时光">
 <meta property="og:description" content="什么是HTML标签  就其核心而言， HTML 是一种相当简单的、由不同元素组成的标记语言，它可以应用于文本片段，使文本在文档中具有不同的含义（它是一个段落吗？它是一个项目列表吗？它是一个表格吗？），将文档结构化为逻辑块（文档是否有头部？有三列内容？有一个导航菜单？），并且可以将图片，影像等内容嵌入到页面中。  根元素  &amp;lt;html&amp;gt;   HTML &amp;lt;html&amp;gt; 元素 表示">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-24T06:47:02.171Z">
+<meta property="og:updated_time" content="2019-08-24T08:05:51.750Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML常用标签快速入门">
 <meta name="twitter:description" content="什么是HTML标签  就其核心而言， HTML 是一种相当简单的、由不同元素组成的标记语言，它可以应用于文本片段，使文本在文档中具有不同的含义（它是一个段落吗？它是一个项目列表吗？它是一个表格吗？），将文档结构化为逻辑块（文档是否有头部？有三列内容？有一个导航菜单？），并且可以将图片，影像等内容嵌入到页面中。  根元素  &amp;lt;html&amp;gt;   HTML &amp;lt;html&amp;gt; 元素 表示">
@@ -321,7 +321,33 @@
 </blockquote>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">section</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Heading<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Bunch of awesome content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+
+
 </li>
+</ul>
+<h1 id="文本内容"><a href="#文本内容" class="headerlink" title="文本内容"></a>文本内容</h1><ul>
+<li><p><code>&lt;dl&gt;</code>,<code>&lt;dt&gt;</code>,<code>&lt;dd&gt;</code></p>
+<blockquote>
+<p><strong>HTML <code>&lt;dl&gt;</code> 元素</strong> （或 <em>HTML</em> <em>描述列表元素</em>）是一个包含术语定义以及描述的列表，通常用于展示词汇表或者元数据 (键-值对列表)。</p>
+</blockquote>
+<blockquote>
+<p><strong>HTML <code>&lt;dt&gt;</code> 元素</strong> （或 <em>HTML 术语定义元素</em>）用于在一个定义列表中声明一个术语。该元素仅能作为 <code>&lt;dl&gt;</code> 的子元素出现。通常在该元素后面会跟着 <code>&lt;dd&gt;</code> 元素， 然而，多个连续出现的 <code>&lt;dt&gt;</code> 元素都将由出现在它们后面的第一个 <code>&lt;dd&gt;</code> 元素定义。 </p>
+</blockquote>
+<blockquote>
+<p><strong>HTML <code>&lt;dd&gt;</code> 元素</strong>（<em>HTML 描述元素</em>）用来指明一个描述列表 <code>&lt;dl&gt;</code> 元素中一个术语的描述。这个元素只能作为描述列表元素的子元素出现，并且必须跟着一个 <code>&lt;dt&gt;</code> 元素。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Name<span class="tag">&lt;/<span class="name">dt</span>&gt;</span>    </span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Godzilla<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Born<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>1952<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Birthplace<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Japan<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Color<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Green<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p><code>&lt;div&gt;</code></p>
+<blockquote>
+<p>HTML <code>&lt;div&gt;</code> 元素 (或 HTML 文档分区元素) 是一个通用型的流内容容器，它在语义上不代表任何特定类型的内容，它可以被用来对其它元素进行分组，一般用于样式化相关的需求（使用 class 或 id 特性) 或者对具有相同特性的一组元素进行分组 (比如 lang)，它应该在没有任何其它语义元素可用时才使用 (比如 <code>&lt;article&gt;</code> 或 <code>&lt;nav&gt;</code>) 。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>这里可以是任何内容，比如 &amp;lt;p&amp;gt;, &amp;lt;table&amp;gt;，一切由你作主。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
