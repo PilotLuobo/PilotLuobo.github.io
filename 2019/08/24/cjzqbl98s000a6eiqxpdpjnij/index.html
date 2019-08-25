@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://pilotluobo.com">
-  <title>Hexo博客搭建记录 | 清与时光</title>
+  <title>网络与IP | 清与时光</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言记录一次 Hexo 博客搭建经历. 环境准备Node.JS官网地址 http://nodejs.cn/download/ .安装后在 bash 内运行 node -v 和 npm -v 查看是否安装完成. GitmacOS 自带了. 安装 Hexo在 bash 内运行sudo npm install -g hexo-cli 与 GitHub 取得联系注册,登录 GitHub太简单了,略过不写.">
-<meta name="keywords" content="Hexo,瞎折腾">
+  <meta name="description" content="TCP与UDP的区别是什么? 简答:  TCP 可靠,面向连接,相对 UDP 较慢;  UDP 不可靠,不面向连接,相对 TCP 较快. 详细回答: 链接：https://www.nowcoder.com/questionTerminal/63c8b45c91a544bd8febc1f1ff02e3b5?toCommentId=73766来源：牛客网 TCP提供面向连接的、可靠的数据流传输，而UD">
+<meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo博客搭建记录">
-<meta property="og:url" content="https://pilotluobo.com/2019/08/12/cjzpyzjkc0000lhiqsxv96697/index.html">
+<meta property="og:title" content="网络与IP">
+<meta property="og:url" content="https://pilotluobo.com/2019/08/24/cjzqbl98s000a6eiqxpdpjnij/index.html">
 <meta property="og:site_name" content="清与时光">
-<meta property="og:description" content="前言记录一次 Hexo 博客搭建经历. 环境准备Node.JS官网地址 http://nodejs.cn/download/ .安装后在 bash 内运行 node -v 和 npm -v 查看是否安装完成. GitmacOS 自带了. 安装 Hexo在 bash 内运行sudo npm install -g hexo-cli 与 GitHub 取得联系注册,登录 GitHub太简单了,略过不写.">
+<meta property="og:description" content="TCP与UDP的区别是什么? 简答:  TCP 可靠,面向连接,相对 UDP 较慢;  UDP 不可靠,不面向连接,相对 TCP 较快. 详细回答: 链接：https://www.nowcoder.com/questionTerminal/63c8b45c91a544bd8febc1f1ff02e3b5?toCommentId=73766来源：牛客网 TCP提供面向连接的、可靠的数据流传输，而UD">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-24T19:28:25.372Z">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/006y8mN6gy1g6a3nldukej31iu0u04jr.jpg">
+<meta property="og:updated_time" content="2019-08-24T19:28:25.383Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo博客搭建记录">
-<meta name="twitter:description" content="前言记录一次 Hexo 博客搭建经历. 环境准备Node.JS官网地址 http://nodejs.cn/download/ .安装后在 bash 内运行 node -v 和 npm -v 查看是否安装完成. GitmacOS 自带了. 安装 Hexo在 bash 内运行sudo npm install -g hexo-cli 与 GitHub 取得联系注册,登录 GitHub太简单了,略过不写.">
+<meta name="twitter:title" content="网络与IP">
+<meta name="twitter:description" content="TCP与UDP的区别是什么? 简答:  TCP 可靠,面向连接,相对 UDP 较慢;  UDP 不可靠,不面向连接,相对 TCP 较快. 详细回答: 链接：https://www.nowcoder.com/questionTerminal/63c8b45c91a544bd8febc1f1ff02e3b5?toCommentId=73766来源：牛客网 TCP提供面向连接的、可靠的数据流传输，而UD">
+<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/006y8mN6gy1g6a3nldukej31iu0u04jr.jpg">
   
   
     <link rel="icon" href="/images/cat-32x32.png">
@@ -94,13 +96,9 @@ var _hmt = _hmt || [];
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/PilotLuobo" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
-					<a class="bilibili" target="_blank" href="#" title="bilibili"><i class="icon-bilibili"></i></a>
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/1749478" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 					<a class="linkedin" target="_blank" href="#" title="linkedin"><i class="icon-linkedin"></i></a>
 		        
@@ -141,13 +139,9 @@ var _hmt = _hmt || [];
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/PilotLuobo" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
-						<a class="bilibili" target="_blank" href="#" title="bilibili"><i class="icon-bilibili"></i></a>
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/1749478" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 						<a class="linkedin" target="_blank" href="#" title="linkedin"><i class="icon-linkedin"></i></a>
 			        
@@ -177,33 +171,60 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo博客搭建记录" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-网络与IP" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo博客搭建记录
+      网络与IP
     </h1>
   
 
         
-        <a href="/2019/08/12/cjzpyzjkc0000lhiqsxv96697/" class="archive-article-date">
-  	<time datetime="2019-08-12T14:23:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
+        <a href="/2019/08/24/cjzqbl98s000a6eiqxpdpjnij/" class="archive-article-date">
+  	<time datetime="2019-08-23T16:40:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>记录一次 Hexo 博客搭建经历.</p>
-<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><h2 id="Node-JS"><a href="#Node-JS" class="headerlink" title="Node.JS"></a>Node.JS</h2><p>官网地址 <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a> .<br>安装后在 bash 内运行 <code>node -v</code> 和 <code>npm -v</code> 查看是否安装完成.</p>
-<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>macOS 自带了.</p>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>在 bash 内运行<code>sudo npm install -g hexo-cli</code></p>
-<h1 id="与-GitHub-取得联系"><a href="#与-GitHub-取得联系" class="headerlink" title="与 GitHub 取得联系"></a>与 GitHub 取得联系</h1><h2 id="注册-登录-GitHub"><a href="#注册-登录-GitHub" class="headerlink" title="注册,登录 GitHub"></a>注册,登录 GitHub</h2><p>太简单了,略过不写.</p>
-<h2 id="取得-SSH-key"><a href="#取得-SSH-key" class="headerlink" title="取得 SSH key"></a>取得 SSH key</h2><p><code>$ ssh-keygen -t rsa -b 4096 -C "xxxxxx"</code>   (把 <em>xxxxxx</em> 替换成你的邮箱)<br><code>$ cat ~/.ssh/id_rsa.pub</code>   复制之</p>
-<h2 id="填写-SSH-key"><a href="#填写-SSH-key" class="headerlink" title="填写 SSH key"></a>填写 SSH key</h2><p><code>Settings</code> –&gt; <code>SSH and GPG keys</code> –&gt; <code>New SSH key</code> –&gt; 粘贴 –&gt; <code>Add SSH key</code></p>
+        <h1 id="TCP与UDP的区别是什么"><a href="#TCP与UDP的区别是什么" class="headerlink" title="TCP与UDP的区别是什么?"></a>TCP与UDP的区别是什么?</h1><ul>
+<li>简答:<br>  TCP 可靠,面向连接,相对 UDP 较慢;<br>  UDP 不可靠,不面向连接,相对 TCP 较快.</li>
+<li>详细回答:<blockquote>
+<p>链接：<a href="https://www.nowcoder.com/questionTerminal/63c8b45c91a544bd8febc1f1ff02e3b5?toCommentId=73766" target="_blank" rel="noopener">https://www.nowcoder.com/questionTerminal/63c8b45c91a544bd8febc1f1ff02e3b5?toCommentId=73766</a><br>来源：牛客网</p>
+<p>TCP提供面向连接的、可靠的数据流传输，而UDP提供的是非面向连接的、不可靠的数据流传输。<br>TCP传输单位称为TCP报文段，UDP传输单位称为用户数据报。<br>TCP注重数据安全性，UDP数据传输快，因为不需要连接等待，少了许多操作，但是其安全性却一般。<br>TCP对应的协议和UDP对应的协议<br>TCP对应的协议：<br>（1） FTP：定义了文件传输协议，使用21端口。<br>（2） Telnet：一种用于远程登陆的端口，使用23端口，用户可以以自己的身份远程连接到计算机上，可提供基于DOS模式下的通信服务。<br>（3） SMTP：邮件传送协议，用于发送邮件。服务器开放的是25号端口。<br>（4） POP3：它是和SMTP对应，POP3用于接收邮件。POP3协议所用的是110端口。<br>（5）HTTP：是从Web服务器传输超文本到本地浏览器的传送协议。<br>UDP对应的协议：<br>（1） DNS：用于域名解析服务，将域名地址转换为IP地址。DNS用的是53号端口。<br>（2） SNMP：简单网络管理协议，使用161号端口，是用来管理网络设备的。由于网络设备很多，无连接的服务就体现出其优势。<br>（3） TFTP(Trival File Tran敏感词er Protocal)，简单文件传输协议，该协议在熟知端口69上使用UDP服务。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="TCP的三次握手"><a href="#TCP的三次握手" class="headerlink" title="TCP的三次握手"></a>TCP的三次握手</h1><blockquote>
+<p>第一次握手:客户端发送syn包(syn=j)到服务器，并进入SYN_SEND状态，等待服务器确认；<br>第二次握手:服务器收到syn包，必须确认客户的SYN（ack=j+1），同时自己也发送一个SYN包（syn=k），即SYN+ACK包，此时服务器进入SYN_RECV状态；<br>第三次握手:客户端收到服务器的SYN＋ACK包，向服务器发送确认包ACK(ack=k+1)，此包发送完毕，客户端和服务器进入ESTABLISHED状态，完成三次握手。<br>握手过程中传送的包里不包含数据，三次握手完毕后，客户端与服务器才正式开始传送数据。理想状态下，TCP连接一旦建立，在通信双方中的任何一方主 动关闭连接之前，TCP 连接都将被一直保持下去。断开连接时服务器和客户端均可以主动发起断开TCP连接的请求，断开过程需要经过“四次握手”（过程就不细写了，就是服务器和客 户端交互，最终确定断开）</p>
+</blockquote>
+<ul>
+<li>简答:<br>每次建立连接前，客户端和服务端之前都要先进行三次对话才开始正式传输内容，三次对话大概是这样的：<ol>
+<li>客户端：我要连接你了，可以吗</li>
+<li>服务端：嗯，我准备好了，连接我吧</li>
+<li>客户端：那我连接你咯。</li>
+<li>开始后面步骤</li>
+</ol>
+</li>
+</ul>
+<h1 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h1><p><img src="http://ww4.sinaimg.cn/large/006y8mN6gy1g6a3nldukej31iu0u04jr.jpg" alt=""></p>
+<ul>
+<li>特殊IP:<ul>
+<li><code>127.0.0.1</code>:本地IP</li>
+<li><code>0.0.0.0</code>:不表示任何设备</li>
+</ul>
+</li>
+<li>端口<ul>
+<li><code>80</code> HTTP 服务</li>
+<li><code>443</code> HTTPS 服务</li>
+<li><code>21</code> FTP 服务</li>
+</ul>
+</li>
+</ul>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -235,11 +256,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">瞎折腾</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
@@ -295,7 +312,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMUlEQVR42u3aO3KEQAwFQN//0jjdwOAnCbsK0USu3WGZJpBHn6+v+Do+rs9P8vXXK6t3NS8MDIzHMo7Lq8fI77pek+wNAwPjPYwkFFY3mgTQ5PVd7w0DAwNjchDMQy0GBgbGvYyElDMmgR4DA+NtjDzw5Ynu9focf3MujoGB8UBGXnX//7//pL+BgYHxKMZRvPIGZN5UuF4f7QoDA2M1Y9KM7K1MqM2nYGBgLGXkgS8peM0TzqTB8MMnGBgYqxl3pbLVUNsbtqiOcWBgYOxgJOMRvSCYNy977/uXsy0GBsZSRnXYNC+NJa8p389p1RADA2M1Y1Ka722x150sDIRhYGAsYlSTyfng1+TbaCwDAwNjHaMacCeFubt+7bTchoGBsZSRNw7zI1rePMhLclFYx8DAWMqY/Fx1zKLHLieuGBgY6xi9lmQvyCathSr49L8HBgbGUkavJZC3PJNCWzXFxcDAeAOjdxTLRyKa73IyM4KBgbGOkbcJkyNdntBWj4mFQI+BgbGU0XvAvelufkA8fRYGBsYLGHnonJfSeofC0bAFBgbGIkZe9kpC52Sj5bswMDCWMo7iVW15Jgnwbfk3BgbGUkYv2FULcNUgex3KJyEbAwPjuYzqUEWvSZA3MnuDFxgYGG9g9Mr9kzGL3rEv6sFiYGC8npHzqi3JSRsVAwMDYxJ8k0JbPkB2uhIDA+MFjF4pv/cKqk2C24YtMDAwHsuopo7zVmL1sFgN/RgYGIsY30LMLLq3HT/jAAAAAElFTkSuQmCC" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACK0lEQVR42u3aUW4jIRAEUN//0s4BEo+rGjvSwONrFc3O8IjUoRoej3g8X4z8+esnf/+vxzcGBgbGbRnPy7HygVfvyZ9J5oaBgXEOIymFSUlt8cnyXc8NAwMD4/qZ6+m2C4GBgYHxKUY+3Ty+tsuHgYFxJiMvfNflNS+s+UJ8OItjYGDckJE3zv7/318538DAwLgV41mOlZZZfuRQzwoDA2NrRl7g8g1Zy24vZ7z8CgYGxqaMvPCthNV8q5dE3D9+goGBcQxj9roZr02gbxYdAwPjAEbbiJ8199tjgKKWYmBgbM1oA+p1AZ211VauWWBgYJzAyCeUgFdK59J7MDAwtmbMLm/lMbVdguSL9W8GAwPj5oz1Fn8yrZWjguuijIGBcQKjbZ+1jbBZaU6m/uYvBgYGxqaM9nUJOCmys6D7aF+EgYFxW8bKQWNbZNvLZ0U7DwMDY2vGbIrtIWU+xTzoDreGGBgYN2SstOlnx59J07+OwRgYGFsz8iDaBs71axbtomBgYOzNWNnk5YeaeTAetucwMDCOYcwi6GeXIw+xGBgYpzFWIugHJjFapqW9LQYGxk0Yz3KsFM18IzjM3xgYGJsyVopdHmtXLoHNgi4GBsZ+jLzIfmPN6kPK9r4GBgbGRoy28OUXI9qN42y2GBgYGLMI2m4WZ5tRDAwMjFn4zJtus0urb44wMTAwNmXkhwFtNG3DcL5kGBgY5zDa6DgrvrPLHLOvY2BgbMT4AcKAslDFo6b+AAAAAElFTkSuQmCC" alt="微信分享二维码">
     </div>
 </div>
 
@@ -309,18 +326,18 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2019/08/23/cjzpyzjkj0004lhiq6vfvicly/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/08/24/cjzqbl99400196eiqs9y9eluo/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          常用的命令行
+          HTML常用标签快速入门
         
       </div>
     </a>
   
   
-    <a href="/2019/08/06/cjzpyzjkk0007lhiq5e5wrr99/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">记一次黑苹果安装历程</div>
+    <a href="/2019/08/23/cjzqbl98q00066eiq82350fg3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">macOS键盘技巧</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -366,7 +383,7 @@ if(true){
     repo: 'pilotluobo.github.io',
     owner: 'PilotLuobo',
     admin: ['PilotLuobo'],
-    id: 'Mon Aug 12 2019 22:23:14 GMT+0800',
+    id: 'Sat Aug 24 2019 00:40:47 GMT+0800',
     distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
@@ -483,6 +500,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">海陵</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Apple</a>
               </li>
              
@@ -491,19 +516,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">命令行</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">黑苹果</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">海陵</a>
+                <a href="javascript:void(0)" class="js-tag color4">命令行</a>
               </li>
              
               <li class="article-tag-list-item">
