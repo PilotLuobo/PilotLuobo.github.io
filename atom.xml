@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pilotluobo.com/"/>
-  <updated>2019-08-24T19:28:25.383Z</updated>
+  <updated>2019-08-31T12:50:33.409Z</updated>
   <id>https://pilotluobo.com/</id>
   
   <author>
@@ -17,9 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HiPDI开启1080P的正确姿势</title>
+    <link href="https://pilotluobo.com/2019/08/31/cjzzjo1yb000083iqtdfiz2tm/"/>
+    <id>https://pilotluobo.com/2019/08/31/cjzzjo1yb000083iqtdfiz2tm/</id>
+    <published>2019-08-31T12:47:35.000Z</published>
+    <updated>2019-08-31T12:50:33.409Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一键开启-macOS-HiDPI"><a href="#一键开启-macOS-HiDPI" class="headerlink" title="一键开启 macOS HiDPI"></a>一键开启 macOS HiDPI</h1><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)</span>"</span></span><br></pre></td></tr></tbody></table></figure><h1 id="安装SwitchResX"><a href="#安装SwitchResX" class="headerlink" title="安装SwitchResX"></a>安装SwitchResX</h1><p>直接下好,选分辨率即可</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一键开启-macOS-HiDPI&quot;&gt;&lt;a href=&quot;#一键开启-macOS-HiDPI&quot; class=&quot;headerlink&quot; title=&quot;一键开启 macOS HiDPI&quot;&gt;&lt;/a&gt;一键开启 macOS HiDPI&lt;/h1&gt;&lt;figure class=&quot;hi
+      
+    
+    </summary>
+    
+    
+      <category term="黑苹果" scheme="https://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="Apple" scheme="https://pilotluobo.com/tags/Apple/"/>
+    
+      <category term="macOS" scheme="https://pilotluobo.com/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTML常用标签快速入门</title>
-    <link href="https://pilotluobo.com/2019/08/24/cjztxtmx90012iuiqak08wygh/"/>
-    <id>https://pilotluobo.com/2019/08/24/cjztxtmx90012iuiqak08wygh/</id>
+    <link href="https://pilotluobo.com/2019/08/24/cjzzjo1z5001783iqoavzvpua/"/>
+    <id>https://pilotluobo.com/2019/08/24/cjzzjo1z5001783iqoavzvpua/</id>
     <published>2019-08-23T17:11:09.000Z</published>
     <updated>2019-08-24T19:28:25.383Z</updated>
     
@@ -45,8 +72,8 @@
   
   <entry>
     <title>网络与IP</title>
-    <link href="https://pilotluobo.com/2019/08/24/cjztxtmwv0008iuiqyim7l62a/"/>
-    <id>https://pilotluobo.com/2019/08/24/cjztxtmwv0008iuiqyim7l62a/</id>
+    <link href="https://pilotluobo.com/2019/08/24/cjzzjo1ym000883iqx3wbcwf9/"/>
+    <id>https://pilotluobo.com/2019/08/24/cjzzjo1ym000883iqx3wbcwf9/</id>
     <published>2019-08-23T16:40:47.000Z</published>
     <updated>2019-08-24T19:28:25.383Z</updated>
     
@@ -69,8 +96,8 @@
   
   <entry>
     <title>macOS键盘技巧</title>
-    <link href="https://pilotluobo.com/2019/08/23/cjztxtmwm0000iuiq59fwle3u/"/>
-    <id>https://pilotluobo.com/2019/08/23/cjztxtmwm0000iuiq59fwle3u/</id>
+    <link href="https://pilotluobo.com/2019/08/23/cjzzjo1yk000583iq6ytz9f3g/"/>
+    <id>https://pilotluobo.com/2019/08/23/cjzzjo1yk000583iq6ytz9f3g/</id>
     <published>2019-08-23T14:07:46.000Z</published>
     <updated>2019-08-27T14:39:26.244Z</updated>
     
@@ -94,8 +121,8 @@
   
   <entry>
     <title>HTTP:请求,响应,curl</title>
-    <link href="https://pilotluobo.com/2019/08/23/cjztxtmws0004iuiqb9zp6bqg/"/>
-    <id>https://pilotluobo.com/2019/08/23/cjztxtmws0004iuiqb9zp6bqg/</id>
+    <link href="https://pilotluobo.com/2019/08/23/cjzzjo1yi000383iqtmifmrgg/"/>
+    <id>https://pilotluobo.com/2019/08/23/cjzzjo1yi000383iqtmifmrgg/</id>
     <published>2019-08-23T06:57:32.000Z</published>
     <updated>2019-08-24T19:28:25.378Z</updated>
     
@@ -119,8 +146,8 @@
   
   <entry>
     <title>打造专属自己的个性化iterm2</title>
-    <link href="https://pilotluobo.com/2019/08/23/cjztxtmwu0006iuiq57m1e6ua/"/>
-    <id>https://pilotluobo.com/2019/08/23/cjztxtmwu0006iuiq57m1e6ua/</id>
+    <link href="https://pilotluobo.com/2019/08/23/cjzzjo1yl000783iq3f8xkn5s/"/>
+    <id>https://pilotluobo.com/2019/08/23/cjzzjo1yl000783iq3f8xkn5s/</id>
     <published>2019-08-23T06:11:30.000Z</published>
     <updated>2019-08-24T19:28:25.382Z</updated>
     
@@ -146,8 +173,8 @@
   
   <entry>
     <title>常用的命令行</title>
-    <link href="https://pilotluobo.com/2019/08/23/cjztxtmwt0005iuiqw5abqb37/"/>
-    <id>https://pilotluobo.com/2019/08/23/cjztxtmwt0005iuiqw5abqb37/</id>
+    <link href="https://pilotluobo.com/2019/08/23/cjzzjo1yj000483iqwuiyac4q/"/>
+    <id>https://pilotluobo.com/2019/08/23/cjzzjo1yj000483iqwuiyac4q/</id>
     <published>2019-08-23T05:59:50.000Z</published>
     <updated>2019-08-24T19:28:25.379Z</updated>
     
@@ -174,8 +201,8 @@
   
   <entry>
     <title>Hexo博客搭建记录</title>
-    <link href="https://pilotluobo.com/2019/08/12/cjztxtmwq0002iuiqn0rsm929/"/>
-    <id>https://pilotluobo.com/2019/08/12/cjztxtmwq0002iuiqn0rsm929/</id>
+    <link href="https://pilotluobo.com/2019/08/12/cjzzjo1yg000183iq5ozk3750/"/>
+    <id>https://pilotluobo.com/2019/08/12/cjzzjo1yg000183iq5ozk3750/</id>
     <published>2019-08-12T14:23:14.000Z</published>
     <updated>2019-08-24T19:28:25.372Z</updated>
     
@@ -200,8 +227,8 @@
   
   <entry>
     <title>记一次黑苹果安装历程</title>
-    <link href="https://pilotluobo.com/2019/08/06/cjztxtmwv0009iuiqyfh5o6jl/"/>
-    <id>https://pilotluobo.com/2019/08/06/cjztxtmwv0009iuiqyfh5o6jl/</id>
+    <link href="https://pilotluobo.com/2019/08/06/cjzzjo1ym000a83iq8u4pprmx/"/>
+    <id>https://pilotluobo.com/2019/08/06/cjzzjo1ym000a83iq8u4pprmx/</id>
     <published>2019-08-06T14:59:38.000Z</published>
     <updated>2019-08-27T14:42:12.346Z</updated>
     
@@ -218,13 +245,13 @@
     </summary>
     
     
+      <category term="黑苹果" scheme="https://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
       <category term="Apple" scheme="https://pilotluobo.com/tags/Apple/"/>
     
       <category term="macOS" scheme="https://pilotluobo.com/tags/macOS/"/>
     
       <category term="瞎折腾" scheme="https://pilotluobo.com/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
-    
-      <category term="黑苹果" scheme="https://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
