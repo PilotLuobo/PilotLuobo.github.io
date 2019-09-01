@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pilotluobo.com/"/>
-  <updated>2019-08-31T12:50:33.409Z</updated>
+  <updated>2019-08-31T12:50:50.965Z</updated>
   <id>https://pilotluobo.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://pilotluobo.com/2019/08/31/cjzzjo1yb000083iqtdfiz2tm/"/>
     <id>https://pilotluobo.com/2019/08/31/cjzzjo1yb000083iqtdfiz2tm/</id>
     <published>2019-08-31T12:47:35.000Z</published>
-    <updated>2019-08-31T12:50:33.409Z</updated>
+    <updated>2019-08-31T12:50:50.965Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一键开启-macOS-HiDPI"><a href="#一键开启-macOS-HiDPI" class="headerlink" title="一键开启 macOS HiDPI"></a>一键开启 macOS HiDPI</h1><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)</span>"</span></span><br></pre></td></tr></tbody></table></figure><h1 id="安装SwitchResX"><a href="#安装SwitchResX" class="headerlink" title="安装SwitchResX"></a>安装SwitchResX</h1><p>直接下好,选分辨率即可</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
@@ -99,9 +99,9 @@
     <link href="https://pilotluobo.com/2019/08/23/cjzzjo1yk000583iq6ytz9f3g/"/>
     <id>https://pilotluobo.com/2019/08/23/cjzzjo1yk000583iq6ytz9f3g/</id>
     <published>2019-08-23T14:07:46.000Z</published>
-    <updated>2019-08-27T14:39:26.244Z</updated>
+    <updated>2019-09-01T15:45:11.485Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="键盘符号"><a href="#键盘符号" class="headerlink" title="键盘符号"></a>键盘符号</h1><p>Capslock 是<code>⇪</code><br>control 是<code>⌃</code><br>option 是<code>⌥</code><br>command 是<code>⌘</code></p><p>这个符号不知道怎么打出来的,好像只有Apple设备才能正确显示：<code></code></p><h1 id="常见快捷键"><a href="#常见快捷键" class="headerlink" title="常见快捷键"></a>常见快捷键</h1><table><thead><tr><th align="center">键位</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center"><code>⌘</code> + <code>C</code></td><td align="center">复制</td></tr><tr><td align="center"><code>⌘</code> + <code>V</code></td><td align="center">粘贴</td></tr><tr><td align="center"><code>⌘</code> + <code>R</code></td><td align="center">刷新</td></tr><tr><td align="center"><code>⌃</code> + <code>Space</code></td><td align="center">切换输入法</td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td></tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<h1 id="键盘符号"><a href="#键盘符号" class="headerlink" title="键盘符号"></a>键盘符号</h1><p>Capslock 是<code>⇪</code><br>control 是<code>⌃</code><br>option 是<code>⌥</code><br>command 是<code>⌘</code></p><p>这个符号不知道怎么打出来的,好像只有Apple设备才能正确显示：<code></code></p><h1 id="常见快捷键"><a href="#常见快捷键" class="headerlink" title="常见快捷键"></a>常见快捷键</h1><table><thead><tr><th align="center">键位</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center"><code>⌘</code> + <code>C</code></td><td align="center">复制</td></tr><tr><td align="center"><code>⌘</code> + <code>V</code></td><td align="center">粘贴</td></tr><tr><td align="center"><code>⌘</code> + <code>R</code></td><td align="center">刷新</td></tr><tr><td align="center"><code>⌃</code> + <code>Space</code></td><td align="center">切换输入法</td></tr><tr><td align="center"><code>⌘</code> + <code>Space</code></td><td align="center">聚焦搜索</td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center"></td></tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
