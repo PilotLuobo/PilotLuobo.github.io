@@ -166,6 +166,114 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-用CSS画一个三角形" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/02/ck02i1vgq0005fziqih4ff2a5/">用CSS画一个三角形</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/02/ck02i1vgq0005fziqih4ff2a5/" class="archive-article-date">
+  	<time datetime="2019-09-02T14:09:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先:画一个宽度和高度都为0的块级元素的边框.边框宽度为 <code>10px</code> .</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:0px</span>;</span><br><span class="line"><span class="comment">/* height:10px; */</span></span><br><span class="line"><span class="selector-tag">border-top</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line"><span class="selector-tag">border-left</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">green</span>;</span><br><span class="line"><span class="selector-tag">border-right</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">purple</span>;</span><br><span class="line"><span class="selector-tag">border-bottom</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">blue</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>可以得到这样一张图:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljb2c1fgj3040040q2p.jpg" alt=""></p>
+<p>然后我们把 <code>border-left</code> 改为 <code>0px</code> ,得到</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:0px</span>;</span><br><span class="line"><span class="comment">/* height:10px; */</span></span><br><span class="line"><span class="selector-tag">border-top</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line"><span class="selector-tag">border-left</span><span class="selector-pseudo">:00px</span> <span class="selector-tag">solid</span> <span class="selector-tag">green</span>;</span><br><span class="line"><span class="selector-tag">border-right</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">purple</span>;</span><br><span class="line"><span class="selector-tag">border-bottom</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">blue</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljd4p97jj303604ca9t.jpg" alt=""></p>
+<p>这时候就发现那个想要的角度的三角形在上面.其他边框的颜色改为透明</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:0px</span>;</span><br><span class="line"> <span class="comment">/* height:10px; */</span></span><br><span class="line"> <span class="selector-tag">border-top</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line"> <span class="selector-tag">border-left</span><span class="selector-pseudo">:00px</span> <span class="selector-tag">solid</span> <span class="selector-tag">transparent</span>;</span><br><span class="line"> <span class="selector-tag">border-right</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">transparent</span>;</span><br><span class="line"> <span class="selector-tag">border-bottom</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">transparent</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>这样就得到了我们想要的那个三角形<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljk2rhgoj303c0380sh.jpg" alt=""></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/02/ck02i1vgq0005fziqih4ff2a5/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
     <article id="post-HiPDI开启1080P的正确姿势" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -173,12 +281,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/31/cjzzjo1yb000083iqtdfiz2tm/">HiPDI开启1080P的正确姿势</a>
+      <a class="article-title" href="/2019/08/31/ck02i1vgj0000fziq2uh6cjax/">HiPDI开启1080P的正确姿势</a>
     </h1>
   
 
         
-        <a href="/2019/08/31/cjzzjo1yb000083iqtdfiz2tm/" class="archive-article-date">
+        <a href="/2019/08/31/ck02i1vgj0000fziq2uh6cjax/" class="archive-article-date">
   	<time datetime="2019-08-31T12:47:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-31</time>
 </a>
         
@@ -238,7 +346,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/31/cjzzjo1yb000083iqtdfiz2tm/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/31/ck02i1vgj0000fziq2uh6cjax/">展开全文 >></a>
         </p>
       
 
@@ -276,12 +384,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/24/cjzzjo1z5001783iqoavzvpua/">HTML常用标签快速入门</a>
+      <a class="article-title" href="/2019/08/24/ck02i1vh9001cfziqucxjtniu/">HTML常用标签快速入门</a>
     </h1>
   
 
         
-        <a href="/2019/08/24/cjzzjo1z5001783iqoavzvpua/" class="archive-article-date">
+        <a href="/2019/08/24/ck02i1vh9001cfziqucxjtniu/" class="archive-article-date">
   	<time datetime="2019-08-23T17:11:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
 </a>
         
@@ -336,7 +444,7 @@ var _hmt = _hmt || [];
 <blockquote>
 <p><strong>HTML <code>&lt;style&gt;</code> 元素</strong>包含文档的样式信息或者文档的部分内容。默认情况下，该标签的样式信息通常是<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">CSS</a>的格式。</p>
 </blockquote>
-<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">body {</span><br><span class="line">  color:red;</span><br><span class="line">}</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">body {</span><br><span class="line"><span class="css">  <span class="selector-tag">color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line">}</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 
 
 
@@ -542,7 +650,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/24/cjzzjo1z5001783iqoavzvpua/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/24/ck02i1vh9001cfziqucxjtniu/">展开全文 >></a>
         </p>
       
 
@@ -580,12 +688,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/24/cjzzjo1ym000883iqx3wbcwf9/">网络与IP</a>
+      <a class="article-title" href="/2019/08/24/ck02i1vgu000cfziqfzx5h381/">网络与IP</a>
     </h1>
   
 
         
-        <a href="/2019/08/24/cjzzjo1ym000883iqx3wbcwf9/" class="archive-article-date">
+        <a href="/2019/08/24/ck02i1vgu000cfziqfzx5h381/" class="archive-article-date">
   	<time datetime="2019-08-23T16:40:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
 </a>
         
@@ -668,7 +776,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/24/cjzzjo1ym000883iqx3wbcwf9/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/24/ck02i1vgu000cfziqfzx5h381/">展开全文 >></a>
         </p>
       
 
@@ -706,12 +814,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/23/cjzzjo1yk000583iq6ytz9f3g/">macOS键盘技巧</a>
+      <a class="article-title" href="/2019/08/23/ck02i1vgs0009fziqrz475w6o/">macOS键盘技巧</a>
     </h1>
   
 
         
-        <a href="/2019/08/23/cjzzjo1yk000583iq6ytz9f3g/" class="archive-article-date">
+        <a href="/2019/08/23/ck02i1vgs0009fziqrz475w6o/" class="archive-article-date">
   	<time datetime="2019-08-23T14:07:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
 </a>
         
@@ -810,7 +918,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/23/cjzzjo1yk000583iq6ytz9f3g/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/23/ck02i1vgs0009fziqrz475w6o/">展开全文 >></a>
         </p>
       
 
@@ -848,12 +956,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/23/cjzzjo1yi000383iqtmifmrgg/">HTTP:请求,响应,curl</a>
+      <a class="article-title" href="/2019/08/23/ck02i1vgp0004fziqdtgwclv0/">HTTP:请求,响应,curl</a>
     </h1>
   
 
         
-        <a href="/2019/08/23/cjzzjo1yi000383iqtmifmrgg/" class="archive-article-date">
+        <a href="/2019/08/23/ck02i1vgp0004fziqdtgwclv0/" class="archive-article-date">
   	<time datetime="2019-08-23T06:57:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
 </a>
         
@@ -953,7 +1061,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/23/cjzzjo1yi000383iqtmifmrgg/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/23/ck02i1vgp0004fziqdtgwclv0/">展开全文 >></a>
         </p>
       
 
@@ -991,12 +1099,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/23/cjzzjo1yl000783iq3f8xkn5s/">打造专属自己的个性化iterm2</a>
+      <a class="article-title" href="/2019/08/23/ck02i1vgr0008fziqh2jpo2f7/">打造专属自己的个性化iterm2</a>
     </h1>
   
 
         
-        <a href="/2019/08/23/cjzzjo1yl000783iq3f8xkn5s/" class="archive-article-date">
+        <a href="/2019/08/23/ck02i1vgr0008fziqh2jpo2f7/" class="archive-article-date">
   	<time datetime="2019-08-23T06:11:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
 </a>
         
@@ -1063,7 +1171,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/23/cjzzjo1yl000783iq3f8xkn5s/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/23/ck02i1vgr0008fziqh2jpo2f7/">展开全文 >></a>
         </p>
       
 
@@ -1101,12 +1209,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/23/cjzzjo1yj000483iqwuiyac4q/">常用的命令行</a>
+      <a class="article-title" href="/2019/08/23/ck02i1vgq0006fziqw1b1lp22/">常用的命令行</a>
     </h1>
   
 
         
-        <a href="/2019/08/23/cjzzjo1yj000483iqwuiyac4q/" class="archive-article-date">
+        <a href="/2019/08/23/ck02i1vgq0006fziqw1b1lp22/" class="archive-article-date">
   	<time datetime="2019-08-23T05:59:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
 </a>
         
@@ -1189,7 +1297,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/23/cjzzjo1yj000483iqwuiyac4q/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/23/ck02i1vgq0006fziqw1b1lp22/">展开全文 >></a>
         </p>
       
 
@@ -1227,12 +1335,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/12/cjzzjo1yg000183iq5ozk3750/">Hexo博客搭建记录</a>
+      <a class="article-title" href="/2019/08/12/ck02i1vgn0002fziqtfcxoryt/">Hexo博客搭建记录</a>
     </h1>
   
 
         
-        <a href="/2019/08/12/cjzzjo1yg000183iq5ozk3750/" class="archive-article-date">
+        <a href="/2019/08/12/ck02i1vgn0002fziqtfcxoryt/" class="archive-article-date">
   	<time datetime="2019-08-12T14:23:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
 </a>
         
@@ -1292,7 +1400,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/12/cjzzjo1yg000183iq5ozk3750/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/12/ck02i1vgn0002fziqtfcxoryt/">展开全文 >></a>
         </p>
       
 
@@ -1330,12 +1438,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/06/cjzzjo1ym000a83iq8u4pprmx/">记一次黑苹果安装历程</a>
+      <a class="article-title" href="/2019/08/06/ck02i1vgt000bfziqxhepqlyu/">记一次黑苹果安装历程</a>
     </h1>
   
 
         
-        <a href="/2019/08/06/cjzzjo1ym000a83iq8u4pprmx/" class="archive-article-date">
+        <a href="/2019/08/06/ck02i1vgt000bfziqxhepqlyu/" class="archive-article-date">
   	<time datetime="2019-08-06T14:59:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
 </a>
         
@@ -1493,7 +1601,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/06/cjzzjo1ym000a83iq8u4pprmx/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/06/ck02i1vgt000bfziqxhepqlyu/">展开全文 >></a>
         </p>
       
 
@@ -1663,6 +1771,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
