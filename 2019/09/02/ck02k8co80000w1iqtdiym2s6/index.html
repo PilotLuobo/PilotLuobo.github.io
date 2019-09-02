@@ -6,19 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://pilotluobo.com">
-  <title>about | 清与时光</title>
+  <title>CSS理解margin与padding | 清与时光</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://pilotluobo.com/about/index.html">
+  <meta name="description" content="marginmargin属性可以为给定元素设置所有四个（上下左右）方向的外边距属性。四个外边距属性设置分别是： margin-top， margin-right， margin-bottom 和 margin-left 。指定的外边距允许为负数。 1.指定一个值时,该值指定四个边到父内边距的距离. 123456.box{  width:100px;  height:100px;  /* borde">
+<meta name="keywords" content="前端,CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS理解margin与padding">
+<meta property="og:url" content="https://pilotluobo.com/2019/09/02/ck02k8co80000w1iqtdiym2s6/index.html">
 <meta property="og:site_name" content="清与时光">
-<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:description" content="marginmargin属性可以为给定元素设置所有四个（上下左右）方向的外边距属性。四个外边距属性设置分别是： margin-top， margin-right， margin-bottom 和 margin-left 。指定的外边距允许为负数。 1.指定一个值时,该值指定四个边到父内边距的距离. 123456.box{  width:100px;  height:100px;  /* borde">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-06T14:33:07.897Z">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll0ql6nlj30du09smxf.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll3cbk94j30bi09at8x.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll5fro8tj30b209874h.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll6hyr41j30as09i3yq.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll9b55fmj30bm09aq36.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6llae1y1kj30bc09iq36.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6llbecrufj30b60983yq.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6llc2tjxjj30b20983yq.jpg">
+<meta property="og:updated_time" content="2019-09-02T15:29:41.266Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta name="twitter:title" content="CSS理解margin与padding">
+<meta name="twitter:description" content="marginmargin属性可以为给定元素设置所有四个（上下左右）方向的外边距属性。四个外边距属性设置分别是： margin-top， margin-right， margin-bottom 和 margin-left 。指定的外边距允许为负数。 1.指定一个值时,该值指定四个边到父内边距的距离. 123456.box{  width:100px;  height:100px;  /* borde">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll0ql6nlj30du09smxf.jpg">
   
   
     <link rel="icon" href="/images/cat-32x32.png">
@@ -168,27 +178,54 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-CSS理解margin与padding" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      CSS理解margin与padding
     </h1>
   
 
         
-        <a href="/about/index.html" class="archive-article-date">
-  	<time datetime="2019-08-06T14:33:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
+        <a href="/2019/09/02/ck02k8co80000w1iqtdiym2s6/" class="archive-article-date">
+  	<time datetime="2019-09-02T15:10:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script>
+        <h1 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h1><p>margin属性可以为给定元素设置所有四个（上下左右）方向的外边距属性。四个外边距属性设置分别是： margin-top， margin-right， margin-bottom 和 margin-left 。指定的外边距允许为负数。</p>
+<p>1.指定一个值时,该值指定四个边到父内边距的距离.</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll0ql6nlj30du09smxf.jpg" alt=""><br>2.指定两个值时,第一个值指定上下,第二个指定左右.</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span> <span class="number">20px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll3cbk94j30bi09at8x.jpg" alt=""><br>3.指定三个值时,第一个指定上边,第二个指定左右两边,第三个指定下边.</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span> <span class="number">20px</span> <span class="number">10px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll5fro8tj30b209874h.jpg" alt=""><br>4.指定四个值时分别为上 右 下 左（顺时针顺序）</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span> <span class="number">20px</span> <span class="number">10px</span> <span class="number">5px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll6hyr41j30as09i3yq.jpg" alt=""></p>
+<h1 id="padding"><a href="#padding" class="headerlink" title="padding"></a>padding</h1><p>padding属性设置一个元素的内边距，padding 区域指一个元素的内容和其边界之间的空间，该属性不能为负值。四个外边距属性设置分别是： padding-top， padding-right， padding-bottom 和 padding-left.<br>1.指定一个值时,该值指定内容到四个边的内边距.</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="comment">/* margin:100px 20px 10px 5px; */</span></span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">100px</span> ;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll9b55fmj30bm09aq36.jpg" alt=""><br>2.指定两个值时,第一个值指定内容到上下两边的内边距,第二个指定内容到左右两边的内边距.</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="comment">/* margin:100px 20px 10px 5px; */</span></span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">100px</span> <span class="number">20px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6llae1y1kj30bc09iq36.jpg" alt=""><br>3.指定三个值时,第一个指定内容到上边的内边距,第二个指定内容到左右两边,第三个指定内容到下边的距离.</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="comment">/* margin:100px 20px 10px 5px; */</span></span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">100px</span> <span class="number">20px</span> <span class="number">10px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6llbecrufj30b60983yq.jpg" alt=""><br>4.指定四个值时分别为上 右 下 左（顺时针顺序）</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="comment">/* margin:100px 20px 10px 5px; */</span></span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">100px</span> <span class="number">20px</span> <span class="number">10px</span> <span class="number">5px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6llc2tjxjj30b20983yq.jpg" alt=""></p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -214,6 +251,21 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -264,7 +316,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxElEQVR42u3ay4rDMAwF0P7/T3dgVoUhzpWUuBk4XpU2j+MuhPV4veL1/l2fnz/X3++TpyVXNhcuLu6Y+16uKnfNSrZ6dA0uLu5+bh68jn6tBqz8Cbi4uE/m9o4+1c3j4uL+L241sUkOSbi4uE/mJsnPOkglyUweBC/I1XBxcQfcXsH02s+313dxcXEv6kpMWiZJQaT8dlxc3C3cdQukF87yEmovHcLFxb2bOyle9Eqlky3h4uLu5CYHlPxYMym4nIRFXFzcLdz82FEtoeZJTiGQ4eLibuT2DjdVyvwuXFzcndxeK7TX78ibsuX5Dlxc3Iu41xZB8o1VBzVwcXF3cnthaA3qJUj5H4GLi3s3t9oOqeJ6ZdbDMIqLi/sAbrWEWi2z5kOcuLi4O7nlGa5BSzVv3J5cg4uLezM3v6E3dplsFRcX95nc8m3x69fPrFZEcXFxd3IngxFJ0pKnUqPGCS4u7kXcakDJg9cdBx1cXNyd3LyEMR/DqjZvRpNfuLi4Y251bKv3ynmAw8XFfRp33XpJrq+GyMMjDi4u7iO5J8XNYjmm0O7FxcXdyJ0kML0k5/ayCC4u7saCaf7iybAXLi7ul7g/yivTaimHQU0AAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLElEQVR42u3ay25CMQwFQP7/p6lUdVEJQc9xbquSTFYI7iOThYkd327xuH+O758fv3m8/vHK9skXDwwMjLdl3F+OZy9LppLwkgV6fRcGBsY5jJVQmE8uWZrXS/b0ewwMDIxyWu0T8mdiYGBgrGz42hCcJL0YGBgYbRKbFNGSK9uAe3EujoGB8YaM2cHA33z+9fMNDAyMf8+4lyMv37dvnM3n614MDIytGUmZLE81V0r/s19vSSaNgYGxEaMIbXFJrt3kteU8DAyMExhtOX7WRtYWzvJyHgYGxgmM9kBx5Zr2rqTYh4GBcQIjCZGzpoq2SLe0fBgYGAcw8lLXrHCWbP6WZoKBgXEAo00d85R1pUeiWAgMDIzDGOtND3kLRc7GwMDAmFWu8unOCnN52wcGBsbejHzqLS8JnXkDR32EiYGBsRFjvdkiT4BnhbboORgYGAcwZonrxceQ5cHDD5tCDAyM7Riz7WAyrfUGjigEY2BgbM1oDxRnLarFJJZhGBgY+zGSieabyJXr83ujtcTAwNiOMcsE85etJ7o/pLgYGBhbM/IUdMbLN5TJKP49MDAwNmLMDgPa4DgLqfX/BgYGxqaMNthdW25rm8za4woMDIydGHlTxTqp3QIW642BgXEAY1Zvz5Ph9iCzDc0YGBgYs51mEriTAB29EQMDA+N1sIvLcEm627ZuYGBgnMNIktgWlofXfIGGB5kYGBhvzlipZa23bly16cTAwNiU8QHHAeZUGn/L3wAAAABJRU5ErkJggg==" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,6 +328,16 @@ var _hmt = _hmt || [];
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/02/ck02k8cok000ew1iqbkfocm6y/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">让聚焦搜索显示中英翻译</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -316,7 +378,7 @@ if(true){
     repo: 'pilotluobo.github.io',
     owner: 'PilotLuobo',
     admin: ['PilotLuobo'],
-    id: 'Tue Aug 06 2019 22:33:07 GMT+0800',
+    id: 'Mon Sep 02 2019 23:10:39 GMT+0800',
     distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
@@ -347,7 +409,7 @@ gitalk.render('gitalk-container')
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

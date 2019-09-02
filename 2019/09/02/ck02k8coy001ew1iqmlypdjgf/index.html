@@ -6,19 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://pilotluobo.com">
-  <title>about | 清与时光</title>
+  <title>用CSS画一个三角形 | 清与时光</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://pilotluobo.com/about/index.html">
+  <meta name="description" content="首先:画一个宽度和高度都为0的块级元素的边框.边框宽度为 10px . 123456width:0px;/* height:10px; */border-top:10px solid red;border-left:10px solid green;border-right:10px solid purple;border-bottom:10px solid blue;  可以得到这样一张图: 然">
+<meta name="keywords" content="前端,CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用CSS画一个三角形">
+<meta property="og:url" content="https://pilotluobo.com/2019/09/02/ck02k8coy001ew1iqmlypdjgf/index.html">
 <meta property="og:site_name" content="清与时光">
-<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:description" content="首先:画一个宽度和高度都为0的块级元素的边框.边框宽度为 10px . 123456width:0px;/* height:10px; */border-top:10px solid red;border-left:10px solid green;border-right:10px solid purple;border-bottom:10px solid blue;  可以得到这样一张图: 然">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-06T14:33:07.897Z">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljb2c1fgj3040040q2p.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljd4p97jj303604ca9t.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljk2rhgoj303c0380sh.jpg">
+<meta property="og:updated_time" content="2019-09-02T14:28:54.984Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta name="twitter:title" content="用CSS画一个三角形">
+<meta name="twitter:description" content="首先:画一个宽度和高度都为0的块级元素的边框.边框宽度为 10px . 123456width:0px;/* height:10px; */border-top:10px solid red;border-left:10px solid green;border-right:10px solid purple;border-bottom:10px solid blue;  可以得到这样一张图: 然">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljb2c1fgj3040040q2p.jpg">
   
   
     <link rel="icon" href="/images/cat-32x32.png">
@@ -168,27 +173,39 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-用CSS画一个三角形" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      用CSS画一个三角形
     </h1>
   
 
         
-        <a href="/about/index.html" class="archive-article-date">
-  	<time datetime="2019-08-06T14:33:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
+        <a href="/2019/09/02/ck02k8coy001ew1iqmlypdjgf/" class="archive-article-date">
+  	<time datetime="2019-09-02T14:09:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script>
+        <p>首先:画一个宽度和高度都为0的块级元素的边框.边框宽度为 <code>10px</code> .</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:0px</span>;</span><br><span class="line"><span class="comment">/* height:10px; */</span></span><br><span class="line"><span class="selector-tag">border-top</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line"><span class="selector-tag">border-left</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">green</span>;</span><br><span class="line"><span class="selector-tag">border-right</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">purple</span>;</span><br><span class="line"><span class="selector-tag">border-bottom</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">blue</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>可以得到这样一张图:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljb2c1fgj3040040q2p.jpg" alt=""></p>
+<p>然后我们把 <code>border-left</code> 改为 <code>0px</code> ,得到</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:0px</span>;</span><br><span class="line"><span class="comment">/* height:10px; */</span></span><br><span class="line"><span class="selector-tag">border-top</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line"><span class="selector-tag">border-left</span><span class="selector-pseudo">:00px</span> <span class="selector-tag">solid</span> <span class="selector-tag">green</span>;</span><br><span class="line"><span class="selector-tag">border-right</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">purple</span>;</span><br><span class="line"><span class="selector-tag">border-bottom</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">blue</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljd4p97jj303604ca9t.jpg" alt=""></p>
+<p>这时候就发现那个想要的角度的三角形在上面.其他边框的颜色改为透明</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:0px</span>;</span><br><span class="line"> <span class="comment">/* height:10px; */</span></span><br><span class="line"> <span class="selector-tag">border-top</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line"> <span class="selector-tag">border-left</span><span class="selector-pseudo">:00px</span> <span class="selector-tag">solid</span> <span class="selector-tag">transparent</span>;</span><br><span class="line"> <span class="selector-tag">border-right</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">transparent</span>;</span><br><span class="line"> <span class="selector-tag">border-bottom</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">transparent</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>这样就得到了我们想要的那个三角形<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljk2rhgoj303c0380sh.jpg" alt=""></p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -214,6 +231,21 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -264,7 +296,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxElEQVR42u3ay4rDMAwF0P7/T3dgVoUhzpWUuBk4XpU2j+MuhPV4veL1/l2fnz/X3++TpyVXNhcuLu6Y+16uKnfNSrZ6dA0uLu5+bh68jn6tBqz8Cbi4uE/m9o4+1c3j4uL+L241sUkOSbi4uE/mJsnPOkglyUweBC/I1XBxcQfcXsH02s+313dxcXEv6kpMWiZJQaT8dlxc3C3cdQukF87yEmovHcLFxb2bOyle9Eqlky3h4uLu5CYHlPxYMym4nIRFXFzcLdz82FEtoeZJTiGQ4eLibuT2DjdVyvwuXFzcndxeK7TX78ibsuX5Dlxc3Iu41xZB8o1VBzVwcXF3cnthaA3qJUj5H4GLi3s3t9oOqeJ6ZdbDMIqLi/sAbrWEWi2z5kOcuLi4O7nlGa5BSzVv3J5cg4uLezM3v6E3dplsFRcX95nc8m3x69fPrFZEcXFxd3IngxFJ0pKnUqPGCS4u7kXcakDJg9cdBx1cXNyd3LyEMR/DqjZvRpNfuLi4Y251bKv3ynmAw8XFfRp33XpJrq+GyMMjDi4u7iO5J8XNYjmm0O7FxcXdyJ0kML0k5/ayCC4u7saCaf7iybAXLi7ul7g/yivTaimHQU0AAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJ0lEQVR42u3aMXLDQAgF0Nz/0k6bwpI/IGdG6G3lGcvafSkILPz8xOt1sP5+e/R88ubqr5oLAwPjtozX6TraINny/J3nb87PhoGB8RxGEgp7v5pQk10wMDAwep+TJ/NAj4GBgTEJuEliNw/ZGBgYGPPAl5epveB+cS2OgYFxQ0Z+6/7/n7/S38DAwLgV41VcvWuyXmOgcCoMDIzVjDzAVYcn8mZAnj5+2AUDA+MBjPzV1YKzl+OdX65FtTgGBsYKRjXwJVdmeSOzl2K+2QsDA+ORjEnxmQyH5Y3J6EkMDIzVjHlemaeG1zY7PxSxGBgY6xjJQXPAPMjmYT3quGJgYKxgnG9fnXPovbnaEjjMczEwMNYx8suvPJhOksLmvwEMDIzVjGpzMafmbYDe0csADAyMdYxJ8Zkj53thYGA8jTFJ16oHrQ5kFHbEwMBYyuhd+l9balaHXzEwMJ7DqAbZa1uPvUbCGyoGBsZqRvJ1r/i8NkCXRy4wMDDWMc6bkdWDVkvfJDWM9sLAwHgAI98gCYX5KEYv6B/W4hgYGKsZk4A7uVyrNlY/5LYYGBjrGK/iytuK1VQvCfGF+hsDA2MRoxfsquXrVRd5eYqJgYGxjzEPkd9LAcujqxgYGKsZk0v8/KItaQM0hzwwMDAwBkNgveIz+TNhYGBglJuILV4SfKOWKgYGxgMYSRGbD15U08cLCmkMDIzVjGrpOG95TgrXUdKJgYFxP8YvTXO8KjpnGzAAAAAASUVORK5CYII=" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,6 +308,25 @@ var _hmt = _hmt || [];
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2019/09/02/ck02k8cok000ew1iqbkfocm6y/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          让聚焦搜索显示中英翻译
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/31/ck02k8cod0002w1iq0kmjfyow/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HiPDI开启1080P的正确姿势</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -316,7 +367,7 @@ if(true){
     repo: 'pilotluobo.github.io',
     owner: 'PilotLuobo',
     admin: ['PilotLuobo'],
-    id: 'Tue Aug 06 2019 22:33:07 GMT+0800',
+    id: 'Mon Sep 02 2019 22:09:55 GMT+0800',
     distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
@@ -347,7 +398,7 @@ gitalk.render('gitalk-container')
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

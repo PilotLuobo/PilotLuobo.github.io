@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pilotluobo.com/"/>
-  <updated>2019-09-02T14:58:10.300Z</updated>
+  <updated>2019-09-02T15:29:41.266Z</updated>
   <id>https://pilotluobo.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CSS理解margin与padding</title>
+    <link href="https://pilotluobo.com/2019/09/02/ck02k8co80000w1iqtdiym2s6/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck02k8co80000w1iqtdiym2s6/</id>
+    <published>2019-09-02T15:10:39.000Z</published>
+    <updated>2019-09-02T15:29:41.266Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h1><p>margin属性可以为给定元素设置所有四个（上下左右）方向的外边距属性。四个外边距属性设置分别是： margin-top， margin-right， margin-bottom 和 margin-left 。指定的外边距允许为负数。</p><p>1.指定一个值时,该值指定四个边到父内边距的距离.</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll0ql6nlj30du09smxf.jpg" alt=""><br>2.指定两个值时,第一个值指定上下,第二个指定左右.</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span> <span class="number">20px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll3cbk94j30bi09at8x.jpg" alt=""><br>3.指定三个值时,第一个指定上边,第二个指定左右两边,第三个指定下边.</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span> <span class="number">20px</span> <span class="number">10px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll5fro8tj30b209874h.jpg" alt=""><br>4.指定四个值时分别为上 右 下 左（顺时针顺序）</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span> <span class="number">20px</span> <span class="number">10px</span> <span class="number">5px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll6hyr41j30as09i3yq.jpg" alt=""></p><h1 id="padding"><a href="#padding" class="headerlink" title="padding"></a>padding</h1><p>padding属性设置一个元素的内边距，padding 区域指一个元素的内容和其边界之间的空间，该属性不能为负值。四个外边距属性设置分别是： padding-top， padding-right， padding-bottom 和 padding-left.<br>1.指定一个值时,该值指定内容到四个边的内边距.</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="comment">/* margin:100px 20px 10px 5px; */</span></span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">100px</span> ;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ll9b55fmj30bm09aq36.jpg" alt=""><br>2.指定两个值时,第一个值指定内容到上下两边的内边距,第二个指定内容到左右两边的内边距.</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="comment">/* margin:100px 20px 10px 5px; */</span></span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">100px</span> <span class="number">20px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6llae1y1kj30bc09iq36.jpg" alt=""><br>3.指定三个值时,第一个指定内容到上边的内边距,第二个指定内容到左右两边,第三个指定内容到下边的距离.</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="comment">/* margin:100px 20px 10px 5px; */</span></span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">100px</span> <span class="number">20px</span> <span class="number">10px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6llbecrufj30b60983yq.jpg" alt=""><br>4.指定四个值时分别为上 右 下 左（顺时针顺序）</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="comment">/* margin:100px 20px 10px 5px; */</span></span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">100px</span> <span class="number">20px</span> <span class="number">10px</span> <span class="number">5px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6llc2tjxjj30b20983yq.jpg" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;margin&quot;&gt;&lt;a href=&quot;#margin&quot; class=&quot;headerlink&quot; title=&quot;margin&quot;&gt;&lt;/a&gt;margin&lt;/h1&gt;&lt;p&gt;margin属性可以为给定元素设置所有四个（上下左右）方向的外边距属性。四个外边距属性设置分别是： marg
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="CSS" scheme="https://pilotluobo.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>让聚焦搜索显示中英翻译</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck02j3qk60007raiqk9kyw8el/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck02j3qk60007raiqk9kyw8el/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck02k8cok000ew1iqbkfocm6y/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck02k8cok000ew1iqbkfocm6y/</id>
     <published>2019-09-02T14:53:53.000Z</published>
-    <updated>2019-09-02T14:58:10.300Z</updated>
+    <updated>2019-09-02T14:58:21.562Z</updated>
     
     <content type="html"><![CDATA[<p>打开词典.app<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6lkcvtq0rj313y0pc7wh.jpg" alt=""></p><p>打开偏好设置,将汉英词典移动到第一位<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6lkdkib88j30rc0giq7m.jpg" alt=""></p><p>done.<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6lkf8h3n9j314g0r0aw6.jpg" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
@@ -42,8 +67,8 @@
   
   <entry>
     <title>用CSS画一个三角形</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck02j3qk8000braiqwj3zd6lf/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck02j3qk8000braiqwj3zd6lf/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck02k8coy001ew1iqmlypdjgf/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck02k8coy001ew1iqmlypdjgf/</id>
     <published>2019-09-02T14:09:55.000Z</published>
     <updated>2019-09-02T14:28:54.984Z</updated>
     
@@ -68,8 +93,8 @@
   
   <entry>
     <title>HiPDI开启1080P的正确姿势</title>
-    <link href="https://pilotluobo.com/2019/08/31/ck02j3qjz0000raiq21o41o90/"/>
-    <id>https://pilotluobo.com/2019/08/31/ck02j3qjz0000raiq21o41o90/</id>
+    <link href="https://pilotluobo.com/2019/08/31/ck02k8cod0002w1iq0kmjfyow/"/>
+    <id>https://pilotluobo.com/2019/08/31/ck02k8cod0002w1iq0kmjfyow/</id>
     <published>2019-08-31T12:47:35.000Z</published>
     <updated>2019-08-31T12:50:50.965Z</updated>
     
@@ -95,8 +120,8 @@
   
   <entry>
     <title>HTML常用标签快速入门</title>
-    <link href="https://pilotluobo.com/2019/08/24/ck02j3qkh0015raiqwsdogjv9/"/>
-    <id>https://pilotluobo.com/2019/08/24/ck02j3qkh0015raiqwsdogjv9/</id>
+    <link href="https://pilotluobo.com/2019/08/24/ck02k8coz001gw1iqsps3g1aj/"/>
+    <id>https://pilotluobo.com/2019/08/24/ck02k8coz001gw1iqsps3g1aj/</id>
     <published>2019-08-23T17:11:09.000Z</published>
     <updated>2019-08-24T19:28:25.383Z</updated>
     
@@ -122,8 +147,8 @@
   
   <entry>
     <title>网络与IP</title>
-    <link href="https://pilotluobo.com/2019/08/24/ck02j3qkq001braiq6ighto2y/"/>
-    <id>https://pilotluobo.com/2019/08/24/ck02j3qkq001braiq6ighto2y/</id>
+    <link href="https://pilotluobo.com/2019/08/24/ck02k8coh0006w1iqh36rmvc1/"/>
+    <id>https://pilotluobo.com/2019/08/24/ck02k8coh0006w1iqh36rmvc1/</id>
     <published>2019-08-23T16:40:47.000Z</published>
     <updated>2019-08-24T19:28:25.383Z</updated>
     
@@ -146,8 +171,8 @@
   
   <entry>
     <title>macOS键盘技巧</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck02j3qk60005raiqyn2w84w7/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck02j3qk60005raiqyn2w84w7/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck02k8col000hw1iqjxakfjdv/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck02k8col000hw1iqjxakfjdv/</id>
     <published>2019-08-23T14:07:46.000Z</published>
     <updated>2019-09-02T14:08:50.033Z</updated>
     
@@ -171,8 +196,8 @@
   
   <entry>
     <title>HTTP:请求,响应,curl</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck02j3qk40003raiqlmehf1me/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck02j3qk40003raiqlmehf1me/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck02k8coj000cw1iq0fb6nboa/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck02k8coj000cw1iq0fb6nboa/</id>
     <published>2019-08-23T06:57:32.000Z</published>
     <updated>2019-08-24T19:28:25.378Z</updated>
     
@@ -196,8 +221,8 @@
   
   <entry>
     <title>打造专属自己的个性化iterm2</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck02j3qkq001araiqj0203bly/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck02j3qkq001araiqj0203bly/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck02k8coh0008w1iqlczjilpl/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck02k8coh0008w1iqlczjilpl/</id>
     <published>2019-08-23T06:11:30.000Z</published>
     <updated>2019-08-24T19:28:25.382Z</updated>
     
@@ -213,9 +238,9 @@
     </summary>
     
     
-      <category term="macOS" scheme="https://pilotluobo.com/tags/macOS/"/>
-    
       <category term="前端" scheme="https://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="macOS" scheme="https://pilotluobo.com/tags/macOS/"/>
     
       <category term="命令行" scheme="https://pilotluobo.com/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
@@ -223,8 +248,8 @@
   
   <entry>
     <title>常用的命令行</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck02j3qk50004raiq3ia2afu2/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck02j3qk50004raiq3ia2afu2/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck02k8cog0005w1iqy89eshn5/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck02k8cog0005w1iqy89eshn5/</id>
     <published>2019-08-23T05:59:50.000Z</published>
     <updated>2019-08-24T19:28:25.379Z</updated>
     
@@ -251,8 +276,8 @@
   
   <entry>
     <title>Hexo博客搭建记录</title>
-    <link href="https://pilotluobo.com/2019/08/12/ck02j3qk20001raiq5zqbrzij/"/>
-    <id>https://pilotluobo.com/2019/08/12/ck02j3qk20001raiq5zqbrzij/</id>
+    <link href="https://pilotluobo.com/2019/08/12/ck02k8cof0004w1iq6h45ywyz/"/>
+    <id>https://pilotluobo.com/2019/08/12/ck02k8cof0004w1iq6h45ywyz/</id>
     <published>2019-08-12T14:23:14.000Z</published>
     <updated>2019-08-24T19:28:25.372Z</updated>
     
@@ -277,8 +302,8 @@
   
   <entry>
     <title>记一次黑苹果安装历程</title>
-    <link href="https://pilotluobo.com/2019/08/06/ck02j3qk70008raiqaeb8zao4/"/>
-    <id>https://pilotluobo.com/2019/08/06/ck02j3qk70008raiqaeb8zao4/</id>
+    <link href="https://pilotluobo.com/2019/08/06/ck02k8coi000aw1iqkdwtuom4/"/>
+    <id>https://pilotluobo.com/2019/08/06/ck02k8coi000aw1iqkdwtuom4/</id>
     <published>2019-08-06T14:59:38.000Z</published>
     <updated>2019-08-27T14:42:12.346Z</updated>
     
