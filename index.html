@@ -166,6 +166,124 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-clearfix清除浮动" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/03/ck03csimw0005d686h3b26tfy/">clearfix清除浮动</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/03/ck03csimw0005d686h3b26tfy/" class="archive-article-date">
+  	<time datetime="2019-09-03T03:31:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="每当使用-float-left-right-时，可能会造成被设置为浮动的元素被移出正常流（normal-flow），这就使得包含浮动元素的容器发生高度塌陷。"><a href="#每当使用-float-left-right-时，可能会造成被设置为浮动的元素被移出正常流（normal-flow），这就使得包含浮动元素的容器发生高度塌陷。" class="headerlink" title="每当使用 float:left/right 时，可能会造成被设置为浮动的元素被移出正常流（normal flow），这就使得包含浮动元素的容器发生高度塌陷。"></a>每当使用 <code>float:left/right</code> 时，可能会造成被设置为浮动的元素被移出正常流（normal flow），这就使得包含浮动元素的容器发生高度塌陷。</h1><p>比如有如下HTML代码：</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"son"</span>&gt;</span></span><br><span class="line">    这是一个浮动元素</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>CSS样式为：</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.son</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightgreen;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>此时页面表现为：<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6m7gnmruwj30hb04lt8y.jpg" alt=""></p>
+<p>此时为 <code>.son</code> 增加 <code>float:left</code> 属性,即</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.son</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightgreen;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">float</span>:left;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>此时页面表现为：<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6m7kjlhfrj30ha02rmxg.jpg" alt=""><br>可以看到设置了浮动之后,父级元素的高度发生了塌陷.</p>
+<h1 id="为了清除浮动的影响-我们使用-clear-both"><a href="#为了清除浮动的影响-我们使用-clear-both" class="headerlink" title="为了清除浮动的影响,我们使用 clear:both"></a>为了清除浮动的影响,我们使用 <code>clear:both</code></h1><p>在HTML中,在父容器内部的末尾添加额外的元素，通过对其添加 <code>clear: both</code> 以清除浮动的影响:</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"son"</span>&gt;</span></span><br><span class="line">    这是一个浮动元素</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。</span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"clear"</span> <span class="attr">style</span>=<span class="string">'clear:both'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>此时页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6m7py4lcrj30ha02sq38.jpg" alt=""></p>
+<h1 id="clearfix"><a href="#clearfix" class="headerlink" title="clearfix"></a>clearfix</h1><p>上面的方法会给页面增加无意义的div元素,不利于代码的整洁.这里我们使用clearfix</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container clearfix"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"son"</span>&gt;</span></span><br><span class="line">    这是一个浮动元素</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span>{</span><br><span class="line">  <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">clear</span>:both;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.container</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.son</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightgreen;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">float</span>:left;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>此时页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6m89rfe6gj30hc02rq38.jpg" alt=""></p>
+<p>这种做法的好处是通过CSS伪元素在父元素底部生成了一个元素,与 <code>div</code> 的作用一致.使用 <code>content:''</code> 使伪元素不占用空间.<br>由于 <code>:after</code> 产生的伪元素为<strong>内联元素</strong>,而<code>clear: both</code>需要添加到<strong>块级元素</strong>上才能起作用,所以添加 <code>display:block</code> .</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/03/ck03csimw0005d686h3b26tfy/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
     <article id="post-CSS引入HTML的三种方式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -173,12 +291,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/03/ck02lsy3d00009aiqzgnmsa7u/">CSS引入HTML的三种方式</a>
+      <a class="article-title" href="/2019/09/03/ck03csimv0004d6860jr75tyy/">CSS引入HTML的三种方式</a>
     </h1>
   
 
         
-        <a href="/2019/09/03/ck02lsy3d00009aiqzgnmsa7u/" class="archive-article-date">
+        <a href="/2019/09/03/ck03csimv0004d6860jr75tyy/" class="archive-article-date">
   	<time datetime="2019-09-02T16:05:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
 </a>
         
@@ -249,7 +367,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/03/ck02lsy3d00009aiqzgnmsa7u/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/03/ck03csimv0004d6860jr75tyy/">展开全文 >></a>
         </p>
       
 
@@ -287,12 +405,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/02/ck02lsy3j00049aiqksch1yvn/">CSS理解margin与padding</a>
+      <a class="article-title" href="/2019/09/02/ck03csinq001cd686fwkj81ub/">CSS理解margin与padding</a>
     </h1>
   
 
         
-        <a href="/2019/09/02/ck02lsy3j00049aiqksch1yvn/" class="archive-article-date">
+        <a href="/2019/09/02/ck03csinq001cd686fwkj81ub/" class="archive-article-date">
   	<time datetime="2019-09-02T15:10:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
 </a>
         
@@ -376,7 +494,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/02/ck02lsy3j00049aiqksch1yvn/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/02/ck03csinq001cd686fwkj81ub/">展开全文 >></a>
         </p>
       
 
@@ -414,12 +532,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/02/ck02lsy3s000g9aiqnvb9w156/">让聚焦搜索显示中英翻译</a>
+      <a class="article-title" href="/2019/09/02/ck03csinr001ed6864mgz7jzx/">让聚焦搜索显示中英翻译</a>
     </h1>
   
 
         
-        <a href="/2019/09/02/ck02lsy3s000g9aiqnvb9w156/" class="archive-article-date">
+        <a href="/2019/09/02/ck03csinr001ed6864mgz7jzx/" class="archive-article-date">
   	<time datetime="2019-09-02T14:53:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
 </a>
         
@@ -463,6 +581,10 @@ var _hmt = _hmt || [];
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Apple</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">macOS</a>
+        		</li>
       		
 		</ul>
 	</div>
@@ -471,7 +593,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/02/ck02lsy3s000g9aiqnvb9w156/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/02/ck03csinr001ed6864mgz7jzx/">展开全文 >></a>
         </p>
       
 
@@ -509,12 +631,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/02/ck02lsy3t000j9aiqwf2plpn8/">用CSS画一个三角形</a>
+      <a class="article-title" href="/2019/09/02/ck03csinv001id686nj94p1oc/">用CSS画一个三角形</a>
     </h1>
   
 
         
-        <a href="/2019/09/02/ck02lsy3t000j9aiqwf2plpn8/" class="archive-article-date">
+        <a href="/2019/09/02/ck03csinv001id686nj94p1oc/" class="archive-article-date">
   	<time datetime="2019-09-02T14:09:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
 </a>
         
@@ -579,7 +701,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/02/ck02lsy3t000j9aiqwf2plpn8/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/02/ck03csinv001id686nj94p1oc/">展开全文 >></a>
         </p>
       
 
@@ -617,12 +739,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/31/ck02lsy3h00029aiqoxyhj1wl/">HiPDI开启1080P的正确姿势</a>
+      <a class="article-title" href="/2019/08/31/ck03csims0002d6868tr910ly/">HiPDI开启1080P的正确姿势</a>
     </h1>
   
 
         
-        <a href="/2019/08/31/ck02lsy3h00029aiqoxyhj1wl/" class="archive-article-date">
+        <a href="/2019/08/31/ck03csims0002d6868tr910ly/" class="archive-article-date">
   	<time datetime="2019-08-31T12:47:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-31</time>
 </a>
         
@@ -682,7 +804,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/31/ck02lsy3h00029aiqoxyhj1wl/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/31/ck03csims0002d6868tr910ly/">展开全文 >></a>
         </p>
       
 
@@ -720,12 +842,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/24/ck02lsy49001o9aiq1p3vnikr/">HTML常用标签快速入门</a>
+      <a class="article-title" href="/2019/08/24/ck03csinx001kd686x494s9n7/">HTML常用标签快速入门</a>
     </h1>
   
 
         
-        <a href="/2019/08/24/ck02lsy49001o9aiq1p3vnikr/" class="archive-article-date">
+        <a href="/2019/08/24/ck03csinx001kd686x494s9n7/" class="archive-article-date">
   	<time datetime="2019-08-23T17:11:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
 </a>
         
@@ -986,7 +1108,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/24/ck02lsy49001o9aiq1p3vnikr/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/24/ck03csinx001kd686x494s9n7/">展开全文 >></a>
         </p>
       
 
@@ -1024,12 +1146,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/24/ck02lsy3p000c9aiqta9q0tkt/">网络与IP</a>
+      <a class="article-title" href="/2019/08/24/ck03csinp001bd6865z3504tu/">网络与IP</a>
     </h1>
   
 
         
-        <a href="/2019/08/24/ck02lsy3p000c9aiqta9q0tkt/" class="archive-article-date">
+        <a href="/2019/08/24/ck03csinp001bd6865z3504tu/" class="archive-article-date">
   	<time datetime="2019-08-23T16:40:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
 </a>
         
@@ -1112,7 +1234,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/24/ck02lsy3p000c9aiqta9q0tkt/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/24/ck03csinp001bd6865z3504tu/">展开全文 >></a>
         </p>
       
 
@@ -1150,12 +1272,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/23/ck02lsy3l00069aiq72f2glnv/">macOS键盘技巧</a>
+      <a class="article-title" href="/2019/08/23/ck03csin00009d6860eozew5i/">macOS键盘技巧</a>
     </h1>
   
 
         
-        <a href="/2019/08/23/ck02lsy3l00069aiq72f2glnv/" class="archive-article-date">
+        <a href="/2019/08/23/ck03csin00009d6860eozew5i/" class="archive-article-date">
   	<time datetime="2019-08-23T14:07:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
 </a>
         
@@ -1254,7 +1376,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/23/ck02lsy3l00069aiq72f2glnv/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/23/ck03csin00009d6860eozew5i/">展开全文 >></a>
         </p>
       
 
@@ -1292,12 +1414,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/23/ck02lsy3n00099aiqgpi64qk9/">HTTP:请求,响应,curl</a>
+      <a class="article-title" href="/2019/08/23/ck03csimn0001d686wf2ubdqt/">HTTP:请求,响应,curl</a>
     </h1>
   
 
         
-        <a href="/2019/08/23/ck02lsy3n00099aiqgpi64qk9/" class="archive-article-date">
+        <a href="/2019/08/23/ck03csimn0001d686wf2ubdqt/" class="archive-article-date">
   	<time datetime="2019-08-23T06:57:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
 </a>
         
@@ -1397,117 +1519,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/23/ck02lsy3n00099aiqgpi64qk9/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-打造专属自己的个性化iterm2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/23/ck02lsy3m00089aiqb0dqvsg0/">打造专属自己的个性化iterm2</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/23/ck02lsy3m00089aiqb0dqvsg0/" class="archive-article-date">
-  	<time datetime="2019-08-23T06:11:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="先来看看最终效果图"><a href="#先来看看最终效果图" class="headerlink" title="先来看看最终效果图"></a>先来看看最终效果图</h1><p><img src="http://ww4.sinaimg.cn/large/006y8mN6gy1g69l2nn3p5j316z0u0nn5.jpg" alt=""></p>
-<h1 id="安装iterm2"><a href="#安装iterm2" class="headerlink" title="安装iterm2"></a>安装iterm2</h1><p>官网地址 <a href="https://iterm2.com/" target="_blank" rel="noopener">https://iterm2.com/</a></p>
-<h1 id="Oh-My-Zsh"><a href="#Oh-My-Zsh" class="headerlink" title="Oh My Zsh"></a>Oh My Zsh</h1><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>or</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h1><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></tbody></table></figure>
-
-<p>然后把里面 <code>ZSH_THEME</code> 的值改为 <code>ZSH_THEME="ys"</code>,保存退出,重启 iterm2.</p>
-<h1 id="终端命令关键字高亮效果插件，zsh-syntax-highlighting"><a href="#终端命令关键字高亮效果插件，zsh-syntax-highlighting" class="headerlink" title="终端命令关键字高亮效果插件，zsh-syntax-highlighting"></a>终端命令关键字高亮效果插件，zsh-syntax-highlighting</h1><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="variable">${ZSH_CUSTOM:-~/.oh-my-zsh/custom}</span>/plugins/zsh-syntax-highlighting</span><br><span class="line"></span><br><span class="line">plugins=(zsh-syntax-highlighting)</span><br><span class="line"></span><br><span class="line"><span class="built_in">source</span> ~/.zsh</span><br></pre></td></tr></tbody></table></figure><script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">macOS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">命令行</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/23/ck02lsy3m00089aiqb0dqvsg0/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/23/ck03csimn0001d686wf2ubdqt/">展开全文 >></a>
         </p>
       
 
@@ -1660,11 +1672,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1680,6 +1688,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -1689,10 +1705,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">命令行</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
               </li>
             
             <div class="clearfix"></div>
