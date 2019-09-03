@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pilotluobo.com/"/>
-  <updated>2019-09-03T04:47:53.915Z</updated>
+  <updated>2019-09-03T06:28:09.457Z</updated>
   <id>https://pilotluobo.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>用CSS画个太极吧</title>
+    <link href="https://pilotluobo.com/2019/09/03/ck03gcf3z000nrx86iby17hwq/"/>
+    <id>https://pilotluobo.com/2019/09/03/ck03gcf3z000nrx86iby17hwq/</id>
+    <published>2019-09-03T05:36:16.000Z</published>
+    <updated>2019-09-03T06:28:09.457Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="首先-我们画一个圆"><a href="#首先-我们画一个圆" class="headerlink" title="首先,我们画一个圆."></a>首先,我们画一个圆.</h1><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"yinyang"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.yinyang</span>{</span><br><span class="line">      <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">      <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">      <span class="attribute">border</span>:<span class="number">1px</span> solid red;</span><br><span class="line">      <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure><p>页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6mb5toek9j306506c0sq.jpg" alt=""></p><h1 id="给圆添加背景色"><a href="#给圆添加背景色" class="headerlink" title="给圆添加背景色"></a>给圆添加背景色</h1><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.yinyang</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to bottom , #fff 50% , #000 50%);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6mb8i07nij3065060glj.jpg" alt=""></p><h1 id="增加两个伪元素-来做中间的两个圆-并做定位"><a href="#增加两个伪元素-来做中间的两个圆-并做定位" class="headerlink" title="增加两个伪元素,来做中间的两个圆,并做定位"></a>增加两个伪元素,来做中间的两个圆,并做定位</h1><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>{</span><br><span class="line">  <span class="comment">/* background-color: grey; */</span></span><br><span class="line">}</span><br><span class="line"><span class="selector-class">.yinyang</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to bottom , #fff 50% , #000 50%);</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span> auto <span class="number">20px</span>;</span><br><span class="line">}</span><br><span class="line"><span class="selector-class">.yinyang</span><span class="selector-pseudo">:before</span>{</span><br><span class="line">  <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">border</span>:<span class="number">35px</span> solid black;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">left</span>:<span class="number">0</span>;</span><br><span class="line">  <span class="attribute">top</span>:<span class="number">50px</span>;</span><br><span class="line">}</span><br><span class="line"><span class="selector-class">.yinyang</span><span class="selector-pseudo">:after</span>{</span><br><span class="line">  <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">border</span>:<span class="number">35px</span> solid <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">right</span>:<span class="number">0</span>;</span><br><span class="line">  <span class="attribute">top</span>:<span class="number">50px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6mbat06tij30p00bwdg0.jpg" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;首先-我们画一个圆&quot;&gt;&lt;a href=&quot;#首先-我们画一个圆&quot; class=&quot;headerlink&quot; title=&quot;首先,我们画一个圆.&quot;&gt;&lt;/a&gt;首先,我们画一个圆.&lt;/h1&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tbod
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="CSS" scheme="https://pilotluobo.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>clearfix清除浮动</title>
-    <link href="https://pilotluobo.com/2019/09/03/ck03csimw0005d686h3b26tfy/"/>
-    <id>https://pilotluobo.com/2019/09/03/ck03csimw0005d686h3b26tfy/</id>
+    <link href="https://pilotluobo.com/2019/09/03/ck03gcf3o000arx868jo3mp5c/"/>
+    <id>https://pilotluobo.com/2019/09/03/ck03gcf3o000arx868jo3mp5c/</id>
     <published>2019-09-03T03:31:37.000Z</published>
-    <updated>2019-09-03T04:47:53.915Z</updated>
+    <updated>2019-09-03T04:49:26.674Z</updated>
     
     <content type="html"><![CDATA[<h1 id="每当使用-float-left-right-时，可能会造成被设置为浮动的元素被移出正常流（normal-flow），这就使得包含浮动元素的容器发生高度塌陷。"><a href="#每当使用-float-left-right-时，可能会造成被设置为浮动的元素被移出正常流（normal-flow），这就使得包含浮动元素的容器发生高度塌陷。" class="headerlink" title="每当使用 float:left/right 时，可能会造成被设置为浮动的元素被移出正常流（normal flow），这就使得包含浮动元素的容器发生高度塌陷。"></a>每当使用 <code>float:left/right</code> 时，可能会造成被设置为浮动的元素被移出正常流（normal flow），这就使得包含浮动元素的容器发生高度塌陷。</h1><p>比如有如下HTML代码：</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"son"</span>&gt;</span></span><br><span class="line">    这是一个浮动元素</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>CSS样式为：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.son</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightgreen;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>此时页面表现为：<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6m7gnmruwj30hb04lt8y.jpg" alt=""></p><p>此时为 <code>.son</code> 增加 <code>float:left</code> 属性,即</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.son</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightgreen;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">float</span>:left;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>此时页面表现为：<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6m7kjlhfrj30ha02rmxg.jpg" alt=""><br>可以看到设置了浮动之后,父级元素的高度发生了塌陷.</p><h1 id="为了清除浮动的影响-我们使用-clear-both"><a href="#为了清除浮动的影响-我们使用-clear-both" class="headerlink" title="为了清除浮动的影响,我们使用 clear:both"></a>为了清除浮动的影响,我们使用 <code>clear:both</code></h1><p>在HTML中,在父容器内部的末尾添加额外的元素，通过对其添加 <code>clear: both</code> 以清除浮动的影响:</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"son"</span>&gt;</span></span><br><span class="line">    这是一个浮动元素</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。</span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"clear"</span> <span class="attr">style</span>=<span class="string">'clear:both'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>此时页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6m7py4lcrj30ha02sq38.jpg" alt=""></p><h1 id="clearfix"><a href="#clearfix" class="headerlink" title="clearfix"></a>clearfix</h1><p>上面的方法会给页面增加无意义的div元素,不利于代码的整洁.这里我们使用clearfix</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container clearfix"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"son"</span>&gt;</span></span><br><span class="line">    这是一个浮动元素</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。这是父级元素。</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span>{</span><br><span class="line">  <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">clear</span>:both;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.container</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightskyblue;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.son</span>{</span><br><span class="line">  <span class="attribute">background-color</span>: lightgreen;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">float</span>:left;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>此时页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6m89rfe6gj30hc02rq38.jpg" alt=""></p><p>这种做法的好处是通过CSS伪元素在父元素底部生成了一个元素,与 <code>div</code> 的作用一致.使用 <code>content:''</code> 使伪元素不占用空间.<br>由于 <code>:after</code> 产生的伪元素为<strong>内联元素</strong>,而<code>clear: both</code>需要添加到<strong>块级元素</strong>上才能起作用,所以添加 <code>display:block</code> .</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
@@ -43,12 +68,12 @@
   
   <entry>
     <title>CSS引入HTML的三种方式</title>
-    <link href="https://pilotluobo.com/2019/09/03/ck03csimv0004d6860jr75tyy/"/>
-    <id>https://pilotluobo.com/2019/09/03/ck03csimv0004d6860jr75tyy/</id>
+    <link href="https://pilotluobo.com/2019/09/03/ck03gcf3w000lrx866tcuwbfj/"/>
+    <id>https://pilotluobo.com/2019/09/03/ck03gcf3w000lrx866tcuwbfj/</id>
     <published>2019-09-02T16:05:14.000Z</published>
     <updated>2019-09-02T16:13:56.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="行内样式"><a href="#行内样式" class="headerlink" title="行内样式"></a>行内样式</h1><p>通过style的属性来书写CSS代码.</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">"color:red;"</span>&gt;</span>style属性的应用<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h1 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h1><p>在style标签中书写CSS代码。style标签写在head标签中。</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">      h3{</span><br><span class="line">            color:red;</span><br><span class="line">         }</span><br><span class="line">   <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h1 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h1><p>CSS代码保存在扩展名为.css的样式表中<br>HTML文件引用扩展名为.css的样式表，有两种方式：链接式、导入式。<br>1.链接式</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">rel</span>=<span class="string">"styleSheet"</span>  <span class="attr">href</span>=<span class="string">"CSS文件路径"</span> /&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>2.导入式</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">  @import url("css文件路径");</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h2 id="链接式和导入式的区别"><a href="#链接式和导入式的区别" class="headerlink" title="链接式和导入式的区别"></a>链接式和导入式的区别</h2><p><code>&lt;link&gt;</code><br>1、属于XHTML<br>2、优先加载CSS文件到页面<br><code>@import</code><br>1、属于CSS2.1<br>2、先加载HTML结构在加载CSS文件。</p><h1 id="CSS中的优先级"><a href="#CSS中的优先级" class="headerlink" title="CSS中的优先级"></a>CSS中的优先级</h1><p>1.样式优先级<br>行内样式&gt;内部样式&gt;外部样式(后两者是就近原则)<br>2.选择器优先级<br>ID选择器&gt;类选择器&gt;标签选择器</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<h1 id="行内样式"><a href="#行内样式" class="headerlink" title="行内样式"></a>行内样式</h1><p>通过style的属性来书写CSS代码.</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">"color:red;"</span>&gt;</span>style属性的应用<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h1 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h1><p>在style标签中书写CSS代码。style标签写在head标签中。</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">      h3{</span><br><span class="line"><span class="css">            <span class="selector-tag">color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line">         }</span><br><span class="line">   <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h1 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h1><p>CSS代码保存在扩展名为.css的样式表中<br>HTML文件引用扩展名为.css的样式表，有两种方式：链接式、导入式。<br>1.链接式</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">rel</span>=<span class="string">"styleSheet"</span>  <span class="attr">href</span>=<span class="string">"CSS文件路径"</span> /&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>2.导入式</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">  @<span class="keyword">import</span> url(<span class="string">"css文件路径"</span>);</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h2 id="链接式和导入式的区别"><a href="#链接式和导入式的区别" class="headerlink" title="链接式和导入式的区别"></a>链接式和导入式的区别</h2><p><code>&lt;link&gt;</code><br>1、属于XHTML<br>2、优先加载CSS文件到页面<br><code>@import</code><br>1、属于CSS2.1<br>2、先加载HTML结构在加载CSS文件。</p><h1 id="CSS中的优先级"><a href="#CSS中的优先级" class="headerlink" title="CSS中的优先级"></a>CSS中的优先级</h1><p>1.样式优先级<br>行内样式&gt;内部样式&gt;外部样式(后两者是就近原则)<br>2.选择器优先级<br>ID选择器&gt;类选择器&gt;标签选择器</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
@@ -63,16 +88,16 @@
     
       <category term="前端" scheme="https://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="HTML" scheme="https://pilotluobo.com/tags/HTML/"/>
-    
       <category term="CSS" scheme="https://pilotluobo.com/tags/CSS/"/>
+    
+      <category term="HTML" scheme="https://pilotluobo.com/tags/HTML/"/>
     
   </entry>
   
   <entry>
     <title>CSS理解margin与padding</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck03csinq001cd686fwkj81ub/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck03csinq001cd686fwkj81ub/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck03gcf3s000erx86dfcncvv2/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck03gcf3s000erx86dfcncvv2/</id>
     <published>2019-09-02T15:10:39.000Z</published>
     <updated>2019-09-02T15:41:09.000Z</updated>
     
@@ -96,8 +121,8 @@
   
   <entry>
     <title>让聚焦搜索显示中英翻译</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck03csinr001ed6864mgz7jzx/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck03csinr001ed6864mgz7jzx/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck03gcf3x000mrx86zbjj8bsc/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck03gcf3x000mrx86zbjj8bsc/</id>
     <published>2019-09-02T14:53:53.000Z</published>
     <updated>2019-09-03T02:58:30.285Z</updated>
     
@@ -121,8 +146,8 @@
   
   <entry>
     <title>用CSS画一个三角形</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck03csinv001id686nj94p1oc/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck03csinv001id686nj94p1oc/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck03gcf3v000irx86a1qq27c8/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck03gcf3v000irx86a1qq27c8/</id>
     <published>2019-09-02T14:09:55.000Z</published>
     <updated>2019-09-02T14:28:54.000Z</updated>
     
@@ -147,8 +172,8 @@
   
   <entry>
     <title>HiPDI开启1080P的正确姿势</title>
-    <link href="https://pilotluobo.com/2019/08/31/ck03csims0002d6868tr910ly/"/>
-    <id>https://pilotluobo.com/2019/08/31/ck03csims0002d6868tr910ly/</id>
+    <link href="https://pilotluobo.com/2019/08/31/ck03gcf3b0002rx862s9kwgmj/"/>
+    <id>https://pilotluobo.com/2019/08/31/ck03gcf3b0002rx862s9kwgmj/</id>
     <published>2019-08-31T12:47:35.000Z</published>
     <updated>2019-08-31T12:50:50.000Z</updated>
     
@@ -174,8 +199,8 @@
   
   <entry>
     <title>HTML常用标签快速入门</title>
-    <link href="https://pilotluobo.com/2019/08/24/ck03csinx001kd686x494s9n7/"/>
-    <id>https://pilotluobo.com/2019/08/24/ck03csinx001kd686x494s9n7/</id>
+    <link href="https://pilotluobo.com/2019/08/24/ck03gcf4i001xrx86l4qnoy0x/"/>
+    <id>https://pilotluobo.com/2019/08/24/ck03gcf4i001xrx86l4qnoy0x/</id>
     <published>2019-08-23T17:11:09.000Z</published>
     <updated>2019-08-24T19:28:25.000Z</updated>
     
@@ -201,8 +226,8 @@
   
   <entry>
     <title>网络与IP</title>
-    <link href="https://pilotluobo.com/2019/08/24/ck03csinp001bd6865z3504tu/"/>
-    <id>https://pilotluobo.com/2019/08/24/ck03csinp001bd6865z3504tu/</id>
+    <link href="https://pilotluobo.com/2019/08/24/ck03gcf3u000hrx86q9cjy4pg/"/>
+    <id>https://pilotluobo.com/2019/08/24/ck03gcf3u000hrx86q9cjy4pg/</id>
     <published>2019-08-23T16:40:47.000Z</published>
     <updated>2019-08-24T19:28:25.000Z</updated>
     
@@ -225,8 +250,8 @@
   
   <entry>
     <title>macOS键盘技巧</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck03csin00009d6860eozew5i/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck03csin00009d6860eozew5i/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck03gcf3h0005rx86mpna1t9e/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck03gcf3h0005rx86mpna1t9e/</id>
     <published>2019-08-23T14:07:46.000Z</published>
     <updated>2019-09-02T14:08:50.000Z</updated>
     
@@ -250,8 +275,8 @@
   
   <entry>
     <title>HTTP:请求,响应,curl</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck03csimn0001d686wf2ubdqt/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck03csimn0001d686wf2ubdqt/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck03gcf340000rx86o2oa3dqh/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck03gcf340000rx86o2oa3dqh/</id>
     <published>2019-08-23T06:57:32.000Z</published>
     <updated>2019-08-24T19:28:25.000Z</updated>
     
@@ -275,8 +300,8 @@
   
   <entry>
     <title>打造专属自己的个性化iterm2</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck03csinu001gd686b3r5mzl6/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck03csinu001gd686b3r5mzl6/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck03gcf3m0009rx860gdiseeq/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck03gcf3m0009rx860gdiseeq/</id>
     <published>2019-08-23T06:11:30.000Z</published>
     <updated>2019-08-24T19:28:25.000Z</updated>
     
@@ -302,8 +327,8 @@
   
   <entry>
     <title>常用的命令行</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck03csimz0008d686hb9sb6q5/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck03csimz0008d686hb9sb6q5/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck03gcf3i0006rx86qrl9qwzn/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck03gcf3i0006rx86qrl9qwzn/</id>
     <published>2019-08-23T05:59:50.000Z</published>
     <updated>2019-08-24T19:28:25.000Z</updated>
     
@@ -330,8 +355,8 @@
   
   <entry>
     <title>Hexo博客搭建记录</title>
-    <link href="https://pilotluobo.com/2019/08/12/ck03csimx0006d686n41taiuq/"/>
-    <id>https://pilotluobo.com/2019/08/12/ck03csimx0006d686n41taiuq/</id>
+    <link href="https://pilotluobo.com/2019/08/12/ck03gcf3k0007rx86q0s74uo0/"/>
+    <id>https://pilotluobo.com/2019/08/12/ck03gcf3k0007rx86q0s74uo0/</id>
     <published>2019-08-12T14:23:14.000Z</published>
     <updated>2019-09-02T23:38:48.452Z</updated>
     
@@ -356,8 +381,8 @@
   
   <entry>
     <title>记一次黑苹果安装历程</title>
-    <link href="https://pilotluobo.com/2019/08/06/ck03csin1000bd686q4le0zvh/"/>
-    <id>https://pilotluobo.com/2019/08/06/ck03csin1000bd686q4le0zvh/</id>
+    <link href="https://pilotluobo.com/2019/08/06/ck03gcf3q000crx86cx0ixvvi/"/>
+    <id>https://pilotluobo.com/2019/08/06/ck03gcf3q000crx86cx0ixvvi/</id>
     <published>2019-08-06T14:59:38.000Z</published>
     <updated>2019-08-27T14:42:12.000Z</updated>
     
