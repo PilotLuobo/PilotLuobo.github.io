@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pilotluobo.com/"/>
-  <updated>2019-09-07T02:10:26.000Z</updated>
+  <updated>2019-09-09T02:03:16.000Z</updated>
   <id>https://pilotluobo.com/</id>
   
   <author>
@@ -17,9 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>堆叠上下文</title>
+    <link href="https://pilotluobo.com/2019/09/09/ck0qp81gk0008ahiqzzuvfyr5/"/>
+    <id>https://pilotluobo.com/2019/09/09/ck0qp81gk0008ahiqzzuvfyr5/</id>
+    <published>2019-09-09T02:03:16.000Z</published>
+    <updated>2019-09-09T02:03:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>CSS的学习思路</title>
-    <link href="https://pilotluobo.com/2019/09/06/ck09ka9nw0007gjiq1e5mel9z/"/>
-    <id>https://pilotluobo.com/2019/09/06/ck09ka9nw0007gjiq1e5mel9z/</id>
+    <link href="https://pilotluobo.com/2019/09/06/ck0qp81h40021ahiqn30ex6lh/"/>
+    <id>https://pilotluobo.com/2019/09/06/ck0qp81h40021ahiqn30ex6lh/</id>
     <published>2019-09-06T15:05:43.000Z</published>
     <updated>2019-09-07T02:10:26.000Z</updated>
     
@@ -44,8 +69,8 @@
   
   <entry>
     <title>用CSS画个太极吧</title>
-    <link href="https://pilotluobo.com/2019/09/03/ck09ka9o3000igjiql001ix8u/"/>
-    <id>https://pilotluobo.com/2019/09/03/ck09ka9o3000igjiql001ix8u/</id>
+    <link href="https://pilotluobo.com/2019/09/03/ck0qp81gn000dahiqokfv59yt/"/>
+    <id>https://pilotluobo.com/2019/09/03/ck0qp81gn000dahiqokfv59yt/</id>
     <published>2019-09-03T05:36:16.000Z</published>
     <updated>2019-09-03T06:28:54.000Z</updated>
     
@@ -69,8 +94,8 @@
   
   <entry>
     <title>clearfix清除浮动</title>
-    <link href="https://pilotluobo.com/2019/09/03/ck09ka9nu0005gjiqmpd4j285/"/>
-    <id>https://pilotluobo.com/2019/09/03/ck09ka9nu0005gjiqmpd4j285/</id>
+    <link href="https://pilotluobo.com/2019/09/03/ck0qp81gi0005ahiqqtv6etvw/"/>
+    <id>https://pilotluobo.com/2019/09/03/ck0qp81gi0005ahiqqtv6etvw/</id>
     <published>2019-09-03T03:31:37.000Z</published>
     <updated>2019-09-03T04:49:26.000Z</updated>
     
@@ -94,8 +119,8 @@
   
   <entry>
     <title>CSS引入HTML的三种方式</title>
-    <link href="https://pilotluobo.com/2019/09/03/ck09ka9nn0000gjiqn0pk4zay/"/>
-    <id>https://pilotluobo.com/2019/09/03/ck09ka9nn0000gjiqn0pk4zay/</id>
+    <link href="https://pilotluobo.com/2019/09/03/ck0qp81gb0000ahiqwlg02sci/"/>
+    <id>https://pilotluobo.com/2019/09/03/ck0qp81gb0000ahiqwlg02sci/</id>
     <published>2019-09-02T16:05:14.000Z</published>
     <updated>2019-09-02T16:13:56.963Z</updated>
     
@@ -122,8 +147,8 @@
   
   <entry>
     <title>CSS理解margin与padding</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck09ka9nz000cgjiqc79odq46/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck09ka9nz000cgjiqc79odq46/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck0qp81ge0001ahiq3wz6b2o7/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck0qp81ge0001ahiq3wz6b2o7/</id>
     <published>2019-09-02T15:10:39.000Z</published>
     <updated>2019-09-02T15:41:09.451Z</updated>
     
@@ -147,8 +172,8 @@
   
   <entry>
     <title>让聚焦搜索显示中英翻译</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck09ka9o5000ngjiqzei4kbo0/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck09ka9o5000ngjiqzei4kbo0/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck0qp81gp000iahiqycxpwzmt/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck0qp81gp000iahiqycxpwzmt/</id>
     <published>2019-09-02T14:53:53.000Z</published>
     <updated>2019-09-03T02:58:30.000Z</updated>
     
@@ -172,8 +197,8 @@
   
   <entry>
     <title>用CSS画一个三角形</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck09ka9o4000lgjiqi61b0ro0/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck09ka9o4000lgjiqi61b0ro0/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck0qp81gq000kahiq38wlk0d7/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck0qp81gq000kahiq38wlk0d7/</id>
     <published>2019-09-02T14:09:55.000Z</published>
     <updated>2019-09-02T14:28:54.984Z</updated>
     
@@ -198,8 +223,8 @@
   
   <entry>
     <title>HiPDI开启1080P的正确姿势</title>
-    <link href="https://pilotluobo.com/2019/08/31/ck09ka9nv0006gjiqvyrdofb6/"/>
-    <id>https://pilotluobo.com/2019/08/31/ck09ka9nv0006gjiqvyrdofb6/</id>
+    <link href="https://pilotluobo.com/2019/08/31/ck0qp81gh0004ahiqd8weo7wn/"/>
+    <id>https://pilotluobo.com/2019/08/31/ck0qp81gh0004ahiqd8weo7wn/</id>
     <published>2019-08-31T12:47:35.000Z</published>
     <updated>2019-09-04T14:34:02.309Z</updated>
     
@@ -225,8 +250,8 @@
   
   <entry>
     <title>HTML常用标签快速入门</title>
-    <link href="https://pilotluobo.com/2019/08/24/ck09ka9og0023gjiq5jyl8b5e/"/>
-    <id>https://pilotluobo.com/2019/08/24/ck09ka9og0023gjiq5jyl8b5e/</id>
+    <link href="https://pilotluobo.com/2019/08/24/ck0qp81h3001zahiqlcrclwma/"/>
+    <id>https://pilotluobo.com/2019/08/24/ck0qp81h3001zahiqlcrclwma/</id>
     <published>2019-08-23T17:11:09.000Z</published>
     <updated>2019-08-24T19:28:25.383Z</updated>
     
@@ -252,8 +277,8 @@
   
   <entry>
     <title>网络与IP</title>
-    <link href="https://pilotluobo.com/2019/08/24/ck09ka9o2000ggjiq4rfruwpk/"/>
-    <id>https://pilotluobo.com/2019/08/24/ck09ka9o2000ggjiq4rfruwpk/</id>
+    <link href="https://pilotluobo.com/2019/08/24/ck0qp81go000fahiqu3d0qn8n/"/>
+    <id>https://pilotluobo.com/2019/08/24/ck0qp81go000fahiqu3d0qn8n/</id>
     <published>2019-08-23T16:40:47.000Z</published>
     <updated>2019-08-24T19:28:25.383Z</updated>
     
@@ -276,8 +301,8 @@
   
   <entry>
     <title>macOS键盘技巧</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck09ka9o6000qgjiqn0wc217w/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck09ka9o6000qgjiqn0wc217w/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck0qp81gl000bahiqwu5ae12y/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck0qp81gl000bahiqwu5ae12y/</id>
     <published>2019-08-23T14:07:46.000Z</published>
     <updated>2019-09-02T14:08:50.033Z</updated>
     
@@ -301,8 +326,8 @@
   
   <entry>
     <title>HTTP:请求,响应,curl</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck09ka9ns0002gjiq4juqve7u/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck09ka9ns0002gjiq4juqve7u/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck0qp81gg0003ahiqvsxuucco/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck0qp81gg0003ahiqvsxuucco/</id>
     <published>2019-08-23T06:57:32.000Z</published>
     <updated>2019-08-24T19:28:25.378Z</updated>
     
@@ -326,8 +351,8 @@
   
   <entry>
     <title>打造专属自己的个性化iterm2</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck09ka9o0000dgjiqr8hb6hmm/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck09ka9o0000dgjiqr8hb6hmm/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck0qp81gk000aahiq6dj91vwf/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck0qp81gk000aahiq6dj91vwf/</id>
     <published>2019-08-23T06:11:30.000Z</published>
     <updated>2019-08-24T19:28:25.382Z</updated>
     
@@ -353,8 +378,8 @@
   
   <entry>
     <title>常用的命令行</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck09ka9ny000agjiqbbrxy5c3/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck09ka9ny000agjiqbbrxy5c3/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck0qp81gj0007ahiquffv8ldn/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck0qp81gj0007ahiquffv8ldn/</id>
     <published>2019-08-23T05:59:50.000Z</published>
     <updated>2019-08-24T19:28:25.379Z</updated>
     
@@ -381,10 +406,10 @@
   
   <entry>
     <title>Hexo博客搭建记录</title>
-    <link href="https://pilotluobo.com/2019/08/12/ck09ka9nx0009gjiqruq1o2pu/"/>
-    <id>https://pilotluobo.com/2019/08/12/ck09ka9nx0009gjiqruq1o2pu/</id>
+    <link href="https://pilotluobo.com/2019/08/12/ck0qp81gr000pahiq9f1tvtrz/"/>
+    <id>https://pilotluobo.com/2019/08/12/ck0qp81gr000pahiq9f1tvtrz/</id>
     <published>2019-08-12T14:23:14.000Z</published>
-    <updated>2019-09-02T23:38:48.000Z</updated>
+    <updated>2019-09-19T09:28:42.614Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>记录一次 Hexo 博客搭建经历.</p><h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><h2 id="Node-JS"><a href="#Node-JS" class="headerlink" title="Node.JS"></a>Node.JS</h2><p>官网地址 <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a> .<br>安装后在 bash 内运行 <code>node -v</code> 和 <code>npm -v</code> 查看是否安装完成.</p><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>macOS 自带了.</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>在 bash 内运行<code>sudo npm install -g hexo-cli</code></p><h1 id="与-GitHub-取得联系"><a href="#与-GitHub-取得联系" class="headerlink" title="与 GitHub 取得联系"></a>与 GitHub 取得联系</h1><h2 id="注册-登录-GitHub"><a href="#注册-登录-GitHub" class="headerlink" title="注册,登录 GitHub"></a>注册,登录 GitHub</h2><p>太简单了,略过不写.</p><h2 id="取得-SSH-key"><a href="#取得-SSH-key" class="headerlink" title="取得 SSH key"></a>取得 SSH key</h2><p><code>$ ssh-keygen -t rsa -b 4096 -C "xxxxxx"</code>   (把 <em>xxxxxx</em> 替换成你的邮箱)<br><code>$ cat ~/.ssh/id_rsa.pub</code>   复制之</p><h2 id="填写-SSH-key"><a href="#填写-SSH-key" class="headerlink" title="填写 SSH key"></a>填写 SSH key</h2><p><code>Settings</code> –&gt; <code>SSH and GPG keys</code> –&gt; <code>New SSH key</code> –&gt; 粘贴 –&gt; <code>Add SSH key</code></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
@@ -399,16 +424,16 @@
     </summary>
     
     
-      <category term="Hexo" scheme="https://pilotluobo.com/tags/Hexo/"/>
-    
       <category term="瞎折腾" scheme="https://pilotluobo.com/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="Hexo" scheme="https://pilotluobo.com/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>记一次黑苹果安装历程</title>
-    <link href="https://pilotluobo.com/2019/08/06/ck09ka9o7000sgjiqz2oqmylf/"/>
-    <id>https://pilotluobo.com/2019/08/06/ck09ka9o7000sgjiqz2oqmylf/</id>
+    <link href="https://pilotluobo.com/2019/08/06/ck0qp81gr000nahiqmw2uapl7/"/>
+    <id>https://pilotluobo.com/2019/08/06/ck0qp81gr000nahiqmw2uapl7/</id>
     <published>2019-08-06T14:59:38.000Z</published>
     <updated>2019-08-27T14:42:12.346Z</updated>
     
