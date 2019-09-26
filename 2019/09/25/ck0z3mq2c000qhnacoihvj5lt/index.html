@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="清与时光">
 <meta property="og:description" content="第一题 请写出一个符合 W3C 规范的 HTML 文件，要求  页面标题为「我的页面」 页面中引入了一个外部 CSS 文件，文件路径为 /style.css 页面中引入了另一个外部 CSS 文件，路径为 /print.css，该文件仅在打印时生效 页面中引入了另一个外部 CSS 文件，路径为 /mobile.css，该文件仅在设备宽度小于 500 像素时生效 页面中引入了一个外部 JS 文件，路径">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-26T03:35:32.639Z">
+<meta property="og:updated_time" content="2019-09-26T03:39:39.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记录一些面试题">
 <meta name="twitter:description" content="第一题 请写出一个符合 W3C 规范的 HTML 文件，要求  页面标题为「我的页面」 页面中引入了一个外部 CSS 文件，文件路径为 /style.css 页面中引入了另一个外部 CSS 文件，路径为 /print.css，该文件仅在打印时生效 页面中引入了另一个外部 CSS 文件，路径为 /mobile.css，该文件仅在设备宽度小于 500 像素时生效 页面中引入了一个外部 JS 文件，路径">
@@ -276,6 +276,14 @@ var _hmt = _hmt || [];
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ques3-2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.ques3-2</span>{</span></span><br><span class="line"><span class="css">    <span class="selector-tag">width</span><span class="selector-pseudo">:50px</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">height</span><span class="selector-pseudo">:50px</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">background</span><span class="selector-pseudo">:green</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">box-shadow</span><span class="selector-pseudo">:5px</span> 5<span class="selector-tag">px</span> 0 0 <span class="selector-tag">grey</span>;</span></span><br><span class="line">  }</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 
 <div style="width:50px;height:50px;background:green;box-shadow:5px 5px 0 0 grey;"></div>
+
+<h1 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h1><blockquote>
+<p>什么是闭包，闭包的用途是什么？</p>
+</blockquote>
+<h2 id="回答-3"><a href="#回答-3" class="headerlink" title="回答:"></a><em>回答:</em></h2><p>闭包就是函数内部访问函数作用域外的变量,这个变量和这个函数之间的这个环境就叫闭包.<br>例如:</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>{</span><br><span class="line">    <span class="built_in">console</span>.log(a)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>用途:<br>1.实现封装，管理私有变量和私有方法，将变量（状态）的变化封装在安全的环境中。<br>2.让变量始终保持在内存中</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
