@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="清与时光">
 <meta property="og:description" content="第一题 请写出一个符合 W3C 规范的 HTML 文件，要求  页面标题为「我的页面」 页面中引入了一个外部 CSS 文件，文件路径为 /style.css 页面中引入了另一个外部 CSS 文件，路径为 /print.css，该文件仅在打印时生效 页面中引入了另一个外部 CSS 文件，路径为 /mobile.css，该文件仅在设备宽度小于 500 像素时生效 页面中引入了一个外部 JS 文件，路径">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-26T03:14:49.135Z">
+<meta property="og:updated_time" content="2019-09-26T03:30:42.258Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记录一些面试题">
 <meta name="twitter:description" content="第一题 请写出一个符合 W3C 规范的 HTML 文件，要求  页面标题为「我的页面」 页面中引入了一个外部 CSS 文件，文件路径为 /style.css 页面中引入了另一个外部 CSS 文件，路径为 /print.css，该文件仅在打印时生效 页面中引入了另一个外部 CSS 文件，路径为 /mobile.css，该文件仅在设备宽度小于 500 像素时生效 页面中引入了一个外部 JS 文件，路径">
@@ -263,10 +263,19 @@ var _hmt = _hmt || [];
 <p>rem是通过根元素的字体大小来设置元素的宽高的,以此来达在不同屏幕尺寸中等比例缩放达到完美的展现效果<br>1rem = 根元素字体大小</p>
 <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@<span class="function"><span class="keyword">function</span> <span class="title">px</span>(<span class="params"> $px </span>)</span>{</span><br><span class="line">@<span class="keyword">return</span> $px/$designWidth*<span class="number">10</span> + rem;</span><br><span class="line">}</span><br><span class="line">$designWidth: <span class="number">320</span>px; <span class="comment">//设计稿的宽度</span></span><br></pre></td></tr></tbody></table></figure>
 
-<h1 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h1><div style="border-radius:1em;border:1px solid red;width:50px;height:50px;"></div>
+<h1 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h1><blockquote>
+<p>用过CSS3吗? 实现圆角矩形和阴影怎么做?</p>
+</blockquote>
+<h2 id="回答-2"><a href="#回答-2" class="headerlink" title="回答:"></a><em>回答:</em></h2><p>1.圆角</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*分开写*/</span></span><br><span class="line"><span class="selector-tag">border-top-left-radius</span>:     1<span class="selector-tag">em</span> ;</span><br><span class="line"><span class="selector-tag">border-top-right-radius</span>:    1<span class="selector-tag">em</span> ;</span><br><span class="line"><span class="selector-tag">border-bottom-right-radius</span>: 1<span class="selector-tag">em</span> ;</span><br><span class="line"><span class="selector-tag">border-bottom-left-radius</span>:  1<span class="selector-tag">em</span> ;</span><br><span class="line"><span class="comment">/*四边统一写*/</span></span><br><span class="line"><span class="selector-tag">border-radius</span><span class="selector-pseudo">:1em</span>;</span><br></pre></td></tr></tbody></table></figure>
 
+<div style="border-radius:1em;border:1px solid red;width:50px;height:50px;"></div>
+2.阴影
 
+<p><code>box-shadow</code>使用一个或多个投影，如果使用多个投影时必须需要用逗号“，”分开。<br>对象选择器 {box-shadow:[inset] [x-offset] [y-offset] [blur-radius] [spread-radius] [color]}<br>对象选择器 {box-shadow:[投影方式] [X轴偏移量] [Y轴偏移量] [阴影模糊半径] [阴影扩展半径] [阴影颜色]}</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ques3-2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.ques3-2</span>{</span></span><br><span class="line"><span class="css">    <span class="selector-tag">width</span><span class="selector-pseudo">:50px</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">height</span><span class="selector-pseudo">:50px</span>;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">background</span><span class="selector-pseudo">:green</span>;</span></span><br><span class="line">    box-shadow: inset 0 0  10px 10px grey;</span><br><span class="line">  }</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 
+<div style="width:50px;height:50px;background:green;box-shadow:inset 0 0 10px 10px grey;"></div>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
