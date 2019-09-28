@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="清与时光">
 <meta property="og:description" content="作者：清与参考文献:关于跨域，你想知道的全在这里  同源策略浏览器出于安全方面的考虑，只允许与本域下的接口交互。不同源的客户端脚本在没有明确授权的情况下，不能读写对方的资源。 所谓”同源”指的是”三个相同”。  协议相同 域名相同 端口相同  示例:http://www.example.com/dir/page.html 的同源情况    URL 同源情况    http://www.examp">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-28T02:46:13.230Z">
+<meta property="og:updated_time" content="2019-09-28T02:50:24.009Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="同源政策 &amp; 跨域">
 <meta name="twitter:description" content="作者：清与参考文献:关于跨域，你想知道的全在这里  同源策略浏览器出于安全方面的考虑，只允许与本域下的接口交互。不同源的客户端脚本在没有明确授权的情况下，不能读写对方的资源。 所谓”同源”指的是”三个相同”。  协议相同 域名相同 端口相同  示例:http://www.example.com/dir/page.html 的同源情况    URL 同源情况    http://www.examp">
@@ -268,6 +268,11 @@ var _hmt = _hmt || [];
 
 </li>
 </ul>
+<h2 id="一道面试题"><a href="#一道面试题" class="headerlink" title="一道面试题"></a>一道面试题</h2><blockquote>
+<p>为什么JSONP不能发送POST请求？</p>
+</blockquote>
+<p><em>回答</em></p>
+<p>JSONP是通过<strong>动态创建</strong> <code>script</code> 实现的。 <code>script</code> 标签只能发送 <code>get</code> 请求，不能发送 <code>post</code> 请求。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
