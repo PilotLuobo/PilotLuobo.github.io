@@ -186,7 +186,48 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script>
+        <p>有这样一道面试题:什么是JSONP?为什么JSONP没有POST.首先我们了解一下JSONP,再来看这个问题.</p>
+<h1 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h1><p>浏览器出于安全方面的考虑，只允许与本域下的接口交互。不同源的客户端脚本在没有明确授权的情况下，不能读写对方的资源。</p>
+<p>所谓”同源”指的是”三个相同”。</p>
+<ul>
+<li>协议相同</li>
+<li>域名相同</li>
+<li>端口相同</li>
+</ul>
+<p>示例:<br><code>http://www.example.com/dir/page.html</code> 的同源情况</p>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>同源情况</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>http://www.example.com/dir2/other.html</code></td>
+<td>同源</td>
+</tr>
+<tr>
+<td><code>https://www.example.com/dir/other.html</code></td>
+<td>不同源（协议不同）</td>
+</tr>
+<tr>
+<td><code>http://example.com/dir/other.html</code></td>
+<td>不同源（域名不同）</td>
+</tr>
+<tr>
+<td><code>http://www.example.com:81/dir/other.html</code></td>
+<td>不同源（端口不同）</td>
+</tr>
+</tbody></table>
+<h1 id="如何做局部刷新"><a href="#如何做局部刷新" class="headerlink" title="如何做局部刷新?"></a>如何做局部刷新?</h1><p>有没有想过，不返回 HTML，返回 JS</p>
+<p>方案一:用图片造get请求</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">button.addEventListener(<span class="string">'click'</span>, (e)=&gt;{</span><br><span class="line">    <span class="keyword">let</span> image = <span class="built_in">document</span>.createElement(<span class="string">'img'</span>)</span><br><span class="line">    image.src = <span class="string">'/pay'</span></span><br><span class="line">    image.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ <span class="comment">// 状态码是 200~299 则表示成功</span></span><br><span class="line">        alert(<span class="string">'成功'</span>)</span><br><span class="line">    }</span><br><span class="line">    image.onerror = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{ <span class="comment">// 状态码大于等于 400 则表示失败</span></span><br><span class="line">        alert(<span class="string">'失败'</span>)</span><br><span class="line">    }</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+
+<p>方案二:用 script 造 get 请求</p>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//前端代码</span></span><br><span class="line">button.addEventListener(<span class="string">'click'</span>, (e)=&gt;{</span><br><span class="line">    <span class="keyword">let</span> script = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>)</span><br><span class="line">    script.src = <span class="string">'/pay'</span></span><br><span class="line">    <span class="built_in">document</span>.body.appendChild(script)</span><br><span class="line">    script.onload = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>{ <span class="comment">// 状态码是 200~299 则表示成功</span></span><br><span class="line">        e.currentTarget.remove()</span><br><span class="line">    }</span><br><span class="line">    script.onerror = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>{ <span class="comment">// 状态码大于等于 400 则表示失败</span></span><br><span class="line">        e.currentTarget.remove()</span><br><span class="line">    }</span><br><span class="line">})</span><br><span class="line"></span><br><span class="line"><span class="comment">//后端代码</span></span><br><span class="line"><span class="keyword">if</span> (path === <span class="string">'/pay'</span>){</span><br><span class="line">    <span class="keyword">let</span> amount = fs.readFileSync(<span class="string">'./db'</span>, <span class="string">'utf8'</span>)</span><br><span class="line">    amount -= <span class="number">1</span></span><br><span class="line">    fs.writeFileSync(<span class="string">'./db'</span>, amount)</span><br><span class="line">    response.setHeader(<span class="string">'Content-Type'</span>, <span class="string">'application/javascript'</span>)</span><br><span class="line">    response.write(<span class="string">'amount.innerText = '</span> + amount)</span><br><span class="line">    response.end()</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>这种技术叫做 SRJ - Server Rendered JavaScript</strong></p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
