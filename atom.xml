@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pilotluobo.com/"/>
-  <updated>2019-09-29T12:57:51.697Z</updated>
+  <updated>2019-09-29T12:58:24.925Z</updated>
   <id>https://pilotluobo.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://pilotluobo.com/2019/09/29/ck14zphm0000mrgiqk4a3y85f/"/>
     <id>https://pilotluobo.com/2019/09/29/ck14zphm0000mrgiqk4a3y85f/</id>
     <published>2019-09-29T12:57:13.000Z</published>
-    <updated>2019-09-29T12:57:51.697Z</updated>
+    <updated>2019-09-29T12:58:24.925Z</updated>
     
     <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
