@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://pilotluobo.com">
-  <title>Archives | 清与时光</title>
+  <title>用CSS画一个三角形 | 清与时光</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="清与时光">
-<meta property="og:url" content="https://pilotluobo.com/archives/page/2/index.html">
+  <meta name="description" content="首先:画一个宽度和高度都为0的块级元素的边框.边框宽度为 10px . 123456width:0px;/* height:10px; */border-top:10px solid red;border-left:10px solid green;border-right:10px solid purple;border-bottom:10px solid blue;  可以得到这样一张图: 然">
+<meta name="keywords" content="前端,CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用CSS画一个三角形">
+<meta property="og:url" content="https://pilotluobo.com/2019/09/02/ck15147y4000mzpiq5b86erl0/index.html">
 <meta property="og:site_name" content="清与时光">
+<meta property="og:description" content="首先:画一个宽度和高度都为0的块级元素的边框.边框宽度为 10px . 123456width:0px;/* height:10px; */border-top:10px solid red;border-left:10px solid green;border-right:10px solid purple;border-bottom:10px solid blue;  可以得到这样一张图: 然">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljb2c1fgj3040040q2p.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljd4p97jj303604ca9t.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljk2rhgoj303c0380sh.jpg">
+<meta property="og:updated_time" content="2019-09-02T14:28:54.984Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="清与时光">
+<meta name="twitter:title" content="用CSS画一个三角形">
+<meta name="twitter:description" content="首先:画一个宽度和高度都为0的块级元素的边框.边框宽度为 10px . 123456width:0px;/* height:10px; */border-top:10px solid red;border-left:10px solid green;border-right:10px solid purple;border-bottom:10px solid blue;  可以得到这样一张图: 然">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljb2c1fgj3040040q2p.jpg">
   
   
     <link rel="icon" href="/images/cat-32x32.png">
@@ -164,82 +173,64 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-用CSS画一个三角形" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      用CSS画一个三角形
+    </h1>
+  
+
+        
+        <a href="/2019/09/02/ck15147y4000mzpiq5b86erl0/" class="archive-article-date">
+  	<time datetime="2019-09-02T14:09:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先:画一个宽度和高度都为0的块级元素的边框.边框宽度为 <code>10px</code> .</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:0px</span>;</span><br><span class="line"><span class="comment">/* height:10px; */</span></span><br><span class="line"><span class="selector-tag">border-top</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line"><span class="selector-tag">border-left</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">green</span>;</span><br><span class="line"><span class="selector-tag">border-right</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">purple</span>;</span><br><span class="line"><span class="selector-tag">border-bottom</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">blue</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>可以得到这样一张图:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljb2c1fgj3040040q2p.jpg" alt=""></p>
+<p>然后我们把 <code>border-left</code> 改为 <code>0px</code> ,得到</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:0px</span>;</span><br><span class="line"><span class="comment">/* height:10px; */</span></span><br><span class="line"><span class="selector-tag">border-top</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line"><span class="selector-tag">border-left</span><span class="selector-pseudo">:00px</span> <span class="selector-tag">solid</span> <span class="selector-tag">green</span>;</span><br><span class="line"><span class="selector-tag">border-right</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">purple</span>;</span><br><span class="line"><span class="selector-tag">border-bottom</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">blue</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljd4p97jj303604ca9t.jpg" alt=""></p>
+<p>这时候就发现那个想要的角度的三角形在上面.其他边框的颜色改为透明</p>
+<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:0px</span>;</span><br><span class="line"> <span class="comment">/* height:10px; */</span></span><br><span class="line"> <span class="selector-tag">border-top</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">red</span>;</span><br><span class="line"> <span class="selector-tag">border-left</span><span class="selector-pseudo">:00px</span> <span class="selector-tag">solid</span> <span class="selector-tag">transparent</span>;</span><br><span class="line"> <span class="selector-tag">border-right</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">transparent</span>;</span><br><span class="line"> <span class="selector-tag">border-bottom</span><span class="selector-pseudo">:10px</span> <span class="selector-tag">solid</span> <span class="selector-tag">transparent</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>这样就得到了我们想要的那个三角形<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6ljk2rhgoj303c0380sh.jpg" alt=""></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/31/ck15147xv0005zpiq0kdwzqje/" class="archive-article-date">
-  	<time datetime="2019-08-31T12:47:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/31/ck15147xv0005zpiq0kdwzqje/">HiPDI开启1080P的正确姿势</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">黑苹果</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Apple</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">macOS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/24/ck15147yj0028zpiqszrgn8wj/" class="archive-article-date">
-  	<time datetime="2019-08-23T17:11:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/24/ck15147yj0028zpiqszrgn8wj/">HTML常用标签快速入门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -249,331 +240,142 @@ var _hmt = _hmt || [];
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACL0lEQVR42u3a0W6jQAwF0P7/T2dfKyWBa5uuhDk8RTDAHCq5nrF/fuLj9ev4feb99/v496vvI7+95eIDAwPjtozX4XHMyKeYgI9hJ58GAwPjAYwkFCaAHvX48yUfCAMDAyMPiPmT80CPgYGBUWUcB9PqQrf6XgwMjCczeoEvD7vVhPIP1+IYGBg3ZOS77v//95/UNzAwMG7FeBWPfFututDNg+yHp2FgYKxm5AEuT8iSFDCZevktGBgYSxl5g0W1YNlbauYFhg9/BwwMjNWMqzbOqqWCSTnzQ8DFwMBYzUiWo/nis1q8nDefYWBgPIHR25rPt8nmwfck6GNgYKxmTKY1LxVUP1k0HgMDYymjOsVqAC2neq0EFAMDYysjLzTON8UmW3Un5zEwMFYzekd1cnmzRe9eDAwMjGqwmwTZauKIgYHxNEY+NF/iVhs18jMnhQEMDIyljOoN1WSul27mZQwMDIzdjGtbUXsBNMd8vYqBgbGa0Qt885dVk9Fm5wgGBsYKRq9566r2i7xoevJ8DAyMxzCqmN7UJ82v5UUsBgbGIkY1i/w2/rI9v+pdGBgYSxlXtaj20rv86slnxcDAWM2YB7s87Tuebm/frNnGioGBcUNGL8j2SpJJeSBPMQv/PTAwMFYw8k20SeLYrKwmhU8MDAyMYgvXPBvNU0kMDAyMapmzWjxIGtGi8gMGBsYDGL2t/MmYSfqIgYHxNEZ16XhVm0Vv4ToqamJgYNyP8Q/5ayLg++VkNgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/24/ck15147y5000rzpiq668u7rvo/" class="archive-article-date">
-  	<time datetime="2019-08-23T16:40:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/09/02/ck15147y6000wzpiqrr7adgpl/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          让聚焦搜索显示中英翻译
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/31/ck15147xv0005zpiq0kdwzqje/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HiPDI开启1080P的正确姿势</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/24/ck15147y5000rzpiq668u7rvo/">网络与IP</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/23/ck15147xy000azpiqkxyopvc7/" class="archive-article-date">
-  	<time datetime="2019-08-23T14:07:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/23/ck15147xy000azpiqkxyopvc7/">macOS键盘技巧</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Apple</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">macOS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/23/ck15147xw0006zpiqunvsqwhi/" class="archive-article-date">
-  	<time datetime="2019-08-23T06:57:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/23/ck15147xw0006zpiqunvsqwhi/">HTTP:请求,响应,curl</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
-        		</li>
-      		
-		</ul>
-	</div>
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
 
-          
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+if(true){
+  var gitalk = new Gitalk({
+    clientID: 'c1ae9f4dad2acc4ca598',
+    clientSecret: '8d707a24802d0e4eede7cc5e8dcb99c0122950ae',
+    repo: 'pilotluobo.github.io',
+    owner: 'PilotLuobo',
+    admin: ['PilotLuobo'],
+    id: 'Mon Sep 02 2019 22:09:55 GMT+0800',
+    distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/23/ck15147y2000hzpiqs1vs3pmn/" class="archive-article-date">
-  	<time datetime="2019-08-23T06:11:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/23/ck15147y2000hzpiqs1vs3pmn/">打造专属自己的个性化iterm2</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">macOS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">命令行</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/23/ck15147y0000dzpiq2qrfq4w9/" class="archive-article-date">
-  	<time datetime="2019-08-23T05:59:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/23/ck15147y0000dzpiq2qrfq4w9/">常用的命令行</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">命令行</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/12/ck15147xx0009zpiqtjp0drs9/" class="archive-article-date">
-  	<time datetime="2019-08-12T14:23:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/12/ck15147xx0009zpiqtjp0drs9/">Hexo博客搭建记录</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">瞎折腾</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/06/ck15147y6000uzpiqtbf1wga9/" class="archive-article-date">
-  	<time datetime="2019-08-06T14:59:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/06/ck15147y6000uzpiqtbf1wga9/">记一次黑苹果安装历程</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">黑苹果</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Apple</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">macOS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">瞎折腾</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </nav>
-  
 
 
           </div>
@@ -596,8 +398,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
