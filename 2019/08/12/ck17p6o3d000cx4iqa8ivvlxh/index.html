@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://pilotluobo.com">
-  <title>Archives | 清与时光</title>
+  <title>Hexo博客搭建记录 | 清与时光</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="清与时光">
-<meta property="og:url" content="https://pilotluobo.com/archives/index.html">
+  <meta name="description" content="前言记录一次 Hexo 博客搭建经历. 环境准备Node.JS官网地址 http://nodejs.cn/download/ .安装后在 bash 内运行 node -v 和 npm -v 查看是否安装完成. GitmacOS 自带了. 安装 Hexo在 bash 内运行sudo npm install -g hexo-cli 与 GitHub 取得联系注册,登录 GitHub太简单了,略过不写.">
+<meta name="keywords" content="Hexo,瞎折腾">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客搭建记录">
+<meta property="og:url" content="https://pilotluobo.com/2019/08/12/ck17p6o3d000cx4iqa8ivvlxh/index.html">
 <meta property="og:site_name" content="清与时光">
+<meta property="og:description" content="前言记录一次 Hexo 博客搭建经历. 环境准备Node.JS官网地址 http://nodejs.cn/download/ .安装后在 bash 内运行 node -v 和 npm -v 查看是否安装完成. GitmacOS 自带了. 安装 Hexo在 bash 内运行sudo npm install -g hexo-cli 与 GitHub 取得联系注册,登录 GitHub太简单了,略过不写.">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-19T09:28:42.614Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="清与时光">
+<meta name="twitter:title" content="Hexo博客搭建记录">
+<meta name="twitter:description" content="前言记录一次 Hexo 博客搭建经历. 环境准备Node.JS官网地址 http://nodejs.cn/download/ .安装后在 bash 内运行 node -v 和 npm -v 查看是否安装完成. GitmacOS 自带了. 安装 Hexo在 bash 内运行sudo npm install -g hexo-cli 与 GitHub 取得联系注册,登录 GitHub太简单了,略过不写.">
   
   
     <link rel="icon" href="/images/cat-32x32.png">
@@ -164,458 +169,204 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-hexo博客搭建记录" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo博客搭建记录
+    </h1>
+  
+
+        
+        <a href="/2019/08/12/ck17p6o3d000cx4iqa8ivvlxh/" class="archive-article-date">
+  	<time datetime="2019-08-12T14:23:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-12</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>记录一次 Hexo 博客搭建经历.</p>
+<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><h2 id="Node-JS"><a href="#Node-JS" class="headerlink" title="Node.JS"></a>Node.JS</h2><p>官网地址 <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a> .<br>安装后在 bash 内运行 <code>node -v</code> 和 <code>npm -v</code> 查看是否安装完成.</p>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>macOS 自带了.</p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>在 bash 内运行<code>sudo npm install -g hexo-cli</code></p>
+<h1 id="与-GitHub-取得联系"><a href="#与-GitHub-取得联系" class="headerlink" title="与 GitHub 取得联系"></a>与 GitHub 取得联系</h1><h2 id="注册-登录-GitHub"><a href="#注册-登录-GitHub" class="headerlink" title="注册,登录 GitHub"></a>注册,登录 GitHub</h2><p>太简单了,略过不写.</p>
+<h2 id="取得-SSH-key"><a href="#取得-SSH-key" class="headerlink" title="取得 SSH key"></a>取得 SSH key</h2><p><code>$ ssh-keygen -t rsa -b 4096 -C "xxxxxx"</code>   (把 <em>xxxxxx</em> 替换成你的邮箱)<br><code>$ cat ~/.ssh/id_rsa.pub</code>   复制之</p>
+<h2 id="填写-SSH-key"><a href="#填写-SSH-key" class="headerlink" title="填写 SSH key"></a>填写 SSH key</h2><p><code>Settings</code> –&gt; <code>SSH and GPG keys</code> –&gt; <code>New SSH key</code> –&gt; 粘贴 –&gt; <code>Add SSH key</code></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/29/ck17p6o3e000dx4iq4rn7cvsj/" class="archive-article-date">
-  	<time datetime="2019-09-29T12:57:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/29/ck17p6o3e000dx4iq4rn7cvsj/">浅谈AJAX</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">瞎折腾</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJ0lEQVR42u3a0WrDMAwF0P7/T3cw9jDYmlxJyUPs46dREtfHBc2S/HrF4/09kk9+f378zKfn/7512cDAwHgs43045kvsYapzYmBg7MA4DrJ5KExmy2cozIaBgYFRDJoTGAYGBsYdjDxAV0M2BgYGRjWJPX4rP1YmW3BjLo6BgfFAxiSxvPvvG/sbGBgYD2G8iyNvYSYtgfl6fubBwMBYmnF8yLuqfFaNmc0nMTAwNmDM09oE1kt9o43DwMBYlFEt3191wauXk37kYWBgbMCohrzehddkO6qpbHM6DAyMRzGqR7pqGJ0fJUepMgYGxhKMPJhe1ezsNQ/KJ1wMDIzlGNV4XG1PJtfLRuU5DAyMpRm9CxB54T7ZguN3C/8MMDAwlmbkB7I8sPaCePV7MTAw9mTkAbd6WKy2E6qJLgYGxqqMUWiL38oPlNWwi4GBsRtj0g2sgqsHypNrZxgYGBswJte8JsWy3pWLk/wbAwNjOUZSvu8F5WSz5m2AExIGBsYSjN4X9I561SCeJNIYGBi7MXqFtupGXNUM+KfchoGBsSgjv7zVC52Tolu+cRgYGGsz3sWRLLqXiCYp8cc1YGBgLM3IR1Ksz5eY4KspMQYGxtqMq1qY1YJdtdl58gtgYGBswKgGwTzI9j4vt1cxMDAwBillvgW9VgQGBgZGMkUSNCcXO6KNw8DA2ICRL3QeantB9uJyGwYGxqMY88bAqK14Q3DHwMBYiPEFOt/WLNC7GIgAAAAASUVORK5CYII=" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/26/ck17p6o3b0009x4iqgrksqt9t/" class="archive-article-date">
-  	<time datetime="2019-09-26T04:27:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-26</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/08/23/ck17p6o3f000fx4iq68yxxt4z/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          常用的命令行
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/06/ck17p6o3l000tx4iq0zvqtumv/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">记一次黑苹果安装历程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/26/ck17p6o3b0009x4iqgrksqt9t/">同源政策 &amp; 跨域</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/25/ck17p6o3z002cx4iqxyvid6xh/" class="archive-article-date">
-  	<time datetime="2019-09-25T09:57:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/ck17p6o3z002cx4iqxyvid6xh/">记录一些面试题</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/09/ck17p6o3j000rx4iqt5uevyb8/" class="archive-article-date">
-  	<time datetime="2019-09-09T02:03:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/09/ck17p6o3j000rx4iqt5uevyb8/">堆叠上下文</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
 
-          
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+if(true){
+  var gitalk = new Gitalk({
+    clientID: 'c1ae9f4dad2acc4ca598',
+    clientSecret: '8d707a24802d0e4eede7cc5e8dcb99c0122950ae',
+    repo: 'pilotluobo.github.io',
+    owner: 'PilotLuobo',
+    admin: ['PilotLuobo'],
+    id: 'Mon Aug 12 2019 22:23:14 GMT+0800',
+    distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/03/ck17p6o3h000mx4iq0zlom2ik/" class="archive-article-date">
-  	<time datetime="2019-09-03T05:36:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/03/ck17p6o3h000mx4iq0zlom2ik/">用CSS画个太极吧</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/03/ck17p6o3b000ax4iqxq0r0sr2/" class="archive-article-date">
-  	<time datetime="2019-09-03T03:31:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/03/ck17p6o3b000ax4iqxq0r0sr2/">clearfix清除浮动</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/03/ck17p6o390005x4iqmwi02qgk/" class="archive-article-date">
-  	<time datetime="2019-09-02T16:05:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/03/ck17p6o390005x4iqmwi02qgk/">CSS引入HTML的三种方式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/02/ck17p6o390006x4iqjzkemguq/" class="archive-article-date">
-  	<time datetime="2019-09-02T15:10:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/02/ck17p6o390006x4iqjzkemguq/">CSS理解margin与padding</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/02/ck17p6o3i000ox4iqjae0353f/" class="archive-article-date">
-  	<time datetime="2019-09-02T14:53:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/02/ck17p6o3i000ox4iqjae0353f/">让聚焦搜索显示中英翻译</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Apple</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">macOS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/02/ck17p6o3l000wx4iqtdy149qf/" class="archive-article-date">
-  	<time datetime="2019-09-02T14:09:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/02/ck17p6o3l000wx4iqtdy149qf/">用CSS画一个三角形</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -638,8 +389,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
