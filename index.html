@@ -213,6 +213,11 @@ var _hmt = _hmt || [];
 <p>不要在选项属性或回调上使用箭头函数，比如 created: () =&gt; console.log(this.a) 或 vm.$watch(‘a’, newValue =&gt; this.myMethod())。因为箭头函数并没有 this，this 会作为变量一直向上级词法作用域查找，直至找到为止，经常导致 Uncaught TypeError: Cannot read property of undefined 或 Uncaught TypeError: this.myMethod is not a function 之类的错误。</p>
 </blockquote>
 <h1 id="生命周期图示"><a href="#生命周期图示" class="headerlink" title="生命周期图示"></a>生命周期图示</h1><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7nmd9zzg2j30u023ztaj.jpg" alt=""></p>
+<h1 id="文本插值-amp-表达式"><a href="#文本插值-amp-表达式" class="headerlink" title="文本插值 &amp; 表达式"></a>文本插值 &amp; 表达式</h1><blockquote>
+<p><strong>语法</strong>：数据绑定最常见的形式是“Mustache”语法（双大括号 <code>&amp;#123&amp;#123&amp;#125&amp;#125</code> ）的文本插值</p>
+</blockquote>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>Message: {{ msg }}<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
