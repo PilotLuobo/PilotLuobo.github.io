@@ -17,7 +17,7 @@
 <meta property="og:description" content="Vue实例 引入  &amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js&quot;&amp;gt;&amp;lt;/script&amp;gt;  构造 vue 实例   12345678910111213&amp;lt;div id=&quot;app&quot;&amp;gt;    {{msg}}&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;    var app = n">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g7nmd9zzg2j30u023ztaj.jpg">
-<meta property="og:updated_time" content="2019-10-05T12:56:54.762Z">
+<meta property="og:updated_time" content="2019-10-05T13:01:55.759Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue基础学习之Vue实例">
 <meta name="twitter:description" content="Vue实例 引入  &amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js&quot;&amp;gt;&amp;lt;/script&amp;gt;  构造 vue 实例   12345678910111213&amp;lt;div id=&quot;app&quot;&amp;gt;    {{msg}}&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;    var app = n">
@@ -212,6 +212,11 @@ var _hmt = _hmt || [];
 <li><code>mounted</code> — 刚刚挂载<br><code>el</code> 挂载到实例上后调用，一般我们的第一个业务逻辑会在这里开始 。相当于 <code>$(document).ready()</code>。</li>
 <li><code>beforeDestroy</code><br>实例销毁之前调用。主要解绑一些使用 <code>addEventListener</code> 监听的事件等。</li>
 </ul>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue({</span><br><span class="line">  data: {</span><br><span class="line">    a: <span class="number">1</span></span><br><span class="line">  },</span><br><span class="line">  created: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span><br><span class="line">    <span class="comment">// `this` 指向 vm 实例</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'a is: '</span> + <span class="keyword">this</span>.a)</span><br><span class="line">  }</span><br><span class="line">})</span><br><span class="line"><span class="comment">// =&gt; "a is: 1"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>不要在选项属性或回调上使用箭头函数，比如 created: () =&gt; console.log(this.a) 或 vm.$watch(‘a’, newValue =&gt; this.myMethod())。因为箭头函数并没有 this，this 会作为变量一直向上级词法作用域查找，直至找到为止，经常导致 Uncaught TypeError: Cannot read property of undefined 或 Uncaught TypeError: this.myMethod is not a function 之类的错误。</p>
+</blockquote>
 <h1 id="生命周期图示"><a href="#生命周期图示" class="headerlink" title="生命周期图示"></a>生命周期图示</h1><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7nmd9zzg2j30u023ztaj.jpg" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
