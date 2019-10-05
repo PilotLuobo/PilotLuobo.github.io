@@ -166,6 +166,119 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Vue基础学习之Vue实例" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/05/ck1diit7k0004msiqp1bkcxcc/">Vue基础学习之Vue实例</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/05/ck1diit7k0004msiqp1bkcxcc/" class="archive-article-date">
+  	<time datetime="2019-10-05T11:41:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Vue实例"><a href="#Vue实例" class="headerlink" title="Vue实例"></a>Vue实例</h1><ul>
+<li><p>引入<br>  <code>&lt;script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"&gt;&lt;/script&gt;</code></p>
+</li>
+<li><p>构造 vue 实例</p>
+  <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    {{msg}}</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">    var app = new Vue({</span><br><span class="line">    // element，用于指定页面中已经存在的DOM元素，挂载到DOM中去，也可以是CSS</span><br><span class="line">    el:'#app',</span><br><span class="line">    //data，声明应用内需要双向绑定的数据</span><br><span class="line">    data:{</span><br><span class="line">        msg:"Hello World"</span><br><span class="line">    }</span><br><span class="line">})</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>必不可少的是 <code>el</code> 。<code>el</code> 用于指定一个页面中已经存在的DOM元素来挂载Vue实例，可以是标签，也可以是CSS语法。</p>
+</li>
+<li><p>通过 Vue实例 的 <code>data</code> 选项可以声明应用内需要双向绑定的数据。</p>
+</li>
+<li><p>挂载成功后，我们可以通过 <code>app.$el</code> 来访问该元素。Vue提供了很多常用的实例属性和方法，都以 <code>$</code> 开头。<em>特别地，Vue实例本身代理了 <code>data</code> 对象里的所有属性。</em></p>
+</li>
+</ul>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Vue.js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/05/ck1diit7k0004msiqp1bkcxcc/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
     <article id="post-浅谈AJAX" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -173,12 +286,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/29/ck17p6o3e000dx4iq4rn7cvsj/">浅谈AJAX</a>
+      <a class="article-title" href="/2019/09/29/ck1diit85001bmsiq0tz0q86d/">浅谈AJAX</a>
     </h1>
   
 
         
-        <a href="/2019/09/29/ck17p6o3e000dx4iq4rn7cvsj/" class="archive-article-date">
+        <a href="/2019/09/29/ck1diit85001bmsiq0tz0q86d/" class="archive-article-date">
   	<time datetime="2019-09-29T12:57:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-29</time>
 </a>
         
@@ -231,7 +344,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/29/ck17p6o3e000dx4iq4rn7cvsj/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/29/ck1diit85001bmsiq0tz0q86d/">展开全文 >></a>
         </p>
       
 
@@ -269,12 +382,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/26/ck17p6o3b0009x4iqgrksqt9t/">同源政策 &amp; 跨域</a>
+      <a class="article-title" href="/2019/09/26/ck1diit7m0008msiqyj45mvvv/">同源政策 &amp; 跨域</a>
     </h1>
   
 
         
-        <a href="/2019/09/26/ck17p6o3b0009x4iqgrksqt9t/" class="archive-article-date">
+        <a href="/2019/09/26/ck1diit7m0008msiqyj45mvvv/" class="archive-article-date">
   	<time datetime="2019-09-26T04:27:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-26</time>
 </a>
         
@@ -411,7 +524,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/26/ck17p6o3b0009x4iqgrksqt9t/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/26/ck1diit7m0008msiqyj45mvvv/">展开全文 >></a>
         </p>
       
 
@@ -449,12 +562,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/25/ck17p6o3z002cx4iqxyvid6xh/">记录一些面试题</a>
+      <a class="article-title" href="/2019/09/25/ck1diit8j0027msiqv74ebiy2/">记录一些面试题</a>
     </h1>
   
 
         
-        <a href="/2019/09/25/ck17p6o3z002cx4iqxyvid6xh/" class="archive-article-date">
+        <a href="/2019/09/25/ck1diit8j0027msiqv74ebiy2/" class="archive-article-date">
   	<time datetime="2019-09-25T09:57:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
 </a>
         
@@ -693,7 +806,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/25/ck17p6o3z002cx4iqxyvid6xh/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/25/ck1diit8j0027msiqv74ebiy2/">展开全文 >></a>
         </p>
       
 
@@ -731,12 +844,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/09/ck17p6o3j000rx4iqt5uevyb8/">堆叠上下文</a>
+      <a class="article-title" href="/2019/09/09/ck1diit830016msiqzussp9gz/">堆叠上下文</a>
     </h1>
   
 
         
-        <a href="/2019/09/09/ck17p6o3j000rx4iqt5uevyb8/" class="archive-article-date">
+        <a href="/2019/09/09/ck1diit830016msiqzussp9gz/" class="archive-article-date">
   	<time datetime="2019-09-09T02:03:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-09</time>
 </a>
         
@@ -789,114 +902,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/09/ck17p6o3j000rx4iqt5uevyb8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-用CSS画个太极吧" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/03/ck17p6o3h000mx4iq0zlom2ik/">用CSS画个太极吧</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/03/ck17p6o3h000mx4iq0zlom2ik/" class="archive-article-date">
-  	<time datetime="2019-09-03T05:36:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="首先-我们画一个圆"><a href="#首先-我们画一个圆" class="headerlink" title="首先,我们画一个圆."></a>首先,我们画一个圆.</h1><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"yinyang"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.yinyang</span>{</span><br><span class="line">      <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">      <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">      <span class="attribute">border</span>:<span class="number">1px</span> solid red;</span><br><span class="line">      <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">    }</span><br></pre></td></tr></tbody></table></figure>
-
-<p>页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6mb5toek9j306506c0sq.jpg" alt=""></p>
-<h1 id="给圆添加背景色"><a href="#给圆添加背景色" class="headerlink" title="给圆添加背景色"></a>给圆添加背景色</h1><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.yinyang</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to bottom , #fff 50% , #000 50%);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6mb8i07nij3065060glj.jpg" alt=""></p>
-<h1 id="增加两个伪元素-来做中间的两个圆-并做定位"><a href="#增加两个伪元素-来做中间的两个圆-并做定位" class="headerlink" title="增加两个伪元素,来做中间的两个圆,并做定位"></a>增加两个伪元素,来做中间的两个圆,并做定位</h1><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>{</span><br><span class="line">  <span class="comment">/* background-color: grey; */</span></span><br><span class="line">}</span><br><span class="line"><span class="selector-class">.yinyang</span>{</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="comment">/* border:1px solid red; */</span></span><br><span class="line">  <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to bottom , #fff 50% , #000 50%);</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">100px</span> auto <span class="number">20px</span>;</span><br><span class="line">}</span><br><span class="line"><span class="selector-class">.yinyang</span><span class="selector-pseudo">:before</span>{</span><br><span class="line">  <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">border</span>:<span class="number">35px</span> solid black;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">left</span>:<span class="number">0</span>;</span><br><span class="line">  <span class="attribute">top</span>:<span class="number">50px</span>;</span><br><span class="line">}</span><br><span class="line"><span class="selector-class">.yinyang</span><span class="selector-pseudo">:after</span>{</span><br><span class="line">  <span class="attribute">content</span>:<span class="string">''</span>;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#000</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>:<span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">border</span>:<span class="number">35px</span> solid <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">right</span>:<span class="number">0</span>;</span><br><span class="line">  <span class="attribute">top</span>:<span class="number">50px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>页面表现为:<br><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g6mbat06tij30p00bwdg0.jpg" alt=""></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/03/ck17p6o3h000mx4iq0zlom2ik/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/09/09/ck1diit830016msiqzussp9gz/">展开全文 >></a>
         </p>
       
 
@@ -1045,23 +1051,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">黑苹果</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Apple</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">macOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1073,7 +1063,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Vue.js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1082,6 +1080,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">瞎折腾</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Apple</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">macOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">黑苹果</a>
               </li>
              
               <li class="article-tag-list-item">

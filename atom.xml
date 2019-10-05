@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pilotluobo.com/"/>
-  <updated>2019-09-29T12:58:24.925Z</updated>
+  <updated>2019-10-05T12:24:51.452Z</updated>
   <id>https://pilotluobo.com/</id>
   
   <author>
@@ -17,9 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vue基础学习之Vue实例</title>
+    <link href="https://pilotluobo.com/2019/10/05/ck1diit7k0004msiqp1bkcxcc/"/>
+    <id>https://pilotluobo.com/2019/10/05/ck1diit7k0004msiqp1bkcxcc/</id>
+    <published>2019-10-05T11:41:02.000Z</published>
+    <updated>2019-10-05T12:24:51.452Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Vue实例"><a href="#Vue实例" class="headerlink" title="Vue实例"></a>Vue实例</h1><ul><li><p>引入<br>  <code>&lt;script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"&gt;&lt;/script&gt;</code></p></li><li><p>构造 vue 实例</p>  <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    {{msg}}</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">    var app = new Vue({</span><br><span class="line">    // element，用于指定页面中已经存在的DOM元素，挂载到DOM中去，也可以是CSS</span><br><span class="line">    el:'#app',</span><br><span class="line">    //data，声明应用内需要双向绑定的数据</span><br><span class="line">    data:{</span><br><span class="line">        msg:"Hello World"</span><br><span class="line">    }</span><br><span class="line">})</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure></li><li><p>必不可少的是 <code>el</code> 。<code>el</code> 用于指定一个页面中已经存在的DOM元素来挂载Vue实例，可以是标签，也可以是CSS语法。</p></li><li><p>通过 Vue实例 的 <code>data</code> 选项可以声明应用内需要双向绑定的数据。</p></li><li><p>挂载成功后，我们可以通过 <code>app.$el</code> 来访问该元素。Vue提供了很多常用的实例属性和方法，都以 <code>$</code> 开头。<em>特别地，Vue实例本身代理了 <code>data</code> 对象里的所有属性。</em></p></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Vue实例&quot;&gt;&lt;a href=&quot;#Vue实例&quot; class=&quot;headerlink&quot; title=&quot;Vue实例&quot;&gt;&lt;/a&gt;Vue实例&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;引入&lt;br&gt;  &lt;code&gt;&amp;lt;script src=&quot;https://cdn.jsdeliv
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="https://pilotluobo.com/tags/JavaScript/"/>
+    
+      <category term="Vue.js" scheme="https://pilotluobo.com/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>浅谈AJAX</title>
-    <link href="https://pilotluobo.com/2019/09/29/ck17p6o3e000dx4iq4rn7cvsj/"/>
-    <id>https://pilotluobo.com/2019/09/29/ck17p6o3e000dx4iq4rn7cvsj/</id>
+    <link href="https://pilotluobo.com/2019/09/29/ck1diit85001bmsiq0tz0q86d/"/>
+    <id>https://pilotluobo.com/2019/09/29/ck1diit85001bmsiq0tz0q86d/</id>
     <published>2019-09-29T12:57:13.000Z</published>
     <updated>2019-09-29T12:58:24.925Z</updated>
     
@@ -47,8 +75,8 @@
   
   <entry>
     <title>同源政策 &amp; 跨域</title>
-    <link href="https://pilotluobo.com/2019/09/26/ck17p6o3b0009x4iqgrksqt9t/"/>
-    <id>https://pilotluobo.com/2019/09/26/ck17p6o3b0009x4iqgrksqt9t/</id>
+    <link href="https://pilotluobo.com/2019/09/26/ck1diit7m0008msiqyj45mvvv/"/>
+    <id>https://pilotluobo.com/2019/09/26/ck1diit7m0008msiqyj45mvvv/</id>
     <published>2019-09-26T04:27:28.000Z</published>
     <updated>2019-09-29T10:32:04.990Z</updated>
     
@@ -73,8 +101,8 @@
   
   <entry>
     <title>记录一些面试题</title>
-    <link href="https://pilotluobo.com/2019/09/25/ck17p6o3z002cx4iqxyvid6xh/"/>
-    <id>https://pilotluobo.com/2019/09/25/ck17p6o3z002cx4iqxyvid6xh/</id>
+    <link href="https://pilotluobo.com/2019/09/25/ck1diit8j0027msiqv74ebiy2/"/>
+    <id>https://pilotluobo.com/2019/09/25/ck1diit8j0027msiqv74ebiy2/</id>
     <published>2019-09-25T09:57:49.000Z</published>
     <updated>2019-09-27T00:54:39.000Z</updated>
     
@@ -105,8 +133,8 @@
   
   <entry>
     <title>堆叠上下文</title>
-    <link href="https://pilotluobo.com/2019/09/09/ck17p6o3j000rx4iqt5uevyb8/"/>
-    <id>https://pilotluobo.com/2019/09/09/ck17p6o3j000rx4iqt5uevyb8/</id>
+    <link href="https://pilotluobo.com/2019/09/09/ck1diit830016msiqzussp9gz/"/>
+    <id>https://pilotluobo.com/2019/09/09/ck1diit830016msiqzussp9gz/</id>
     <published>2019-09-09T02:03:16.000Z</published>
     <updated>2019-09-27T15:04:05.308Z</updated>
     
@@ -134,8 +162,8 @@
   
   <entry>
     <title>用CSS画个太极吧</title>
-    <link href="https://pilotluobo.com/2019/09/03/ck17p6o3h000mx4iq0zlom2ik/"/>
-    <id>https://pilotluobo.com/2019/09/03/ck17p6o3h000mx4iq0zlom2ik/</id>
+    <link href="https://pilotluobo.com/2019/09/03/ck1diit840019msiqewxjowgg/"/>
+    <id>https://pilotluobo.com/2019/09/03/ck1diit840019msiqewxjowgg/</id>
     <published>2019-09-03T05:36:16.000Z</published>
     <updated>2019-09-03T06:28:54.000Z</updated>
     
@@ -159,8 +187,8 @@
   
   <entry>
     <title>clearfix清除浮动</title>
-    <link href="https://pilotluobo.com/2019/09/03/ck17p6o3b000ax4iqxq0r0sr2/"/>
-    <id>https://pilotluobo.com/2019/09/03/ck17p6o3b000ax4iqxq0r0sr2/</id>
+    <link href="https://pilotluobo.com/2019/09/03/ck1diit820015msiqfmjiln9h/"/>
+    <id>https://pilotluobo.com/2019/09/03/ck1diit820015msiqfmjiln9h/</id>
     <published>2019-09-03T03:31:37.000Z</published>
     <updated>2019-09-25T09:57:37.000Z</updated>
     
@@ -184,8 +212,8 @@
   
   <entry>
     <title>CSS引入HTML的三种方式</title>
-    <link href="https://pilotluobo.com/2019/09/03/ck17p6o390005x4iqmwi02qgk/"/>
-    <id>https://pilotluobo.com/2019/09/03/ck17p6o390005x4iqmwi02qgk/</id>
+    <link href="https://pilotluobo.com/2019/09/03/ck1diit7d0000msiqbp4qvyov/"/>
+    <id>https://pilotluobo.com/2019/09/03/ck1diit7d0000msiqbp4qvyov/</id>
     <published>2019-09-02T16:05:14.000Z</published>
     <updated>2019-09-02T16:13:56.963Z</updated>
     
@@ -212,8 +240,8 @@
   
   <entry>
     <title>CSS理解margin与padding</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck17p6o390006x4iqjzkemguq/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck17p6o390006x4iqjzkemguq/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck1diit7h0001msiqzqnsohsb/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck1diit7h0001msiqzqnsohsb/</id>
     <published>2019-09-02T15:10:39.000Z</published>
     <updated>2019-09-02T15:41:09.451Z</updated>
     
@@ -237,8 +265,8 @@
   
   <entry>
     <title>让聚焦搜索显示中英翻译</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck17p6o3i000ox4iqjae0353f/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck17p6o3i000ox4iqjae0353f/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck1diit88001gmsiqgkd06z21/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck1diit88001gmsiqgkd06z21/</id>
     <published>2019-09-02T14:53:53.000Z</published>
     <updated>2019-09-03T02:58:30.000Z</updated>
     
@@ -262,8 +290,8 @@
   
   <entry>
     <title>用CSS画一个三角形</title>
-    <link href="https://pilotluobo.com/2019/09/02/ck17p6o3l000wx4iqtdy149qf/"/>
-    <id>https://pilotluobo.com/2019/09/02/ck17p6o3l000wx4iqtdy149qf/</id>
+    <link href="https://pilotluobo.com/2019/09/02/ck1diit89001imsiqmy2ov65n/"/>
+    <id>https://pilotluobo.com/2019/09/02/ck1diit89001imsiqmy2ov65n/</id>
     <published>2019-09-02T14:09:55.000Z</published>
     <updated>2019-09-02T14:28:54.984Z</updated>
     
@@ -288,8 +316,8 @@
   
   <entry>
     <title>HiPDI开启1080P的正确姿势</title>
-    <link href="https://pilotluobo.com/2019/08/31/ck17p6o320000x4iqgncnzsd7/"/>
-    <id>https://pilotluobo.com/2019/08/31/ck17p6o320000x4iqgncnzsd7/</id>
+    <link href="https://pilotluobo.com/2019/08/31/ck1diit7z0011msiqy3e2jpv0/"/>
+    <id>https://pilotluobo.com/2019/08/31/ck1diit7z0011msiqy3e2jpv0/</id>
     <published>2019-08-31T12:47:35.000Z</published>
     <updated>2019-09-04T14:34:02.309Z</updated>
     
@@ -305,18 +333,18 @@
     </summary>
     
     
-      <category term="黑苹果" scheme="https://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
-    
       <category term="Apple" scheme="https://pilotluobo.com/tags/Apple/"/>
     
       <category term="macOS" scheme="https://pilotluobo.com/tags/macOS/"/>
+    
+      <category term="黑苹果" scheme="https://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
   <entry>
     <title>HTML常用标签快速入门</title>
-    <link href="https://pilotluobo.com/2019/08/24/ck17p6o3y002bx4iqhqckwsug/"/>
-    <id>https://pilotluobo.com/2019/08/24/ck17p6o3y002bx4iqhqckwsug/</id>
+    <link href="https://pilotluobo.com/2019/08/24/ck1diit8a001mmsiqxzi2h3ao/"/>
+    <id>https://pilotluobo.com/2019/08/24/ck1diit8a001mmsiqxzi2h3ao/</id>
     <published>2019-08-23T17:11:09.000Z</published>
     <updated>2019-10-01T07:48:27.459Z</updated>
     
@@ -342,8 +370,8 @@
   
   <entry>
     <title>网络与IP</title>
-    <link href="https://pilotluobo.com/2019/08/24/ck17p6o3g000hx4iqdqbukkx4/"/>
-    <id>https://pilotluobo.com/2019/08/24/ck17p6o3g000hx4iqdqbukkx4/</id>
+    <link href="https://pilotluobo.com/2019/08/24/ck1diit87001emsiqve3p8sre/"/>
+    <id>https://pilotluobo.com/2019/08/24/ck1diit87001emsiqve3p8sre/</id>
     <published>2019-08-23T16:40:47.000Z</published>
     <updated>2019-10-01T07:45:05.405Z</updated>
     
@@ -366,8 +394,8 @@
   
   <entry>
     <title>macOS键盘技巧</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck17p6o3a0007x4iqvinz1axm/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck17p6o3a0007x4iqvinz1axm/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck1diit7l0007msiq9qxxwsq8/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck1diit7l0007msiq9qxxwsq8/</id>
     <published>2019-08-23T14:07:46.000Z</published>
     <updated>2019-09-02T14:08:50.033Z</updated>
     
@@ -391,8 +419,8 @@
   
   <entry>
     <title>HTTP:请求,响应,curl</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck17p6o360002x4iqyykiyezp/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck17p6o360002x4iqyykiyezp/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck1diit7j0003msiqe7qoond6/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck1diit7j0003msiqe7qoond6/</id>
     <published>2019-08-23T06:57:32.000Z</published>
     <updated>2019-08-24T19:28:25.378Z</updated>
     
@@ -416,8 +444,8 @@
   
   <entry>
     <title>打造专属自己的个性化iterm2</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck17p6o3g000kx4iqwgv6nz6o/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck17p6o3g000kx4iqwgv6nz6o/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck1diit7z0012msiqbf3k3u3w/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck1diit7z0012msiqbf3k3u3w/</id>
     <published>2019-08-23T06:11:30.000Z</published>
     <updated>2019-08-24T19:28:25.382Z</updated>
     
@@ -433,9 +461,9 @@
     </summary>
     
     
-      <category term="macOS" scheme="https://pilotluobo.com/tags/macOS/"/>
-    
       <category term="前端" scheme="https://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="macOS" scheme="https://pilotluobo.com/tags/macOS/"/>
     
       <category term="命令行" scheme="https://pilotluobo.com/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
@@ -443,8 +471,8 @@
   
   <entry>
     <title>常用的命令行</title>
-    <link href="https://pilotluobo.com/2019/08/23/ck17p6o3f000fx4iq68yxxt4z/"/>
-    <id>https://pilotluobo.com/2019/08/23/ck17p6o3f000fx4iq68yxxt4z/</id>
+    <link href="https://pilotluobo.com/2019/08/23/ck1diit800014msiqox01115h/"/>
+    <id>https://pilotluobo.com/2019/08/23/ck1diit800014msiqox01115h/</id>
     <published>2019-08-23T05:59:50.000Z</published>
     <updated>2019-08-24T19:28:25.379Z</updated>
     
@@ -471,8 +499,8 @@
   
   <entry>
     <title>Hexo博客搭建记录</title>
-    <link href="https://pilotluobo.com/2019/08/12/ck17p6o3d000cx4iqa8ivvlxh/"/>
-    <id>https://pilotluobo.com/2019/08/12/ck17p6o3d000cx4iqa8ivvlxh/</id>
+    <link href="https://pilotluobo.com/2019/08/12/ck1diit7k0005msiq3pb31kde/"/>
+    <id>https://pilotluobo.com/2019/08/12/ck1diit7k0005msiq3pb31kde/</id>
     <published>2019-08-12T14:23:14.000Z</published>
     <updated>2019-09-19T09:28:42.614Z</updated>
     
@@ -497,8 +525,8 @@
   
   <entry>
     <title>记一次黑苹果安装历程</title>
-    <link href="https://pilotluobo.com/2019/08/06/ck17p6o3l000tx4iq0zvqtumv/"/>
-    <id>https://pilotluobo.com/2019/08/06/ck17p6o3l000tx4iq0zvqtumv/</id>
+    <link href="https://pilotluobo.com/2019/08/06/ck1diit8a001kmsiqm48np78b/"/>
+    <id>https://pilotluobo.com/2019/08/06/ck1diit8a001kmsiqm48np78b/</id>
     <published>2019-08-06T14:59:38.000Z</published>
     <updated>2019-08-27T14:42:12.346Z</updated>
     
@@ -515,13 +543,13 @@
     </summary>
     
     
-      <category term="黑苹果" scheme="https://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="瞎折腾" scheme="https://pilotluobo.com/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
       <category term="Apple" scheme="https://pilotluobo.com/tags/Apple/"/>
     
       <category term="macOS" scheme="https://pilotluobo.com/tags/macOS/"/>
     
-      <category term="瞎折腾" scheme="https://pilotluobo.com/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+      <category term="黑苹果" scheme="https://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
