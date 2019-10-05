@@ -16,10 +16,12 @@
 <meta property="og:site_name" content="清与时光">
 <meta property="og:description" content="Vue实例 引入  &amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js&quot;&amp;gt;&amp;lt;/script&amp;gt;  构造 vue 实例   12345678910111213&amp;lt;div id=&quot;app&quot;&amp;gt;    {{msg}}&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;    var app = n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-05T12:27:09.578Z">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g7nmd9zzg2j30u023ztaj.jpg">
+<meta property="og:updated_time" content="2019-10-05T12:56:54.762Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue基础学习之Vue实例">
 <meta name="twitter:description" content="Vue实例 引入  &amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js&quot;&amp;gt;&amp;lt;/script&amp;gt;  构造 vue 实例   12345678910111213&amp;lt;div id=&quot;app&quot;&amp;gt;    {{msg}}&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;    var app = n">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g7nmd9zzg2j30u023ztaj.jpg">
   
   
     <link rel="icon" href="/images/cat-32x32.png">
@@ -200,8 +202,17 @@ var _hmt = _hmt || [];
 <li><p>通过 Vue实例 的 <code>data</code> 选项可以声明应用内需要双向绑定的数据。</p>
 </li>
 <li><p>挂载成功后，我们可以通过 <code>app.$el</code> 来访问该元素。Vue提供了很多常用的实例属性和方法，都以 <code>$</code> 开头。<em>特别地，Vue实例本身代理了 <code>data</code> 对象里的所有属性。</em><br>  例如：</p>
-  <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data = { <span class="attr">a</span>: <span class="number">1</span> }</span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue({</span><br><span class="line">    el: <span class="string">'#example'</span>,</span><br><span class="line">    data: data</span><br><span class="line">})</span><br><span class="line"></span><br><span class="line">vm.$data === data <span class="comment">// =&gt; true</span></span><br><span class="line">vm.$el === <span class="built_in">document</span>.getElementById(<span class="string">'example'</span>) <span class="comment">// =&gt; true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// $watch 是一个实例方法</span></span><br><span class="line">vm.$watch(<span class="string">'a'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">newValue, oldValue</span>) </span>{</span><br><span class="line"><span class="comment">// 这个回调将在 `vm.a` 改变后调用</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure></li>
+  <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data = { <span class="attr">a</span>: <span class="number">1</span> }</span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue({</span><br><span class="line">    el: <span class="string">'#example'</span>,</span><br><span class="line">    data: data</span><br><span class="line">})</span><br><span class="line"></span><br><span class="line">app.$data === data <span class="comment">// =&gt; true</span></span><br><span class="line">app.$el === <span class="built_in">document</span>.getElementById(<span class="string">'example'</span>) <span class="comment">// =&gt; true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// $watch 是一个实例方法</span></span><br><span class="line">app.$watch(<span class="string">'a'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">newValue, oldValue</span>) </span>{</span><br><span class="line"><span class="comment">// 这个回调将在 `vm.a` 改变后调用</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+
+</li>
 </ul>
+<h1 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h1><p>常用的三个：</p>
+<ul>
+<li><code>created</code> — 还未挂载<br>实例创建完成后调用，此阶段完成了数据的观测等，但尚未挂载， <code>$el</code> 还不可用。需要初始化处理一些数据时会比较有用，后面章节将有介绍。</li>
+<li><code>mounted</code> — 刚刚挂载<br><code>el</code> 挂载到实例上后调用，一般我们的第一个业务逻辑会在这里开始 。相当于 <code>$(document).ready()</code>。</li>
+<li><code>beforeDestroy</code><br>实例销毁之前调用。主要解绑一些使用 <code>addEventListener</code> 监听的事件等。</li>
+</ul>
+<h1 id="生命周期图示"><a href="#生命周期图示" class="headerlink" title="生命周期图示"></a>生命周期图示</h1><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7nmd9zzg2j30u023ztaj.jpg" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
