@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pilotluobo.com/"/>
-  <updated>2019-10-06T18:47:11.504Z</updated>
+  <updated>2019-10-06T18:49:19.360Z</updated>
   <id>http://pilotluobo.com/</id>
   
   <author>
@@ -17,9 +17,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vue基础学习之过滤器，指令和事件，语法糖</title>
+    <link href="http://pilotluobo.com/2019/10/07/ck1fcbzn00003d0iqce4a5ko7/"/>
+    <id>http://pilotluobo.com/2019/10/07/ck1fcbzn00003d0iqce4a5ko7/</id>
+    <published>2019-10-06T18:48:54.000Z</published>
+    <updated>2019-10-06T18:49:19.360Z</updated>
+    
+    <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://pilotluobo.com/tags/JavaScript/"/>
+    
+      <category term="Vue.js" scheme="http://pilotluobo.com/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vue基础学习之Vue实例，生命周期钩子，文本插值与表达式</title>
-    <link href="http://pilotluobo.com/2019/10/05/ck1fc99ox0006bfiq4c5n36kf/"/>
-    <id>http://pilotluobo.com/2019/10/05/ck1fc99ox0006bfiq4c5n36kf/</id>
+    <link href="http://pilotluobo.com/2019/10/05/ck1fcbzmy0001d0iqipmoq5p7/"/>
+    <id>http://pilotluobo.com/2019/10/05/ck1fcbzmy0001d0iqipmoq5p7/</id>
     <published>2019-10-05T11:41:02.000Z</published>
     <updated>2019-10-06T18:47:11.504Z</updated>
     
@@ -46,8 +77,8 @@
   
   <entry>
     <title>浅谈AJAX</title>
-    <link href="http://pilotluobo.com/2019/09/29/ck1fc99p3000cbfiqj6krtfi3/"/>
-    <id>http://pilotluobo.com/2019/09/29/ck1fc99p3000cbfiqj6krtfi3/</id>
+    <link href="http://pilotluobo.com/2019/09/29/ck1fcbzn7000fd0iq98udh6mk/"/>
+    <id>http://pilotluobo.com/2019/09/29/ck1fcbzn7000fd0iq98udh6mk/</id>
     <published>2019-09-29T12:57:13.000Z</published>
     <updated>2019-09-29T12:58:24.925Z</updated>
     
@@ -75,8 +106,8 @@
   
   <entry>
     <title>同源政策 &amp; 跨域</title>
-    <link href="http://pilotluobo.com/2019/09/26/ck1fc99oz0007bfiqd2p83bat/"/>
-    <id>http://pilotluobo.com/2019/09/26/ck1fc99oz0007bfiqd2p83bat/</id>
+    <link href="http://pilotluobo.com/2019/09/26/ck1fcbzn5000dd0iqnjehocwz/"/>
+    <id>http://pilotluobo.com/2019/09/26/ck1fcbzn5000dd0iqnjehocwz/</id>
     <published>2019-09-26T04:27:28.000Z</published>
     <updated>2019-09-29T10:32:04.990Z</updated>
     
@@ -101,8 +132,8 @@
   
   <entry>
     <title>记录一些面试题</title>
-    <link href="http://pilotluobo.com/2019/09/25/ck1fc99pp002hbfiqhh2klt9z/"/>
-    <id>http://pilotluobo.com/2019/09/25/ck1fc99pp002hbfiqhh2klt9z/</id>
+    <link href="http://pilotluobo.com/2019/09/25/ck1fcbzo4002jd0iq4h0dbu56/"/>
+    <id>http://pilotluobo.com/2019/09/25/ck1fcbzo4002jd0iq4h0dbu56/</id>
     <published>2019-09-25T09:57:49.000Z</published>
     <updated>2019-09-27T00:54:39.000Z</updated>
     
@@ -123,18 +154,18 @@
     
       <category term="前端" scheme="http://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="HTML" scheme="http://pilotluobo.com/tags/HTML/"/>
+      <category term="JavaScript" scheme="http://pilotluobo.com/tags/JavaScript/"/>
     
       <category term="CSS" scheme="http://pilotluobo.com/tags/CSS/"/>
     
-      <category term="JavaScript" scheme="http://pilotluobo.com/tags/JavaScript/"/>
+      <category term="HTML" scheme="http://pilotluobo.com/tags/HTML/"/>
     
   </entry>
   
   <entry>
     <title>堆叠上下文</title>
-    <link href="http://pilotluobo.com/2019/09/09/ck1fc99p4000dbfiqn0bqvetj/"/>
-    <id>http://pilotluobo.com/2019/09/09/ck1fc99p4000dbfiqn0bqvetj/</id>
+    <link href="http://pilotluobo.com/2019/09/09/ck1fcbznu0026d0iqqyps80yj/"/>
+    <id>http://pilotluobo.com/2019/09/09/ck1fcbznu0026d0iqqyps80yj/</id>
     <published>2019-09-09T02:03:16.000Z</published>
     <updated>2019-09-27T15:04:05.308Z</updated>
     
@@ -162,8 +193,8 @@
   
   <entry>
     <title>用CSS画个太极吧</title>
-    <link href="http://pilotluobo.com/2019/09/03/ck1fc99pd000wbfiqbjl71ibt/"/>
-    <id>http://pilotluobo.com/2019/09/03/ck1fc99pd000wbfiqbjl71ibt/</id>
+    <link href="http://pilotluobo.com/2019/09/03/ck1fcbzns0020d0iq5u9xre7t/"/>
+    <id>http://pilotluobo.com/2019/09/03/ck1fcbzns0020d0iq5u9xre7t/</id>
     <published>2019-09-03T05:36:16.000Z</published>
     <updated>2019-09-03T06:28:54.000Z</updated>
     
@@ -187,8 +218,8 @@
   
   <entry>
     <title>clearfix清除浮动</title>
-    <link href="http://pilotluobo.com/2019/09/03/ck1fc99p8000hbfiqbikopg4o/"/>
-    <id>http://pilotluobo.com/2019/09/03/ck1fc99p8000hbfiqbikopg4o/</id>
+    <link href="http://pilotluobo.com/2019/09/03/ck1fcbzn20005d0iqkm0lqx4d/"/>
+    <id>http://pilotluobo.com/2019/09/03/ck1fcbzn20005d0iqkm0lqx4d/</id>
     <published>2019-09-03T03:31:37.000Z</published>
     <updated>2019-09-25T09:57:37.000Z</updated>
     
@@ -212,12 +243,12 @@
   
   <entry>
     <title>CSS引入HTML的三种方式</title>
-    <link href="http://pilotluobo.com/2019/09/03/ck1fc99oq0000bfiqyrp41b15/"/>
-    <id>http://pilotluobo.com/2019/09/03/ck1fc99oq0000bfiqyrp41b15/</id>
+    <link href="http://pilotluobo.com/2019/09/03/ck1fcbzn30008d0iqbrm53g12/"/>
+    <id>http://pilotluobo.com/2019/09/03/ck1fcbzn30008d0iqbrm53g12/</id>
     <published>2019-09-02T16:05:14.000Z</published>
     <updated>2019-09-02T16:13:56.963Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="行内样式"><a href="#行内样式" class="headerlink" title="行内样式"></a>行内样式</h1><p>通过style的属性来书写CSS代码.</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">"color:red;"</span>&gt;</span>style属性的应用<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h1 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h1><p>在style标签中书写CSS代码。style标签写在head标签中。</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">      h3{</span><br><span class="line">            color:red;</span><br><span class="line">         }</span><br><span class="line">   <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h1 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h1><p>CSS代码保存在扩展名为.css的样式表中<br>HTML文件引用扩展名为.css的样式表，有两种方式：链接式、导入式。<br>1.链接式</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">rel</span>=<span class="string">"styleSheet"</span>  <span class="attr">href</span>=<span class="string">"CSS文件路径"</span> /&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>2.导入式</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">  @import url("css文件路径");</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h2 id="链接式和导入式的区别"><a href="#链接式和导入式的区别" class="headerlink" title="链接式和导入式的区别"></a>链接式和导入式的区别</h2><p><code>&lt;link&gt;</code><br>1、属于XHTML<br>2、优先加载CSS文件到页面<br><code>@import</code><br>1、属于CSS2.1<br>2、先加载HTML结构在加载CSS文件。</p><h1 id="CSS中的优先级"><a href="#CSS中的优先级" class="headerlink" title="CSS中的优先级"></a>CSS中的优先级</h1><p>1.样式优先级<br>行内样式&gt;内部样式&gt;外部样式(后两者是就近原则)<br>2.选择器优先级<br>ID选择器&gt;类选择器&gt;标签选择器</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<h1 id="行内样式"><a href="#行内样式" class="headerlink" title="行内样式"></a>行内样式</h1><p>通过style的属性来书写CSS代码.</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">"color:red;"</span>&gt;</span>style属性的应用<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h1 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h1><p>在style标签中书写CSS代码。style标签写在head标签中。</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">      h3{</span><br><span class="line"><span class="css">            <span class="selector-tag">color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line">         }</span><br><span class="line">   <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h1 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h1><p>CSS代码保存在扩展名为.css的样式表中<br>HTML文件引用扩展名为.css的样式表，有两种方式：链接式、导入式。<br>1.链接式</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">rel</span>=<span class="string">"styleSheet"</span>  <span class="attr">href</span>=<span class="string">"CSS文件路径"</span> /&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>2.导入式</p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">  @<span class="keyword">import</span> url(<span class="string">"css文件路径"</span>);</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><h2 id="链接式和导入式的区别"><a href="#链接式和导入式的区别" class="headerlink" title="链接式和导入式的区别"></a>链接式和导入式的区别</h2><p><code>&lt;link&gt;</code><br>1、属于XHTML<br>2、优先加载CSS文件到页面<br><code>@import</code><br>1、属于CSS2.1<br>2、先加载HTML结构在加载CSS文件。</p><h1 id="CSS中的优先级"><a href="#CSS中的优先级" class="headerlink" title="CSS中的优先级"></a>CSS中的优先级</h1><p>1.样式优先级<br>行内样式&gt;内部样式&gt;外部样式(后两者是就近原则)<br>2.选择器优先级<br>ID选择器&gt;类选择器&gt;标签选择器</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
@@ -232,16 +263,16 @@
     
       <category term="前端" scheme="http://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="HTML" scheme="http://pilotluobo.com/tags/HTML/"/>
-    
       <category term="CSS" scheme="http://pilotluobo.com/tags/CSS/"/>
+    
+      <category term="HTML" scheme="http://pilotluobo.com/tags/HTML/"/>
     
   </entry>
   
   <entry>
     <title>CSS理解margin与padding</title>
-    <link href="http://pilotluobo.com/2019/09/02/ck1fc99ou0002bfiq8ckrtd6q/"/>
-    <id>http://pilotluobo.com/2019/09/02/ck1fc99ou0002bfiq8ckrtd6q/</id>
+    <link href="http://pilotluobo.com/2019/09/02/ck1fcbzn4000ad0iqxtsz2q6z/"/>
+    <id>http://pilotluobo.com/2019/09/02/ck1fcbzn4000ad0iqxtsz2q6z/</id>
     <published>2019-09-02T15:10:39.000Z</published>
     <updated>2019-09-02T15:41:09.451Z</updated>
     
@@ -265,8 +296,8 @@
   
   <entry>
     <title>让聚焦搜索显示中英翻译</title>
-    <link href="http://pilotluobo.com/2019/09/02/ck1fc99pb000pbfiq6gk1g49y/"/>
-    <id>http://pilotluobo.com/2019/09/02/ck1fc99pb000pbfiq6gk1g49y/</id>
+    <link href="http://pilotluobo.com/2019/09/02/ck1fcbznt0022d0iqmda5o9jt/"/>
+    <id>http://pilotluobo.com/2019/09/02/ck1fcbznt0022d0iqmda5o9jt/</id>
     <published>2019-09-02T14:53:53.000Z</published>
     <updated>2019-09-03T02:58:30.000Z</updated>
     
@@ -290,8 +321,8 @@
   
   <entry>
     <title>用CSS画一个三角形</title>
-    <link href="http://pilotluobo.com/2019/09/02/ck1fc99pe000zbfiqc8s669ks/"/>
-    <id>http://pilotluobo.com/2019/09/02/ck1fc99pe000zbfiqc8s669ks/</id>
+    <link href="http://pilotluobo.com/2019/09/02/ck1fcbznv0028d0iqqbrhbnxb/"/>
+    <id>http://pilotluobo.com/2019/09/02/ck1fcbznv0028d0iqqbrhbnxb/</id>
     <published>2019-09-02T14:09:55.000Z</published>
     <updated>2019-09-02T14:28:54.984Z</updated>
     
@@ -316,8 +347,8 @@
   
   <entry>
     <title>HiPDI开启1080P的正确姿势</title>
-    <link href="http://pilotluobo.com/2019/08/31/ck1fc99p6000fbfiqoxdp1ndo/"/>
-    <id>http://pilotluobo.com/2019/08/31/ck1fc99p6000fbfiqoxdp1ndo/</id>
+    <link href="http://pilotluobo.com/2019/08/31/ck1fcbzmu0000d0iqgt45lscs/"/>
+    <id>http://pilotluobo.com/2019/08/31/ck1fcbzmu0000d0iqgt45lscs/</id>
     <published>2019-08-31T12:47:35.000Z</published>
     <updated>2019-09-04T14:34:02.309Z</updated>
     
@@ -333,18 +364,18 @@
     </summary>
     
     
+      <category term="黑苹果" scheme="http://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
       <category term="Apple" scheme="http://pilotluobo.com/tags/Apple/"/>
     
       <category term="macOS" scheme="http://pilotluobo.com/tags/macOS/"/>
-    
-      <category term="黑苹果" scheme="http://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
   <entry>
     <title>HTML常用标签快速入门</title>
-    <link href="http://pilotluobo.com/2019/08/24/ck1fc99pp002gbfiqb1x12d2k/"/>
-    <id>http://pilotluobo.com/2019/08/24/ck1fc99pp002gbfiqb1x12d2k/</id>
+    <link href="http://pilotluobo.com/2019/08/24/ck1fcbzns001zd0iqxidbopn9/"/>
+    <id>http://pilotluobo.com/2019/08/24/ck1fcbzns001zd0iqxidbopn9/</id>
     <published>2019-08-23T17:11:09.000Z</published>
     <updated>2019-10-01T07:48:27.459Z</updated>
     
@@ -370,8 +401,8 @@
   
   <entry>
     <title>网络与IP</title>
-    <link href="http://pilotluobo.com/2019/08/24/ck1fc99pc000rbfiq5hqmcwu9/"/>
-    <id>http://pilotluobo.com/2019/08/24/ck1fc99pc000rbfiq5hqmcwu9/</id>
+    <link href="http://pilotluobo.com/2019/08/24/ck1fcbzn9000kd0iqaim0vqtq/"/>
+    <id>http://pilotluobo.com/2019/08/24/ck1fcbzn9000kd0iqaim0vqtq/</id>
     <published>2019-08-23T16:40:47.000Z</published>
     <updated>2019-10-01T07:45:05.405Z</updated>
     
@@ -394,8 +425,8 @@
   
   <entry>
     <title>macOS键盘技巧</title>
-    <link href="http://pilotluobo.com/2019/08/23/ck1fc99p2000abfiqtmsfg5mf/"/>
-    <id>http://pilotluobo.com/2019/08/23/ck1fc99p2000abfiqtmsfg5mf/</id>
+    <link href="http://pilotluobo.com/2019/08/23/ck1fcbzn20007d0iqpr03rr0i/"/>
+    <id>http://pilotluobo.com/2019/08/23/ck1fcbzn20007d0iqpr03rr0i/</id>
     <published>2019-08-23T14:07:46.000Z</published>
     <updated>2019-09-02T14:08:50.033Z</updated>
     
@@ -419,8 +450,8 @@
   
   <entry>
     <title>HTTP:请求,响应,curl</title>
-    <link href="http://pilotluobo.com/2019/08/23/ck1fc99ox0005bfiqucuk47lf/"/>
-    <id>http://pilotluobo.com/2019/08/23/ck1fc99ox0005bfiqucuk47lf/</id>
+    <link href="http://pilotluobo.com/2019/08/23/ck1fcbzn10004d0iq14n4nhxc/"/>
+    <id>http://pilotluobo.com/2019/08/23/ck1fcbzn10004d0iq14n4nhxc/</id>
     <published>2019-08-23T06:57:32.000Z</published>
     <updated>2019-08-24T19:28:25.378Z</updated>
     
@@ -444,8 +475,8 @@
   
   <entry>
     <title>打造专属自己的个性化iterm2</title>
-    <link href="http://pilotluobo.com/2019/08/23/ck1fc99pa000mbfiq6qpjyd71/"/>
-    <id>http://pilotluobo.com/2019/08/23/ck1fc99pa000mbfiq6qpjyd71/</id>
+    <link href="http://pilotluobo.com/2019/08/23/ck1fcbzna000ld0iqi8423vm8/"/>
+    <id>http://pilotluobo.com/2019/08/23/ck1fcbzna000ld0iqi8423vm8/</id>
     <published>2019-08-23T06:11:30.000Z</published>
     <updated>2019-08-24T19:28:25.382Z</updated>
     
@@ -461,9 +492,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="macOS" scheme="http://pilotluobo.com/tags/macOS/"/>
+    
+      <category term="前端" scheme="http://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="命令行" scheme="http://pilotluobo.com/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
@@ -471,8 +502,8 @@
   
   <entry>
     <title>常用的命令行</title>
-    <link href="http://pilotluobo.com/2019/08/23/ck1fc99p9000kbfiqdca8s8xc/"/>
-    <id>http://pilotluobo.com/2019/08/23/ck1fc99p9000kbfiqdca8s8xc/</id>
+    <link href="http://pilotluobo.com/2019/08/23/ck1fcbzn9000id0iq8v290hiw/"/>
+    <id>http://pilotluobo.com/2019/08/23/ck1fcbzn9000id0iq8v290hiw/</id>
     <published>2019-08-23T05:59:50.000Z</published>
     <updated>2019-08-24T19:28:25.379Z</updated>
     
@@ -499,8 +530,8 @@
   
   <entry>
     <title>Hexo博客搭建记录</title>
-    <link href="http://pilotluobo.com/2019/08/12/ck1fc99p10009bfiqvy5tj1zn/"/>
-    <id>http://pilotluobo.com/2019/08/12/ck1fc99p10009bfiqvy5tj1zn/</id>
+    <link href="http://pilotluobo.com/2019/08/12/ck1fcbzn5000bd0iq7guu5pw7/"/>
+    <id>http://pilotluobo.com/2019/08/12/ck1fcbzn5000bd0iq7guu5pw7/</id>
     <published>2019-08-12T14:23:14.000Z</published>
     <updated>2019-09-19T09:28:42.614Z</updated>
     
@@ -520,36 +551,6 @@
       <category term="Hexo" scheme="http://pilotluobo.com/tags/Hexo/"/>
     
       <category term="瞎折腾" scheme="http://pilotluobo.com/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>记一次黑苹果安装历程</title>
-    <link href="http://pilotluobo.com/2019/08/06/ck1fc99pc000ubfiqavre4y70/"/>
-    <id>http://pilotluobo.com/2019/08/06/ck1fc99pc000ubfiqavre4y70/</id>
-    <published>2019-08-06T14:59:38.000Z</published>
-    <updated>2019-08-27T14:42:12.346Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>好久没有折腾黑苹果了，恰好去了一趟扬州老同学家里顺走了一些配件，于是开始琢磨黑苹果的事情了。</p><h1 id="硬件准备"><a href="#硬件准备" class="headerlink" title="硬件准备"></a>硬件准备</h1><table><thead><tr><th align="center">硬件</th><th align="center">型号</th><th align="center">备注</th></tr></thead><tbody><tr><td align="center">CPU</td><td align="center">8700k</td><td align="center">顺来的</td></tr><tr><td align="center">主板</td><td align="center">MSI Z370M迫击炮</td><td align="center">顺来的</td></tr><tr><td align="center">内存</td><td align="center">影驰Gamer 8G * 1</td><td align="center">以前用剩下的</td></tr><tr><td align="center">显卡</td><td align="center">蓝宝石 RX570 8G 超白金</td><td align="center">顺来的</td></tr><tr><td align="center">硬盘0</td><td align="center">三星960evo 256G</td><td align="center">顺来的</td></tr><tr><td align="center">硬盘1</td><td align="center">希捷酷鱼3T</td><td align="center">以前用剩下的</td></tr><tr><td align="center">电源</td><td align="center">海盗船CS450M</td><td align="center">嫖来的</td></tr><tr><td align="center">机箱</td><td align="center">先马 平头哥M1</td><td align="center">京东169，送俩风扇</td></tr><tr><td align="center">散热</td><td align="center">暴雪T400i</td><td align="center">顺来的</td></tr><tr><td align="center">显示器</td><td align="center">戴尔P2416D</td><td align="center">打骨折收的</td></tr></tbody></table><p><strong>除了机箱其他几乎都是嫖来的，我tql</strong></p><h1 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h1><ul><li><p>下载黑果小兵的镜像</p><p> <a href="https://blog.daliansky.net/" target="_blank" rel="noopener">黑果小兵的部落阁</a></p></li><li><p>下载<a href="https://etcher.io/" target="_blank" rel="noopener">etcher</a></p></li><li><p>寻找合适的efi，或者用通用efi装完再改</p></li><li><p>制作镜像U盘</p></li><li><p>从优盘启动，开始安装。安装过程基本上是大白话，细节不表。</p></li></ul><h1 id="安装常用软件"><a href="#安装常用软件" class="headerlink" title="安装常用软件"></a>安装常用软件</h1><ul><li>QQ</li><li>微信</li><li>搜狗输入法</li><li>VS Code</li><li>Sublime Text</li><li>Smooze</li><li>Sip</li><li>网易云音乐</li><li>QQ音乐（听Jay用）</li><li>Office全家桶</li><li>onedrive</li><li>Paste</li><li>iTerm2</li><li>iStat Menus</li><li>HBuilderX</li><li>Chrome</li><li>微信开发者工具</li><li>有道词典</li><li>百度网盘</li><li>Webstorm</li><li>。。。</li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;好久没有折腾黑苹果了，恰好去了一趟扬州老同学家里顺走了一些配件，于是开始琢磨黑苹果的事情了。&lt;/p&gt;
-&lt;h1 id=&quot;硬件准备&quot;&gt;&lt;a hr
-      
-    
-    </summary>
-    
-    
-      <category term="瞎折腾" scheme="http://pilotluobo.com/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
-    
-      <category term="Apple" scheme="http://pilotluobo.com/tags/Apple/"/>
-    
-      <category term="macOS" scheme="http://pilotluobo.com/tags/macOS/"/>
-    
-      <category term="黑苹果" scheme="http://pilotluobo.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
