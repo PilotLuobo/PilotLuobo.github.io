@@ -17,7 +17,7 @@
 <meta property="og:description" content="Vue实例 引入  &amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js&quot;&amp;gt;&amp;lt;/script&amp;gt;  构造 vue 实例   12345678910111213&amp;lt;div id=&quot;app&quot;&amp;gt;    {{msg}}&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;    var app = n">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://tva1.sinaimg.cn/large/006y8mN6gy1g7nmd9zzg2j30u023ztaj.jpg">
-<meta property="og:updated_time" content="2019-10-06T13:01:46.200Z">
+<meta property="og:updated_time" content="2019-10-06T13:11:00.288Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue基础学习之Vue实例">
 <meta name="twitter:description" content="Vue实例 引入  &amp;lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js&quot;&amp;gt;&amp;lt;/script&amp;gt;  构造 vue 实例   12345678910111213&amp;lt;div id=&quot;app&quot;&amp;gt;    {{msg}}&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;    var app = n">
@@ -223,7 +223,10 @@ var _hmt = _hmt || [];
 </blockquote>
 <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>Message: {{ msg }}<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
 
-<script>
+<blockquote>
+<p><strong>用法</strong>：在文本插值中，除了简单的绑定属性外，还可以使用JavaScript表达式进行简单的运算、三元运算等。但只支持单个表达式，不支持语句和流控制。</p>
+</blockquote>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">{{ <span class="number">6</span> + <span class="number">6</span> }}</span><br><span class="line"><span class="comment">// =&gt; {{ 12 }}</span></span><br><span class="line"></span><br><span class="line">{{ <span class="number">6</span> &lt; <span class="number">3</span> ? msg : a }}</span><br><span class="line"><span class="comment">// =&gt; {{ a }}</span></span><br><span class="line"></span><br><span class="line">{{<span class="keyword">if</span>(<span class="number">6</span>&gt;<span class="number">3</span>){}}</span><br><span class="line"><span class="comment">//不支持</span></span><br></pre></td></tr></tbody></table></figure><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
