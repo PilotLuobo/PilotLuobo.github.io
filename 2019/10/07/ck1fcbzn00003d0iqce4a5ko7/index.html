@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://pilotluobo.com">
   <title>Vue基础学习之过滤器，指令和事件，语法糖 | 清与时光</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+  <meta name="description" content="过滤器 Vue.js 允许你自定义过滤器，可被用于一些常见的文本格式化。过滤器可以用在两个地方：双花括号插值和 v-bind 表达式 (后者从 2.1.0+ 开始支持)。过滤器应该被添加在 JavaScript 表达式的尾部，由“管道”符号指示：  123456&amp;lt;!-- 在双花括号中 --&amp;gt;{{ message | capitalize }}&amp;lt;!-- 过滤器，| 后面接的是过滤器">
 <meta name="keywords" content="前端,JavaScript,Vue.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue基础学习之过滤器，指令和事件，语法糖">
 <meta property="og:url" content="http://pilotluobo.com/2019/10/07/ck1fcbzn00003d0iqce4a5ko7/index.html">
 <meta property="og:site_name" content="清与时光">
-<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:description" content="过滤器 Vue.js 允许你自定义过滤器，可被用于一些常见的文本格式化。过滤器可以用在两个地方：双花括号插值和 v-bind 表达式 (后者从 2.1.0+ 开始支持)。过滤器应该被添加在 JavaScript 表达式的尾部，由“管道”符号指示：  123456&amp;lt;!-- 在双花括号中 --&amp;gt;{{ message | capitalize }}&amp;lt;!-- 过滤器，| 后面接的是过滤器">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-06T18:49:31.881Z">
+<meta property="og:updated_time" content="2019-10-07T05:36:42.393Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue基础学习之过滤器，指令和事件，语法糖">
-<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta name="twitter:description" content="过滤器 Vue.js 允许你自定义过滤器，可被用于一些常见的文本格式化。过滤器可以用在两个地方：双花括号插值和 v-bind 表达式 (后者从 2.1.0+ 开始支持)。过滤器应该被添加在 JavaScript 表达式的尾部，由“管道”符号指示：  123456&amp;lt;!-- 在双花括号中 --&amp;gt;{{ message | capitalize }}&amp;lt;!-- 过滤器，| 后面接的是过滤器">
   
   
     <link rel="icon" href="/images/cat-32x32.png">
@@ -189,7 +189,23 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script>
+        <h1 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h1><blockquote>
+<p>Vue.js 允许你自定义过滤器，可被用于一些常见的文本格式化。过滤器可以用在两个地方：双花括号插值和 <code>v-bind</code> 表达式 (后者从 2.1.0+ 开始支持)。过滤器应该被添加在 JavaScript 表达式的尾部，由“管道”符号指示：</p>
+</blockquote>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在双花括号中 --&gt;</span></span><br><span class="line">{{ message | capitalize }}</span><br><span class="line"><span class="comment">&lt;!-- 过滤器，| 后面接的是过滤器的名字 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 在 `v-bind` 中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-bind:id</span>=<span class="string">"rawId | formatId"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>过滤器可以串联：</p>
+</blockquote>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{{ message | filterA | filterB }}</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>过滤器是函数，因此可以接受参数</p>
+</blockquote>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{{ message | filterA('arg1', arg2) }}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>其中<code>message</code>为第一个参数，<code>'arg1'</code>和<code>arg2</code>为第二、第三个参数。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
