@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pilotluobo.com/"/>
-  <updated>2019-10-08T09:17:07.729Z</updated>
+  <updated>2019-10-08T16:03:19.154Z</updated>
   <id>http://pilotluobo.com/</id>
   
   <author>
@@ -17,9 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>记录一份面试试卷</title>
+    <link href="http://pilotluobo.com/2019/10/08/ck1i1ab9m002aagiq57wj8sto/"/>
+    <id>http://pilotluobo.com/2019/10/08/ck1i1ab9m002aagiq57wj8sto/</id>
+    <published>2019-10-08T15:55:14.000Z</published>
+    <updated>2019-10-08T16:03:19.154Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h1><blockquote><p>如何居中 DIV ，至少写出 3 种方式</p></blockquote><h1 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h1><blockquote><p>请解释下 CSS3 的 flexbox 弹性盒子布局模型以及使用场景。</p></blockquote><h1 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h1><blockquote><p>如下代码，图片和前后的文字内容之间有空白间隙，为什么呢？常见的解决办法有哪些？</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; &lt;p&gt;</span><br><span class="line">&gt;     &lt;span&gt;Text...&lt;/span&gt;</span><br><span class="line">&gt;     &lt;img src="..." alt=""&gt;</span><br><span class="line">&gt;     &lt;span&gt;Text...&lt;/span&gt;</span><br><span class="line">&gt; &lt;/p&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></tbody></table></figure></blockquote><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第一题&quot;&gt;&lt;a href=&quot;#第一题&quot; class=&quot;headerlink&quot; title=&quot;第一题&quot;&gt;&lt;/a&gt;第一题&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;如何居中 DIV ，至少写出 3 种方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;第二题&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="CSS" scheme="http://pilotluobo.com/tags/CSS/"/>
+    
+      <category term="HTML" scheme="http://pilotluobo.com/tags/HTML/"/>
+    
+      <category term="JavaScript" scheme="http://pilotluobo.com/tags/JavaScript/"/>
+    
+      <category term="Vue.js" scheme="http://pilotluobo.com/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vue基础学习之计算属性</title>
-    <link href="http://pilotluobo.com/2019/10/07/ck1g50ung00030siqbeuo16vd/"/>
-    <id>http://pilotluobo.com/2019/10/07/ck1g50ung00030siqbeuo16vd/</id>
+    <link href="http://pilotluobo.com/2019/10/07/ck1i1ab8u0007agiql6pm5jex/"/>
+    <id>http://pilotluobo.com/2019/10/07/ck1i1ab8u0007agiql6pm5jex/</id>
     <published>2019-10-07T08:12:35.000Z</published>
     <updated>2019-10-08T09:17:07.729Z</updated>
     
@@ -46,8 +80,8 @@
   
   <entry>
     <title>Vue基础学习之过滤器，指令和事件，语法糖</title>
-    <link href="http://pilotluobo.com/2019/10/07/ck1g50unw000x0siqa4026gwy/"/>
-    <id>http://pilotluobo.com/2019/10/07/ck1g50unw000x0siqa4026gwy/</id>
+    <link href="http://pilotluobo.com/2019/10/07/ck1i1ab8t0005agiq1m330smy/"/>
+    <id>http://pilotluobo.com/2019/10/07/ck1i1ab8t0005agiq1m330smy/</id>
     <published>2019-10-06T18:48:54.000Z</published>
     <updated>2019-10-07T07:14:30.034Z</updated>
     
@@ -74,12 +108,12 @@
   
   <entry>
     <title>Vue基础学习之Vue实例，生命周期钩子，文本插值与表达式</title>
-    <link href="http://pilotluobo.com/2019/10/05/ck1g50unm000b0siqjnhvi738/"/>
-    <id>http://pilotluobo.com/2019/10/05/ck1g50unm000b0siqjnhvi738/</id>
+    <link href="http://pilotluobo.com/2019/10/05/ck1i1ab8v0008agiqlaiax3ko/"/>
+    <id>http://pilotluobo.com/2019/10/05/ck1i1ab8v0008agiqlaiax3ko/</id>
     <published>2019-10-05T11:41:02.000Z</published>
     <updated>2019-10-06T18:47:11.504Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Vue实例"><a href="#Vue实例" class="headerlink" title="Vue实例"></a>Vue实例</h1><ul><li><p>引入<br>  <code>&lt;script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"&gt;&lt;/script&gt;</code></p></li><li><p>构造 vue 实例</p>  <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    {{msg}}</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">    var app = new Vue({</span><br><span class="line">    // element，用于指定页面中已经存在的DOM元素，挂载到DOM中去，也可以是CSS</span><br><span class="line">    el:'#app',</span><br><span class="line">    // data，声明应用内需要双向绑定的数据</span><br><span class="line">    data:{</span><br><span class="line">        msg:"Hello World"</span><br><span class="line">    }</span><br><span class="line">})</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure></li><li><p>必不可少的是 <code>el</code> 。<code>el</code> 用于指定一个页面中已经存在的DOM元素来挂载Vue实例，可以是标签，也可以是CSS语法。</p></li><li><p>通过 Vue实例 的 <code>data</code> 选项可以声明应用内需要双向绑定的数据。</p></li><li><p>挂载成功后，我们可以通过 <code>app.$el</code> 来访问该元素。Vue提供了很多常用的实例属性和方法，都以 <code>$</code> 开头。<em>特别地，Vue实例本身代理了 <code>data</code> 对象里的所有属性。</em><br>  例如：</p>  <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data = { <span class="attr">a</span>: <span class="number">1</span> }</span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue({</span><br><span class="line">    el: <span class="string">'#example'</span>,</span><br><span class="line">    data: data</span><br><span class="line">})</span><br><span class="line"></span><br><span class="line">app.$data === data <span class="comment">// =&gt; true</span></span><br><span class="line">app.$el === <span class="built_in">document</span>.getElementById(<span class="string">'example'</span>) <span class="comment">// =&gt; true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// $watch 是一个实例方法</span></span><br><span class="line">app.$watch(<span class="string">'a'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">newValue, oldValue</span>) </span>{</span><br><span class="line"><span class="comment">// 这个回调将在 `vm.a` 改变后调用</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure></li></ul><h1 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h1><p>常用的三个：</p><ul><li><code>created</code> — 还未挂载<br>实例创建完成后调用，此阶段完成了数据的观测等，但尚未挂载， <code>$el</code> 还不可用。需要初始化处理一些数据时会比较有用，后面章节将有介绍。</li><li><code>mounted</code> — 刚刚挂载<br><code>el</code> 挂载到实例上后调用，一般我们的第一个业务逻辑会在这里开始 。相当于 <code>$(document).ready()</code>。</li><li><code>beforeDestroy</code><br>实例销毁之前调用。主要解绑一些使用 <code>addEventListener</code> 监听的事件等。</li></ul><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue({</span><br><span class="line">  data: {</span><br><span class="line">    a: <span class="number">1</span></span><br><span class="line">  },</span><br><span class="line">  created: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span><br><span class="line">    <span class="comment">// `this` 指向 vm 实例</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'a is: '</span> + <span class="keyword">this</span>.a)</span><br><span class="line">  }</span><br><span class="line">})</span><br><span class="line"><span class="comment">// =&gt; "a is: 1"</span></span><br></pre></td></tr></tbody></table></figure><blockquote><p>不要在选项属性或回调上使用箭头函数，比如 created: () =&gt; console.log(this.a) 或 vm.$watch(‘a’, newValue =&gt; this.myMethod())。因为箭头函数并没有 this，this 会作为变量一直向上级词法作用域查找，直至找到为止，经常导致 Uncaught TypeError: Cannot read property of undefined 或 Uncaught TypeError: this.myMethod is not a function 之类的错误。</p></blockquote><h1 id="生命周期图示"><a href="#生命周期图示" class="headerlink" title="生命周期图示"></a>生命周期图示</h1><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7nmd9zzg2j30u023ztaj.jpg" alt=""></p><h1 id="文本插值-amp-表达式"><a href="#文本插值-amp-表达式" class="headerlink" title="文本插值 &amp; 表达式"></a>文本插值 &amp; 表达式</h1><blockquote><p><strong>语法</strong>：数据绑定最常见的形式是“Mustache”语法（双大括号）的文本插值</p></blockquote><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>Message: {{ msg }}<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><blockquote><p><strong>用法</strong>：在文本插值中，除了简单的绑定属性外，还可以使用JavaScript表达式进行简单的运算、三元运算等。但只支持单个表达式，不支持语句和流控制。</p></blockquote><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">{{ <span class="number">6</span> + <span class="number">6</span> }}</span><br><span class="line"><span class="comment">// {{ 12 }}</span></span><br><span class="line"></span><br><span class="line">{{ <span class="number">6</span> &lt; <span class="number">3</span> ? msg : a }}</span><br><span class="line"><span class="comment">// {{ a }}</span></span><br><span class="line"></span><br><span class="line">{{ <span class="keyword">if</span> ( <span class="number">6</span> &gt; <span class="number">3</span> ){}}}</span><br><span class="line"><span class="comment">// 不支持。不能书写多行表达式，仅支持单个表达式。</span></span><br><span class="line"></span><br><span class="line">{{ <span class="keyword">var</span> a = <span class="number">6</span> }}</span><br><span class="line"><span class="comment">// 不支持。</span></span><br><span class="line"><span class="comment">// var a;</span></span><br><span class="line"><span class="comment">// a = 1;</span></span><br><span class="line"></span><br><span class="line">{{ <span class="keyword">var</span> book = ’ Vue . js 实战 ’ }}</span><br><span class="line"><span class="comment">// 不支持。</span></span><br><span class="line"><span class="comment">// 这是语句。</span></span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<h1 id="Vue实例"><a href="#Vue实例" class="headerlink" title="Vue实例"></a>Vue实例</h1><ul><li><p>引入<br>  <code>&lt;script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"&gt;&lt;/script&gt;</code></p></li><li><p>构造 vue 实例</p>  <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    {{msg}}</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> app = <span class="keyword">new</span> Vue({</span></span><br><span class="line"><span class="javascript">    <span class="comment">// element，用于指定页面中已经存在的DOM元素，挂载到DOM中去，也可以是CSS</span></span></span><br><span class="line"><span class="javascript">    el:<span class="string">'#app'</span>,</span></span><br><span class="line"><span class="javascript">    <span class="comment">// data，声明应用内需要双向绑定的数据</span></span></span><br><span class="line">    data:{</span><br><span class="line"><span class="javascript">        msg:<span class="string">"Hello World"</span></span></span><br><span class="line">    }</span><br><span class="line">})</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure></li><li><p>必不可少的是 <code>el</code> 。<code>el</code> 用于指定一个页面中已经存在的DOM元素来挂载Vue实例，可以是标签，也可以是CSS语法。</p></li><li><p>通过 Vue实例 的 <code>data</code> 选项可以声明应用内需要双向绑定的数据。</p></li><li><p>挂载成功后，我们可以通过 <code>app.$el</code> 来访问该元素。Vue提供了很多常用的实例属性和方法，都以 <code>$</code> 开头。<em>特别地，Vue实例本身代理了 <code>data</code> 对象里的所有属性。</em><br>  例如：</p>  <figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data = { <span class="attr">a</span>: <span class="number">1</span> }</span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue({</span><br><span class="line">    el: <span class="string">'#example'</span>,</span><br><span class="line">    data: data</span><br><span class="line">})</span><br><span class="line"></span><br><span class="line">app.$data === data <span class="comment">// =&gt; true</span></span><br><span class="line">app.$el === <span class="built_in">document</span>.getElementById(<span class="string">'example'</span>) <span class="comment">// =&gt; true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// $watch 是一个实例方法</span></span><br><span class="line">app.$watch(<span class="string">'a'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">newValue, oldValue</span>) </span>{</span><br><span class="line"><span class="comment">// 这个回调将在 `vm.a` 改变后调用</span></span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure></li></ul><h1 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h1><p>常用的三个：</p><ul><li><code>created</code> — 还未挂载<br>实例创建完成后调用，此阶段完成了数据的观测等，但尚未挂载， <code>$el</code> 还不可用。需要初始化处理一些数据时会比较有用，后面章节将有介绍。</li><li><code>mounted</code> — 刚刚挂载<br><code>el</code> 挂载到实例上后调用，一般我们的第一个业务逻辑会在这里开始 。相当于 <code>$(document).ready()</code>。</li><li><code>beforeDestroy</code><br>实例销毁之前调用。主要解绑一些使用 <code>addEventListener</code> 监听的事件等。</li></ul><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue({</span><br><span class="line">  data: {</span><br><span class="line">    a: <span class="number">1</span></span><br><span class="line">  },</span><br><span class="line">  created: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{</span><br><span class="line">    <span class="comment">// `this` 指向 vm 实例</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'a is: '</span> + <span class="keyword">this</span>.a)</span><br><span class="line">  }</span><br><span class="line">})</span><br><span class="line"><span class="comment">// =&gt; "a is: 1"</span></span><br></pre></td></tr></tbody></table></figure><blockquote><p>不要在选项属性或回调上使用箭头函数，比如 created: () =&gt; console.log(this.a) 或 vm.$watch(‘a’, newValue =&gt; this.myMethod())。因为箭头函数并没有 this，this 会作为变量一直向上级词法作用域查找，直至找到为止，经常导致 Uncaught TypeError: Cannot read property of undefined 或 Uncaught TypeError: this.myMethod is not a function 之类的错误。</p></blockquote><h1 id="生命周期图示"><a href="#生命周期图示" class="headerlink" title="生命周期图示"></a>生命周期图示</h1><p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g7nmd9zzg2j30u023ztaj.jpg" alt=""></p><h1 id="文本插值-amp-表达式"><a href="#文本插值-amp-表达式" class="headerlink" title="文本插值 &amp; 表达式"></a>文本插值 &amp; 表达式</h1><blockquote><p><strong>语法</strong>：数据绑定最常见的形式是“Mustache”语法（双大括号）的文本插值</p></blockquote><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>Message: {{ msg }}<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><blockquote><p><strong>用法</strong>：在文本插值中，除了简单的绑定属性外，还可以使用JavaScript表达式进行简单的运算、三元运算等。但只支持单个表达式，不支持语句和流控制。</p></blockquote><figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">{{ <span class="number">6</span> + <span class="number">6</span> }}</span><br><span class="line"><span class="comment">// {{ 12 }}</span></span><br><span class="line"></span><br><span class="line">{{ <span class="number">6</span> &lt; <span class="number">3</span> ? msg : a }}</span><br><span class="line"><span class="comment">// {{ a }}</span></span><br><span class="line"></span><br><span class="line">{{ <span class="keyword">if</span> ( <span class="number">6</span> &gt; <span class="number">3</span> ){}}}</span><br><span class="line"><span class="comment">// 不支持。不能书写多行表达式，仅支持单个表达式。</span></span><br><span class="line"></span><br><span class="line">{{ <span class="keyword">var</span> a = <span class="number">6</span> }}</span><br><span class="line"><span class="comment">// 不支持。</span></span><br><span class="line"><span class="comment">// var a;</span></span><br><span class="line"><span class="comment">// a = 1;</span></span><br><span class="line"></span><br><span class="line">{{ <span class="keyword">var</span> book = ’ Vue . js 实战 ’ }}</span><br><span class="line"><span class="comment">// 不支持。</span></span><br><span class="line"><span class="comment">// 这是语句。</span></span><br></pre></td></tr></tbody></table></figure><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
@@ -102,8 +136,8 @@
   
   <entry>
     <title>浅谈AJAX</title>
-    <link href="http://pilotluobo.com/2019/09/29/ck1g50unv000v0siq2au6wq6v/"/>
-    <id>http://pilotluobo.com/2019/09/29/ck1g50unv000v0siq2au6wq6v/</id>
+    <link href="http://pilotluobo.com/2019/09/29/ck1i1ab9k0026agiqc5w2eqw8/"/>
+    <id>http://pilotluobo.com/2019/09/29/ck1i1ab9k0026agiqc5w2eqw8/</id>
     <published>2019-09-29T12:57:13.000Z</published>
     <updated>2019-09-29T12:58:24.925Z</updated>
     
@@ -131,8 +165,8 @@
   
   <entry>
     <title>同源政策 &amp; 跨域</title>
-    <link href="http://pilotluobo.com/2019/09/26/ck1g50unn000d0siqnczdqik9/"/>
-    <id>http://pilotluobo.com/2019/09/26/ck1g50unn000d0siqnczdqik9/</id>
+    <link href="http://pilotluobo.com/2019/09/26/ck1i1ab8z000fagiqcjpu8tzz/"/>
+    <id>http://pilotluobo.com/2019/09/26/ck1i1ab8z000fagiqcjpu8tzz/</id>
     <published>2019-09-26T04:27:28.000Z</published>
     <updated>2019-10-08T13:43:10.809Z</updated>
     
@@ -157,8 +191,8 @@
   
   <entry>
     <title>记录一些面试题</title>
-    <link href="http://pilotluobo.com/2019/09/25/ck1g50uoc002j0siq046ibd3n/"/>
-    <id>http://pilotluobo.com/2019/09/25/ck1g50uoc002j0siq046ibd3n/</id>
+    <link href="http://pilotluobo.com/2019/09/25/ck1i1ab9y002ragiqm4r1ib4v/"/>
+    <id>http://pilotluobo.com/2019/09/25/ck1i1ab9y002ragiqm4r1ib4v/</id>
     <published>2019-09-25T09:57:49.000Z</published>
     <updated>2019-09-27T00:54:39.000Z</updated>
     
@@ -189,8 +223,8 @@
   
   <entry>
     <title>堆叠上下文</title>
-    <link href="http://pilotluobo.com/2019/09/09/ck1g50unr000k0siq2npxka8h/"/>
-    <id>http://pilotluobo.com/2019/09/09/ck1g50unr000k0siq2npxka8h/</id>
+    <link href="http://pilotluobo.com/2019/09/09/ck1i1ab91000hagiq8jbz6l2o/"/>
+    <id>http://pilotluobo.com/2019/09/09/ck1i1ab91000hagiq8jbz6l2o/</id>
     <published>2019-09-09T02:03:16.000Z</published>
     <updated>2019-09-27T15:04:05.308Z</updated>
     
@@ -218,8 +252,8 @@
   
   <entry>
     <title>用CSS画个太极吧</title>
-    <link href="http://pilotluobo.com/2019/09/03/ck1g50unt000o0siqxmbxn7ux/"/>
-    <id>http://pilotluobo.com/2019/09/03/ck1g50unt000o0siqxmbxn7ux/</id>
+    <link href="http://pilotluobo.com/2019/09/03/ck1i1ab93000pagiqpduzafeb/"/>
+    <id>http://pilotluobo.com/2019/09/03/ck1i1ab93000pagiqpduzafeb/</id>
     <published>2019-09-03T05:36:16.000Z</published>
     <updated>2019-09-03T06:28:54.000Z</updated>
     
@@ -243,8 +277,8 @@
   
   <entry>
     <title>clearfix清除浮动</title>
-    <link href="http://pilotluobo.com/2019/09/03/ck1g50unj00070siqmvjs0tza/"/>
-    <id>http://pilotluobo.com/2019/09/03/ck1g50unj00070siqmvjs0tza/</id>
+    <link href="http://pilotluobo.com/2019/09/03/ck1i1ab8x000aagiq8afvmyyk/"/>
+    <id>http://pilotluobo.com/2019/09/03/ck1i1ab8x000aagiq8afvmyyk/</id>
     <published>2019-09-03T03:31:37.000Z</published>
     <updated>2019-09-25T09:57:37.000Z</updated>
     
@@ -268,8 +302,8 @@
   
   <entry>
     <title>CSS引入HTML的三种方式</title>
-    <link href="http://pilotluobo.com/2019/09/03/ck1g50une00010siqrj80wyp6/"/>
-    <id>http://pilotluobo.com/2019/09/03/ck1g50une00010siqrj80wyp6/</id>
+    <link href="http://pilotluobo.com/2019/09/03/ck1i1ab8p0001agiqzc79qjqe/"/>
+    <id>http://pilotluobo.com/2019/09/03/ck1i1ab8p0001agiqzc79qjqe/</id>
     <published>2019-09-02T16:05:14.000Z</published>
     <updated>2019-09-02T16:13:56.963Z</updated>
     
@@ -296,8 +330,8 @@
   
   <entry>
     <title>CSS理解margin与padding</title>
-    <link href="http://pilotluobo.com/2019/09/02/ck1g50una00000siqbb4eyimp/"/>
-    <id>http://pilotluobo.com/2019/09/02/ck1g50una00000siqbb4eyimp/</id>
+    <link href="http://pilotluobo.com/2019/09/02/ck1i1ab8l0000agiqok4kxgvh/"/>
+    <id>http://pilotluobo.com/2019/09/02/ck1i1ab8l0000agiqok4kxgvh/</id>
     <published>2019-09-02T15:10:39.000Z</published>
     <updated>2019-09-02T15:41:09.451Z</updated>
     
@@ -321,8 +355,8 @@
   
   <entry>
     <title>让聚焦搜索显示中英翻译</title>
-    <link href="http://pilotluobo.com/2019/09/02/ck1g50unv000t0siqli06u1gp/"/>
-    <id>http://pilotluobo.com/2019/09/02/ck1g50unv000t0siqli06u1gp/</id>
+    <link href="http://pilotluobo.com/2019/09/02/ck1i1ab9m002cagiqk3vn0wwb/"/>
+    <id>http://pilotluobo.com/2019/09/02/ck1i1ab9m002cagiqk3vn0wwb/</id>
     <published>2019-09-02T14:53:53.000Z</published>
     <updated>2019-09-03T02:58:30.000Z</updated>
     
@@ -346,8 +380,8 @@
   
   <entry>
     <title>用CSS画一个三角形</title>
-    <link href="http://pilotluobo.com/2019/09/02/ck1g50uns000l0siqcn9m7ku0/"/>
-    <id>http://pilotluobo.com/2019/09/02/ck1g50uns000l0siqcn9m7ku0/</id>
+    <link href="http://pilotluobo.com/2019/09/02/ck1i1ab95000uagiqz0wg1f3c/"/>
+    <id>http://pilotluobo.com/2019/09/02/ck1i1ab95000uagiqz0wg1f3c/</id>
     <published>2019-09-02T14:09:55.000Z</published>
     <updated>2019-09-02T14:28:54.984Z</updated>
     
@@ -372,8 +406,8 @@
   
   <entry>
     <title>HiPDI开启1080P的正确姿势</title>
-    <link href="http://pilotluobo.com/2019/08/31/ck1g50unh00040siqk5mw0egw/"/>
-    <id>http://pilotluobo.com/2019/08/31/ck1g50unh00040siqk5mw0egw/</id>
+    <link href="http://pilotluobo.com/2019/08/31/ck1i1ab8s0003agiqinfoo0ky/"/>
+    <id>http://pilotluobo.com/2019/08/31/ck1i1ab8s0003agiqinfoo0ky/</id>
     <published>2019-08-31T12:47:35.000Z</published>
     <updated>2019-09-04T14:34:02.309Z</updated>
     
@@ -399,8 +433,8 @@
   
   <entry>
     <title>HTML常用标签快速入门</title>
-    <link href="http://pilotluobo.com/2019/08/24/ck1g50uoc002h0siq0mlkywtu/"/>
-    <id>http://pilotluobo.com/2019/08/24/ck1g50uoc002h0siq0mlkywtu/</id>
+    <link href="http://pilotluobo.com/2019/08/24/ck1i1ab9k0025agiq8aww51z3/"/>
+    <id>http://pilotluobo.com/2019/08/24/ck1i1ab9k0025agiq8aww51z3/</id>
     <published>2019-08-23T17:11:09.000Z</published>
     <updated>2019-10-01T07:48:27.459Z</updated>
     
@@ -426,8 +460,8 @@
   
   <entry>
     <title>网络与IP</title>
-    <link href="http://pilotluobo.com/2019/08/24/ck1g50unu000q0siqa01iz75j/"/>
-    <id>http://pilotluobo.com/2019/08/24/ck1g50unu000q0siqa01iz75j/</id>
+    <link href="http://pilotluobo.com/2019/08/24/ck1i1ab9l0028agiqzldiherj/"/>
+    <id>http://pilotluobo.com/2019/08/24/ck1i1ab9l0028agiqzldiherj/</id>
     <published>2019-08-23T16:40:47.000Z</published>
     <updated>2019-10-01T07:45:05.405Z</updated>
     
@@ -450,8 +484,8 @@
   
   <entry>
     <title>macOS键盘技巧</title>
-    <link href="http://pilotluobo.com/2019/08/23/ck1g50unk00080siqncc1grge/"/>
-    <id>http://pilotluobo.com/2019/08/23/ck1g50unk00080siqncc1grge/</id>
+    <link href="http://pilotluobo.com/2019/08/23/ck1i1ab94000ragiqdh8shaid/"/>
+    <id>http://pilotluobo.com/2019/08/23/ck1i1ab94000ragiqdh8shaid/</id>
     <published>2019-08-23T14:07:46.000Z</published>
     <updated>2019-09-02T14:08:50.033Z</updated>
     
@@ -475,8 +509,8 @@
   
   <entry>
     <title>HTTP:请求,响应,curl</title>
-    <link href="http://pilotluobo.com/2019/08/23/ck1g50uni00050siqq48zf8yd/"/>
-    <id>http://pilotluobo.com/2019/08/23/ck1g50uni00050siqq48zf8yd/</id>
+    <link href="http://pilotluobo.com/2019/08/23/ck1i1ab8s0004agiqd9laeoom/"/>
+    <id>http://pilotluobo.com/2019/08/23/ck1i1ab8s0004agiqd9laeoom/</id>
     <published>2019-08-23T06:57:32.000Z</published>
     <updated>2019-08-24T19:28:25.378Z</updated>
     
@@ -500,8 +534,8 @@
   
   <entry>
     <title>打造专属自己的个性化iterm2</title>
-    <link href="http://pilotluobo.com/2019/08/23/ck1g50unq000i0siq5dysve9x/"/>
-    <id>http://pilotluobo.com/2019/08/23/ck1g50unq000i0siq5dysve9x/</id>
+    <link href="http://pilotluobo.com/2019/08/23/ck1i1ab91000kagiq0k7pcizd/"/>
+    <id>http://pilotluobo.com/2019/08/23/ck1i1ab91000kagiq0k7pcizd/</id>
     <published>2019-08-23T06:11:30.000Z</published>
     <updated>2019-08-24T19:28:25.382Z</updated>
     
@@ -520,34 +554,6 @@
       <category term="前端" scheme="http://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="macOS" scheme="http://pilotluobo.com/tags/macOS/"/>
-    
-      <category term="命令行" scheme="http://pilotluobo.com/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用的命令行</title>
-    <link href="http://pilotluobo.com/2019/08/23/ck1g50unp000g0siq8v8hz3d9/"/>
-    <id>http://pilotluobo.com/2019/08/23/ck1g50unp000g0siq8v8hz3d9/</id>
-    <published>2019-08-23T05:59:50.000Z</published>
-    <updated>2019-08-24T19:28:25.379Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="文章目录"><a href="#文章目录" class="headerlink" title="文章目录"></a>文章目录</h1><ul><li>什么是命令行</li><li>Linux下常见的命令行（待补全）</li><li>如何使用 explainshell.com</li></ul><h1 id="什么是命令行"><a href="#什么是命令行" class="headerlink" title="什么是命令行"></a>什么是命令行</h1><p>在百度百科中，命令行的定义是这样的：</p><blockquote><p>命令提示符是在操作系统中，提示进行命令输入的一种工作提示符。在不同的操作系统环境下，命令提示符各不相同。</p></blockquote><p>命令行的掌握是一个程序员的基础。在不同的环境下，命令行是不一样的，功能可能会有所不同。</p><h1 id="Linux下常见的命令行（待补全）"><a href="#Linux下常见的命令行（待补全）" class="headerlink" title="Linux下常见的命令行（待补全）"></a>Linux下常见的命令行（待补全）</h1><ul><li><strong>ls</strong></li></ul><p><strong>ls</strong> 为<strong>list</strong>的缩写，中文释义为 <strong>罗列</strong>。<br>常见的用法有：<br><code>ls 路径</code>   ：查看输入的路径下的所有文件/文件夹<br>  </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~</span><br><span class="line">$ ls ~/Desktop/</span><br><span class="line"> PanDownload/        'Visual Studio Code.lnk'*       迅雷快鸟.lnk*</span><br></pre></td></tr></tbody></table></figure><p></p><p>  <code>ls -a 路径</code> ：加了个<strong>a</strong>，在 ls 的基础上，显示当前目录 <strong>./</strong> 以及父级目录 <strong>../</strong> 。<br>  </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~</span><br><span class="line">$ ls ~/Desktop/</span><br><span class="line">./                                     'Visual Studio Code.lnk'*</span><br><span class="line">../                                    迅雷快鸟.lnk*</span><br><span class="line">PanDownload/</span><br></pre></td></tr></tbody></table></figure><p></p><p>  <code>ls -l 路径</code> ：以列表形式展示文件。d目录，r读取权限，w写入权限，x执行权限，-无权限。<br>  </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~</span><br><span class="line">$ ls -l ~/Desktop/</span><br><span class="line">-rw-r--r-- 1 97351 197609   20552 9月  10 21:31  【江湖又相逢】.zip</span><br><span class="line">-rw-r--r-- 1 97351 197609 8834458 9月  10 21:38  【一盏】吃鸡姐妹捏脸数据包.rar</span><br><span class="line">-rw-r--r-- 1 97351 197609     282 9月   9 00:07  desktop.ini</span><br></pre></td></tr></tbody></table></figure><p></p><p>  <code>ls -al 路径</code> ：比 <strong>ls -l 路径</strong> 多了当前目录 <strong>./</strong> 以及父级目录 <strong>../</strong>。<br>  </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~</span><br><span class="line">$ ls -al ~/Desktop/</span><br><span class="line">total 9009</span><br><span class="line">drwxr-xr-x 1 97351 197609       0 9月  13 19:41  ./</span><br><span class="line">drwxr-xr-x 1 97351 197609       0 9月  11 00:29  ../</span><br><span class="line">-rw-r--r-- 1 97351 197609   20552 9月  10 21:31  【江湖又相逢】.zip</span><br><span class="line">-rw-r--r-- 1 97351 197609 8834458 9月  10 21:38  【一盏】吃鸡姐妹捏脸数据包.rar</span><br></pre></td></tr></tbody></table></figure><p></p><ul><li><strong>cat</strong></li></ul><p><strong>cat</strong>是一个文本查看和编辑工具。基本用法为：<br><code>cat 参数 文件名</code><br>  </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~/Desktop</span><br><span class="line">$ cat 1.txt</span><br><span class="line">aaaa</span><br></pre></td></tr></tbody></table></figure><p></p><ul><li><strong>mv</strong></li></ul><p><strong>mv</strong>是<strong>move</strong>的缩写，意为<strong>移动</strong>。<br><code>mv 源路径 目标路径</code><br>  </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~/Desktop</span><br><span class="line">$ mv 1.txt 2.txt</span><br><span class="line"></span><br><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~/Desktop</span><br><span class="line">$ ls</span><br><span class="line"> 2.txt</span><br></pre></td></tr></tbody></table></figure><p></p><ul><li><strong>touch</strong></li></ul><p><strong>touch</strong>，创建文件、更新文件修改时间。<br>   </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~/Desktop</span><br><span class="line">$ touch 1.txt</span><br><span class="line"></span><br><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~/Desktop</span><br><span class="line">$ ls -l</span><br><span class="line">-rw-r--r-- 1 97351 197609       0 9月  14 19:36  1.txt</span><br><span class="line"></span><br><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~/Desktop</span><br><span class="line">$ touch 1.txt</span><br><span class="line"></span><br><span class="line">97351@DESKTOP-GV90EHG MINGW64 ~/Desktop</span><br><span class="line">$ ls -l</span><br><span class="line">-rw-r--r-- 1 97351 197609       0 9月  14 19:38  1.txt</span><br></pre></td></tr></tbody></table></figure><p></p><h1 id="如何使用-explainshell-com"><a href="#如何使用-explainshell-com" class="headerlink" title="如何使用 explainshell.com"></a>如何使用 explainshell.com</h1><p>explainshell如同百度一样，在输入框中输入想要查询的命令，回车即可。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;文章目录&quot;&gt;&lt;a href=&quot;#文章目录&quot; class=&quot;headerlink&quot; title=&quot;文章目录&quot;&gt;&lt;/a&gt;文章目录&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;什么是命令行&lt;/li&gt;
-&lt;li&gt;Linux下常见的命令行（待补全）&lt;/li&gt;
-&lt;li&gt;如何使用 explains
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://pilotluobo.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="命令行" scheme="http://pilotluobo.com/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
