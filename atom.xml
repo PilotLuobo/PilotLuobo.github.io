@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pilotluobo.com/"/>
-  <updated>2019-10-08T16:03:19.154Z</updated>
+  <updated>2019-10-08T16:04:05.960Z</updated>
   <id>http://pilotluobo.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://pilotluobo.com/2019/10/08/ck1i1ab9m002aagiq57wj8sto/"/>
     <id>http://pilotluobo.com/2019/10/08/ck1i1ab9m002aagiq57wj8sto/</id>
     <published>2019-10-08T15:55:14.000Z</published>
-    <updated>2019-10-08T16:03:19.154Z</updated>
+    <updated>2019-10-08T16:04:05.960Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h1><blockquote><p>如何居中 DIV ，至少写出 3 种方式</p></blockquote><h1 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h1><blockquote><p>请解释下 CSS3 的 flexbox 弹性盒子布局模型以及使用场景。</p></blockquote><h1 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h1><blockquote><p>如下代码，图片和前后的文字内容之间有空白间隙，为什么呢？常见的解决办法有哪些？</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; &lt;p&gt;</span><br><span class="line">&gt;     &lt;span&gt;Text...&lt;/span&gt;</span><br><span class="line">&gt;     &lt;img src="..." alt=""&gt;</span><br><span class="line">&gt;     &lt;span&gt;Text...&lt;/span&gt;</span><br><span class="line">&gt; &lt;/p&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></tbody></table></figure></blockquote><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    <content type="html"><![CDATA[<h1 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h1><blockquote><p>如何居中 DIV ，至少写出 3 种方式</p></blockquote><h1 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h1><blockquote><p>请解释下 CSS3 的 flexbox 弹性盒子布局模型以及使用场景。</p></blockquote><h1 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h1><blockquote><p>如下代码，图片和前后的文字内容之间有空白间隙，为什么呢？常见的解决办法有哪些？</p></blockquote><blockquote><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; &lt;p&gt;</span><br><span class="line">&gt;     &lt;span&gt;Text...&lt;/span&gt;</span><br><span class="line">&gt;     &lt;img src="..." alt=""&gt;</span><br><span class="line">&gt;     &lt;span&gt;Text...&lt;/span&gt;</span><br><span class="line">&gt; &lt;/p&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></tbody></table></figure></blockquote><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
     <summary type="html">
     
