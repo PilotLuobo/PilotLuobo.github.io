@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://pilotluobo.com">
   <title>Vue基础学习之计算属性 | 清与时光</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="什么是计算属性 我们己经可以搭建出一个简单的 Vue 应用，在模板中双向绑定一些数据或表达式了。但是表达式如果过长，或逻辑更为复杂时，就会变得雕肿甚至难以阅读和维护。比如： 1234&amp;gt;&amp;lt;div&amp;gt;&amp;gt;{{ text.split ( ’,’ ) •reverse () . join (’,’)}}&amp;gt;&amp;lt;/div&amp;gt;&amp;gt;          document.que">
+  <meta name="description" content="什么是计算属性 我们己经可以搭建出一个简单的 Vue 应用，在模板中双向绑定一些数据或表达式了。但是表达式如果过长，或逻辑更为复杂时，就会变得雕肿甚至难以阅读和维护。比如：    123&amp;lt;div&amp;gt;{{ text.split ( ’,’ ) •reverse () . join (’,’)}}&amp;lt;/div&amp;gt;           document.querySelectorAll">
 <meta name="keywords" content="前端,JavaScript,Vue.js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue基础学习之计算属性">
 <meta property="og:url" content="http://pilotluobo.com/2019/10/07/ck1i1ab8u0007agiql6pm5jex/index.html">
 <meta property="og:site_name" content="清与时光">
-<meta property="og:description" content="什么是计算属性 我们己经可以搭建出一个简单的 Vue 应用，在模板中双向绑定一些数据或表达式了。但是表达式如果过长，或逻辑更为复杂时，就会变得雕肿甚至难以阅读和维护。比如： 1234&amp;gt;&amp;lt;div&amp;gt;&amp;gt;{{ text.split ( ’,’ ) •reverse () . join (’,’)}}&amp;gt;&amp;lt;/div&amp;gt;&amp;gt;          document.que">
+<meta property="og:description" content="什么是计算属性 我们己经可以搭建出一个简单的 Vue 应用，在模板中双向绑定一些数据或表达式了。但是表达式如果过长，或逻辑更为复杂时，就会变得雕肿甚至难以阅读和维护。比如：    123&amp;lt;div&amp;gt;{{ text.split ( ’,’ ) •reverse () . join (’,’)}}&amp;lt;/div&amp;gt;           document.querySelectorAll">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-08T09:17:07.729Z">
+<meta property="og:updated_time" content="2019-10-09T07:04:17.488Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue基础学习之计算属性">
-<meta name="twitter:description" content="什么是计算属性 我们己经可以搭建出一个简单的 Vue 应用，在模板中双向绑定一些数据或表达式了。但是表达式如果过长，或逻辑更为复杂时，就会变得雕肿甚至难以阅读和维护。比如： 1234&amp;gt;&amp;lt;div&amp;gt;&amp;gt;{{ text.split ( ’,’ ) •reverse () . join (’,’)}}&amp;gt;&amp;lt;/div&amp;gt;&amp;gt;          document.que">
+<meta name="twitter:description" content="什么是计算属性 我们己经可以搭建出一个简单的 Vue 应用，在模板中双向绑定一些数据或表达式了。但是表达式如果过长，或逻辑更为复杂时，就会变得雕肿甚至难以阅读和维护。比如：    123&amp;lt;div&amp;gt;{{ text.split ( ’,’ ) •reverse () . join (’,’)}}&amp;lt;/div&amp;gt;           document.querySelectorAll">
   
   
     <link rel="icon" href="/images/cat-32x32.png">
@@ -190,8 +190,8 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="什么是计算属性"><a href="#什么是计算属性" class="headerlink" title="什么是计算属性"></a>什么是计算属性</h1><blockquote>
-<p>我们己经可以搭建出一个简单的 Vue 应用，在模板中双向绑定一些数据或表达式了。但是表达式如果过长，或逻辑更为复杂时，就会变得雕肿甚至难以阅读和维护。<br>比如：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&lt;div&gt;</span><br><span class="line">&gt;{{ text.split ( ’,’ ) •reverse () . join (’,’)}}</span><br><span class="line">&gt;&lt;/div&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></tbody></table></figure></blockquote>
+<p>我们己经可以搭建出一个简单的 Vue 应用，在模板中双向绑定一些数据或表达式了。但是表达式如果过长，或逻辑更为复杂时，就会变得雕肿甚至难以阅读和维护。<br>比如：<br>    </p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">{{ text.split ( ’,’ ) •reverse () . join (’,’)}}</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+</blockquote>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
