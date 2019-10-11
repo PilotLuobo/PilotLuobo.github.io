@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pilotluobo.com/"/>
-  <updated>2019-10-11T15:28:22.596Z</updated>
+  <updated>2019-10-11T15:28:35.506Z</updated>
   <id>http://pilotluobo.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://pilotluobo.com/2019/10/11/ck1mactn0000d4tg1mpxeyw55/"/>
     <id>http://pilotluobo.com/2019/10/11/ck1mactn0000d4tg1mpxeyw55/</id>
     <published>2019-10-11T15:20:08.000Z</published>
-    <updated>2019-10-11T15:28:22.596Z</updated>
+    <updated>2019-10-11T15:28:35.506Z</updated>
     
     <content type="html"><![CDATA[<p>本机环境：macOS Catalina</p><ol><li><p>打开终端</p></li><li><p>编辑host</p> <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/hosts</span><br></pre></td></tr></tbody></table></figure></li><li><p>插入</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">151.101.113.194 github.global.ssl.fastly.net </span><br><span class="line">192.30.253.112 github.com</span><br><span class="line">52.216.227.168 github-cloud.s3.amazonaws.com</span><br></pre></td></tr></tbody></table></figure></li><li><p>刷新DNS缓存</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dscacheutil -flushcache</span><br></pre></td></tr></tbody></table></figure></li></ol><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
     
